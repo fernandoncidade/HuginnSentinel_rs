@@ -1,0 +1,226 @@
+NOTAS DE LANÇAMENTO: Versão 2026.11.9.0
+
+RESUMO GERAL DAS MELHORIAS E NOVIDADES
+
+A versão 2026.11.9.0 consolida aprimoramentos fundamentais na comunicação com o usuário, no suporte oficial, na transparência do modelo de distribuição, na segurança jurídica dos termos e na harmonização internacional completa em todos os seis idiomas do aplicativo.
+
+
+1. NOVO CANAL CENTRALIZADO DE ATENDIMENTO E SUPORTE TÉCNICO
+- E-mail Unificado e Direto: Todos os módulos, janelas de ajuda, termos de uso e telas informativas do aplicativo foram atualizados com o endereço oficial e verificado de suporte técnico: linceu_lighthouse@outlook.com.
+- Atendimento Transparente e Confiável: Estabelecido um canal direto por e-mail para esclarecimento de dúvidas, orientações de uso e recebimento de sugestões, com respostas ágeis e prestação de suporte de forma individualizada, sem a necessidade de chamadas telefônicas ou acessos remotos aos computadores dos usuários.
+
+
+2. TRANSPARÊNCIA NO MODELO DE DISTRIBUIÇÃO E DUPLO LICENCIAMENTO
+- Liberdade e Clareza para o Usuário: Formalização transparente da convivência entre a versão comunitária em código aberto e a edição comercial oficial disponibilizada na loja de aplicativos Microsoft Store.
+- Praticidade e Segurança para Empresas e Profissionais: Os usuários que adquirem o aplicativo na Microsoft Store contam com instalação facilitada, atualizações automáticas e licença comercial de uso sem a obrigatoriedade de compartilhar alterações internas. Ao mesmo tempo, a comunidade que deseja auditar, aprender e compilar suas próprias versões continua com acesso aberto e gratuito ao projeto.
+
+
+3. HARMONIZAÇÃO E PARIDADE ESTRUTURAL NOS 6 IDIOMAS
+- Mesma Experiência em Todo o Mundo: Todos os textos explicativos sobre a história do aplicativo, contratos de licença de uso, termos comerciais, políticas de privacidade e notas de versão foram integralmente traduzidos e alinhados nos 6 idiomas (Português, Inglês, Espanhol, Francês, Italiano e Alemão).
+- Fidelidade Absoluta: Cada documento possui paridade perfeita e o mesmo nível de riqueza de detalhes, garantindo que qualquer usuário compreenda com clareza seus direitos, funcionalidades e orientações operacionais, independentemente do idioma selecionado.
+
+
+4. COMPROMISSO COM A PRIVACIDADE SOBERANA (100% LOCAL)
+- Seus Arquivos Permanecem com Você: Reafirmada a filosofia de privacidade local do Huginn Sentinel. Todas as análises de integridade, geração de relatórios e monitoramento de atividades ocorrem de forma 100% isolada e offline em seu próprio computador.
+- Zero Nuvem e Sem Telemetria: O aplicativo não coleta, não monitora e não envia nenhuma informação pessoal, histórico de uso ou conteúdo de arquivos para a nuvem ou servidores remotos, em total conformidade com a Lei Geral de Proteção de Dados (LGPD).
+
+
+5. CLAREZA SOBRE COMPONENTES E DIREITOS AUTORAIS
+- Respeito Integral à Autoria: Os termos de direitos autorais foram refinados para identificar com clareza o desenvolvedor independente responsável pelo projeto e explicitar que as bibliotecas e recursos de apoio de terceiros pertencem aos seus respectivos autores originais, oferecendo segurança e transparência jurídica completas.
+
+
+6. CONFIABILIDADE E NAVEGAÇÃO APERFEIÇOADA NOS GUIAS DE AJUDA
+- Documentação Clara e Acessível: Todas as orientações, guias de utilização e manuais informativos passaram por revisão completa de links internos e referências, facilitando a consulta rápida sobre como utilizar filtros, personalizar cores, gerar gráficos e exportar relatórios de forma simples e intuitiva.
+
+_________________________________________________
+
+NOTAS DE LANÇAMENTO: Versão 2026.11.4.0
+
+RESUMO GERAL DAS MELHORIAS E NOVIDADES
+
+A versão 2026.11.4.0 introduz um novo e completo sistema individual e granular de limpeza de dados com janelas de confirmação e avisos visuais, reorganização e isolamento dos bancos de dados em diretórios próprios e padronizados, padronização nos nomes dos relatórios salvos e exportados, inicialização da janela principal centralizada na tela e suporte integral a traduções dinâmicas nos 6 idiomas.
+
+
+1. NOVO SISTEMA INDIVIDUAL E GRANULAR DE LIMPEZA DE DADOS
+- Acesso Rápido e Centralizado: O sistema de limpeza pode ser acionado diretamente pelo botão "Limpar" na barra de ferramentas principal, pelo atalho de teclado Ctrl+L, pelo menu "Arquivo > Limpar..." ou pelo menu "Segurança > Limpar Banco de Segurança...".
+- Cinco Opções Claras e Independentes: A nova janela de limpeza permite escolher exatamente o que você deseja purgar:
+  • Limpar Tabela, Banco de Segurança e de Dados: Realiza uma limpeza completa, restaurando a visualização da tela e esvaziando todos os dados armazenados.
+  • Limpar banco de dados: Remove exclusivamente o histórico de eventos de monitoramento gravados no disco, recriando o arquivo e liberando espaço de armazenamento sem afetar a segurança ou a visualização atual da tabela.
+  • Limpar tabela da UI: Limpa apenas os itens exibidos na tabela da tela, preservando intactos todos os dados salvos no banco de dados.
+  • Limpar banco de segurança: Esvazia exclusivamente as ocorrências e regras registradas pelo módulo de segurança, mantendo os registros de monitoramento de arquivos inalterados.
+  • Cancelar: Fecha a janela de limpeza imediatamente sem realizar nenhuma modificação.
+- Confirmação de Segurança e Telas de Aviso: Antes de qualquer exclusão definitiva, uma janela de confirmação é exibida com aviso de cautela sobre a irreversibilidade da ação, permitindo confirmar a operação ou voltar em segurança. Ao concluir a limpeza, uma janela de sucesso informa detalhadamente o resultado. Caso ocorra qualquer impedimento, mensagens de erro claras orientam sobre a situação.
+- Alinhamento Geométrico e Visual Aprimorado: Todos os botões da janela de limpeza possuem largura simétrica e perfeitamente alinhada baseada no comprimento do maior texto. Os textos e ícones foram centralizados com precisão em relação ao eixo vertical dos botões, e a altura das janelas ajusta-se dinamicamente com espaçamento inferior suave e equilibrado.
+
+
+2. ISOLAMENTO E REORGANIZAÇÃO DOS BANCOS DE DADOS
+- Diretórios Próprios e Individuais: Os dados do aplicativo foram separados em pastas dedicadas para maior segurança e integridade operacional. Os eventos de monitoramento de arquivos residem agora em uma pasta própria exclusiva ("events"), enquanto os dados de segurança ficam isolados em sua respectiva pasta ("security").
+- Padronização de Nomenclatura: Todos os bancos de dados e seus arquivos auxiliares de alto desempenho foram renomeados e padronizados com o nome oficial do aplicativo Huginn Sentinel ("huginn_events.db" e "huginn_security.db").
+- Migração Transparente: Registros legados são reconhecidos e organizados automaticamente nas novas pastas sem a necessidade de intervenção do usuário.
+
+
+3. PADRONIZAÇÃO NO SALVAMENTO E EXPORTAÇÃO DE DADOS
+- Nomenclatura Automática Estruturada: Ao salvar ou exportar relatórios nos formatos suportados (como planilhas, tabelas ou arquivos estruturados), o aplicativo sugere e gera automaticamente o nome padronizado "huginn_eventos_AAAAMMDD_HHMMSS" contendo a data e o horário exatos do registro, facilitando a identificação, classificação e arquivamento dos dados.
+
+
+4. INICIALIZAÇÃO CENTRALIZADA NO MONITOR PRINCIPAL
+- Abertura Confortável e Equilibrada: A janela principal do aplicativo agora é posicionada automaticamente no centro exato da tela do monitor principal ao ser iniciada, oferecendo uma apresentação visual mais agradável e integrada à área de trabalho.
+
+
+5. SUPORTE INTEGRAL AOS 6 IDIOMAS
+- Localização Completa em Tempo Real: Todas as novas janelas, botões, opções de escolha, caixas de diálogo de confirmação, notificações de sucesso e mensagens de erro contam com tradução dinâmica e imediata para Português, Inglês, Espanhol, Francês, Italiano e Alemão.
+
+_________________________________________________
+
+NOTAS DE LANÇAMENTO: Versão 2026.11.3.0
+
+RESUMO GERAL DAS MELHORIAS E NOVIDADES
+
+A versão 2026.11.3.0 traz recursos inéditos de encadeamento inteligente de fluxos operacionais, amplas opções de personalização visual para a seleção de células na planilha, ferramentas avançadas para configuração de cores das operações com suporte a código HTML, reorganização de menus e alinhamento geométrico aprimorado em toda a interface do usuário.
+
+
+1. ENCADEAMENTO INTELIGENTE DE ESCANEAMENTO E MONITORAMENTO
+- Diálogos Interativos de Início: Ao clicar no botão "Escanear", o sistema agora pergunta se você deseja iniciar o monitoramento contínuo assim que a varredura for concluída ou se prefere apenas realizar o escaneamento dos arquivos. Da mesma forma, ao clicar em "Iniciar Monitoramento", o sistema pergunta se deseja executar uma varredura inicial antes de monitorar ou se deseja iniciar imediatamente apenas o monitoramento em tempo real.
+- Configurações Personalizadas: As preferências dessas mensagens podem ser ajustadas a qualquer momento nos menus "Configurações > Escaneamento" e "Configurações > Monitoramento", permitindo ativar ou desativar os avisos de acordo com a sua preferência de uso.
+- Isolamento Estrito do Escaneamento: Durante o escaneamento recursivo de uma pasta, o monitoramento em tempo real de alterações fica temporariamente em pausa, garantindo que todos os arquivos encontrados sejam registrados na tabela de forma pura e exclusiva como itens escaneados, sem misturar eventos.
+
+
+2. CONTADOR DINÂMICO DE EVENTOS NO PAINEL DE FILTROS
+- Cálculo em Tempo Real por Operação: O total de eventos exibido na barra lateral de filtros rápidos agora se adapta dinamicamente às suas escolhas. Ao marcar ou desmarcar as caixas de seleção de tipos de operação (como Adicionado, Modificado, Excluído, etc.), o número total reflete imediatamente a soma exata dos eventos correspondentes às opções selecionadas.
+
+
+3. PERSONALIZAÇÃO COMPLETA DA COR DE SELEÇÃO DAS CÉLULAS
+- Nova Janela de Cores de Seleção: Acessível pelo menu "Configurações > Comportamento da Seleção", permite escolher a cor de realce das células selecionadas na planilha.
+- Paleta Recomendada com 6 Cores: Escolha com um clique entre as opções Verde Huginn Sentinel (Padrão), Azul Safira, Âmbar Dourado, Roxo Ametista, Ciano Oceano ou Coral Suave.
+- Contraste Dinâmico com o Tema do Windows 11: Ao utilizar a paleta recomendada, o texto da opção selecionada ajusta automaticamente sua cor de fonte entre branco (no modo escuro do Windows) e preto (no modo claro), mantendo visibilidade e leitura impecáveis mesmo ao alternar o tema do sistema operacional sem reiniciar o aplicativo.
+- Cores Personalizadas com Entrada HTML: Além dos seletores manuais de cor, você pode inserir ou colar diretamente o código hexadecimal da cor em formato HTML (como #00ff00), com atualização instantânea na tela.
+- Visualização Prévia Comparativa: A janela apresenta uma prévia lado a lado na própria planilha simulada, permitindo comparar a cor escolhida diretamente com a cor padrão.
+- Efeito Visual no Cursor e Segurança: Inclui realce visual suave ao passar o mouse sobre a paleta de cores e caixas de diálogo de confirmação ao aplicar novas cores ou restaurar as cores originais de fábrica.
+
+
+4. PALETA DE CORES DE OPERAÇÃO COM CÓDIGO HTML E FECHAMENTO RÁPIDO
+- Edição Direta de Código HTML: Na janela de configuração de cores das operações, ao abrir a paleta de qualquer operação, agora há um campo de texto para digitar o código de cor em formato HTML, facilitando a aplicação de padrões visuais corporativos.
+- Botão Dedicado de Fechamento: Implementado um botão prático com o símbolo "❌" para fechar a paleta de cores rapidamente após definir a cor desejada.
+- Centralização dos Botões de Apoio: Os botões de alternância de formato numérico e de cópia de valores de cor foram perfeitamente centralizados na vertical, com dicas informativas traduzidas em tempo real.
+
+
+5. GERENCIADOR DE COLUNAS SIMPLIFICADO
+- Apresentação em Lista Única: A janela de gerenciamento de colunas foi reformulada para exibir uma lista vertical única, limpa e bem distribuída com caixas de seleção, eliminando áreas vazias e facilitando a organização das colunas visíveis.
+
+
+6. BOTÃO DE INVERSÃO DE ORDEM NA PLANILHA
+- Inversão Rápida de Classificação: Adicionado o botão "Inverter" na barra de controle da tabela para inverter instantaneamente a direção da ordenação (crescente ou decrescente) da coluna selecionada com um único clique.
+
+
+7. HARMONIA VISUAL E ALINHAMENTO GEOMÉTRICO
+- Alinhamento Vertical dos Botões Principais: Os botões de ação da barra de ferramentas (Selecionar Diretório, Escanear, Iniciar Monitoramento, Pausar, Salvar, Limpar e Estatísticas) foram rigorosamente centralizados em relação ao eixo vertical da barra, com fechamento completo da moldura e remoção de divisórias horizontais desnecessárias.
+- Ajuste de Botões em Janelas de Diálogo: Centralização vertical aprimorada para os botões das janelas de filtros avançados, personalização de seleção e no botão de confirmação da janela Sobre.
+- Inicialização Sem Janela de Console: Abertura imediata e direta da interface gráfica sem qualquer janela de terminal transitória.
+
+
+8. LOCALIZAÇÃO COMPLETA NOS 6 IDIOMAS
+- Suporte Integral a Todos os Recursos: Todos os novos botões, avisos, caixas de diálogo, dicas de contexto e menus contam com tradução dinâmica e imediata para Português, Inglês, Espanhol, Francês, Italiano e Alemão.
+
+_________________________________________________
+
+NOTAS DE LANÇAMENTO: Versão 2026.11.1.0
+
+RESUMO GERAL DAS MELHORIAS E CORREÇÕES
+
+A versão 2026.11.1.0 traz importantes aprimoramentos de usabilidade, precisão no monitoramento de arquivos, novos recursos interativos para os gráficos estatísticos e melhorias visuais em toda a interface do usuário.
+
+
+1. SELEÇÃO INTERATIVA POR CLIQUE E ARRASTE NA TABELA
+- Seleção Contínua de Células: Agora é possível clicar sobre qualquer célula da tabela, segurar o botão do mouse e arrastar para selecionar um bloco contínuo de células. A área selecionada é realçada visualmente em tempo real enquanto você movimenta o ponteiro do mouse, e não apenas após soltar o clique.
+- Seleção de Colunas e Linhas por Arraste: O mesmo comportamento contínuo com resposta visual imediata foi adicionado aos cabeçalhos das colunas e linhas. Ao clicar e arrastar sobre o cabeçalho de uma coluna ou linha, todos os itens percorridos são destacados em tempo real.
+- Preservação das Divisórias no Botão Selecionar Tudo: Corrigida a exibição dos cabeçalhos das linhas ao acionar o botão de seleção geral no canto superior esquerdo da tabela. Todas as linhas de divisão e separadores visuais agora permanecem perfeitamente visíveis e alinhados.
+
+
+2. MONITORAMENTO E DIFERENCIAÇÃO PRECISA DE OPERAÇÕES
+- Separação entre Renomear e Mover: Corrigido o rastreamento em tempo real para garantir que a renomeação de um arquivo não seja mais reportada incorretamente como uma movimentação.
+- Dados Completos nos Gráficos: Os gráficos "Linha do Tempo de Operações", "Radar Multidimensional de Risco", "Sankey: Operação → Tipo de Arquivo" e "Sankey: Operação → Diretório" agora reportam e discriminam corretamente os eventos do tipo "Movido", garantindo relatórios estatísticos precisos e completos.
+
+
+3. NOVOS CONTROLES INTERATIVOS NOS DIAGRAMAS DE FLUXO SANKEY
+- Filtros por Caixas de Seleção (Checkboxes): Os diagramas "Sankey: Operação → Tipo de Arquivo" e "Sankey: Operação → Diretório" contam com menus suspensos com caixas de seleção, permitindo marcar individualmente quais tipos de operações devem ser plotados na tela.
+- Limite Configurável de Itens Exibidos: O usuário pode definir a quantidade de extensões de arquivos ou diretórios exibidos nos diagramas (com opções de 10 em 10 até 100 e a opção "Todos"). Para listas volumosas, uma barra de rolagem integrada permite visualizar todos os dados sem sobrecarregar a tela.
+- Estabilidade nas Linhas de Conexão: Eliminação completa das oscilações e tremores nas fitas e curvas de fluxo do diagrama "Sankey: Operação → Diretório" e demais fluxos, garantindo uma visualização estável e limpa.
+
+
+4. REFINAMENTOS VISUAIS E ERGONÔMICOS NOS GRÁFICOS
+- Gráfico de Pizza Limpo: Removida a linha vertical indesejada que cortava ao meio o gráfico "Pizza de Operações".
+- Centralização de Legendas: As legendas das operações no gráfico "Evolução de Eventos por Hora" foram reposicionadas no centro da área de visualização, melhorando a simetria e a leitura.
+- Menus Suspensos Inteligentes: As listas de seleção de gráficos estatísticos agora se recolhem automaticamente assim que o usuário afasta o ponteiro do mouse, evitando que fiquem abertas sobre o gráfico.
+
+
+5. ADAPTAÇÃO DINÂMICA AOS TEMAS DO WINDOWS 11
+- Suporte a Modo Claro e Escuro sem Reiniciar: Todos os gráficos e diagramas agora detectam automaticamente as mudanças de tema do Windows 11 em tempo de execução. As cores de fundo, linhas de grade, contrastes de texto e eixos se reajustam no mesmo instante, garantindo leitura perfeita em qualquer preferência visual.
+
+
+6. TRADUÇÃO E IDIOMAS COMPLETOS
+- Tradução Completa de Alertas: A coluna de resumo de alertas de segurança e os textos informativos foram totalmente traduzidos e integrados.
+- Suporte aos 6 Idiomas: Todos os novos botões, filtros, legendas e opções contam com tradução completa e imediata para Português, Inglês, Espanhol, Francês, Italiano e Alemão.
+
+_________________________________________________
+
+NOTAS DE LANÇAMENTO: Versão 2026.10.31.0
+
+DESTAQUES DESTA VERSÃO — REFATORAÇÃO ARQUITETURAL PROFUNDA (C++/Qt6 -> Rust/egui)
+
+Esta versão histórica do Huginn Sentinel consolida uma refatoração arquitetural e de engenharia de software completa: o antigo projeto legado desenvolvido em C++17 e Qt 6 (Linceu_Lighthouse_cpp) foi integralmente redesenhado, reescrito e modernizado para o novo ecossistema nativo em Rust (Edição 2021) com interface gráfica imediata acelerada por GPU via egui/eframe 0.37 (HuginnSentinel_rs).
+
+Mais do que uma simples tradução de sintaxe entre linguagens, esta migração representa uma transformação estrutural profunda em todos os subsistemas — desde o pipeline de compilação e distribuição binária até o modelo de segurança de memória em tempo de compilação, concorrência lock-free, persistência transacional assíncrona em SQLite WAL, motor vetorial de 17 gráficos analíticos, janelas filhas não-modais (modeless) Win32 independentes e uma planilha forense virtualizada de 58 colunas com suporte a fixação (congelamento) arbitrária de quaisquer linhas e colunas em tempo de execução.
+
+
+DETALHAMENTO PROFUNDO DA REFATORAÇÃO: DE C++/Qt6 PARA RUST/EGUI
+
+1. Toolchain, Sistema de Build e Distribuição Binária Autossuficiente (CMake/windeployqt -> Cargo/LTO)
+- Arquitetura Anterior (C++17 / Qt 6): Dependia de um script CMakeLists.txt monolítico com mais de 1.350 linhas, pré-processadores de meta-objetos (CMAKE_AUTOMOC, CMAKE_AUTORCC, CMAKE_AUTOUIC), vinculação pesada a dez módulos externos do framework Qt 6 (Core, Gui, Widgets, Sql, Xml, Concurrent, OpenGL, OpenGLWidgets, Quick e Qml) e pós-processamento obrigatório via windeployqt para empacotar dezenas de DLLs de runtime, plugins de plataforma (qwindows.dll), drivers SQL (qsqlite.dll) e binários de tradução (.qm).
+- Nova Arquitetura (Rust / Cargo): Gerenciada declarativamente via Cargo.toml com perfil de produção otimizado (lto = true, codegen-units = 1, opt-level = 3, strip = true). Compila diretamente para dois executáveis nativos portáteis e autossuficientes (`huginnsentinel.exe` para Desktop GUI e `huginnsentinel-cli.exe` para linha de comando), eliminando 100% das DLLs do Qt, conflitos de versão de runtime e etapas frágeis de empacotamento.
+
+2. Desacoplamento Modular em Domínios Coesos vs. Fragmentação Procedural Numerada
+- Arquitetura Anterior (C++17 / Qt 6): Concentrava responsabilidades em uma superclasse `InterfaceMonitor` (`QMainWindow`) desmembrada artificialmente em dezenas de arquivos sequenciais numerados (`gmet_01..47`, `gbank_01..20`, `gob_01..13`, `gst_01..18`, `ui_01..15`, `gmui_*`, `secui_*`), dificultando rastreabilidade, manutenção evolutiva e testes unitários isolados.
+- Nova Arquitetura (Rust): Estruturada em módulos de domínio limpos, coesos e fortemente desacoplados (`core`, `services`, `security`, `data`, `tools`, `locale`, `ui`, `utils` e `cli`), com fronteiras explícitas de propriedade de dados (ownership) e APIs internas auditáveis.
+
+3. Paradigma de Interface Gráfica: Modo Retido (QtWidgets/QML) -> Modo Imediato em GPU (egui/eframe 0.37)
+- Arquitetura Anterior (C++17 / Qt 6): Baseada no modelo retido de árvores de ponteiros `QObject`/`QWidget`, acoplamento por macros `Q_OBJECT` (signals/slots) e composição híbrida entre `QWidgets` e `QQuickWidget`/`QML`, acarretando alto consumo basal de memória RAM e sobrecarga de sincronização de estado entre modelo e widgets.
+- Nova Arquitetura (Rust / egui): Renderização vetorial em modo imediato acelerada por hardware (OpenGL/Glow/WGPU) diretamente a partir do estado imutável/controlado da aplicação a cada quadro, proporcionando inicialização quase instantânea, consumo mínimo de memória, zero dessincronização de estado na UI e adaptação automática em tempo real aos temas Claro e Escuro nativos do Windows 11.
+
+4. Janelas Filhas Não-Modais (Modeless) Multi-Viewport Win32 e Gerenciamento Dinâmico de Z-Order
+- Arquitetura Anterior (C++17 / Qt 6): Os diálogos secundários herdavam limitações de foco e hierarquia de `QDialog`/`QWidget`, exigindo filtros globais de eventos (`eventFilter`) e propriedades dinâmicas (`linceuManagedChildDialog`) para contornar bloqueios de sobreposição e perda de foco entre janelas.
+- Nova Arquitetura (Rust / Multi-Viewport Win32): Todas as 13 janelas auxiliares (Sobre, Ajuda, Manual de Utilização, Estatísticas, Central de Alertas, Central de Sessões, Recuperação/Quarentena, Multi-Diretórios, Filtros Avançados, Exportação de Evidências, Configurar Colunas, Configurar Cores e Notificações Pop-up) operam via `show_viewport_immediate` como janelas `HWND` nativas e independentes do Windows 11. Contam com barra de títulos padrão do sistema (Minimizar 🗕, Maximizar/Restaurar 🗖/🗗 integrado ao Snap Layouts e Fechar 🗙), movimentação livre para fora da janela principal e entre múltiplos monitores, elevação nativa de eixo Z (Z-Order raise) gerenciada pelo SO e rodapé inteligente que exibe dinamicamente a contagem exata de janelas abertas ("1 Janela:", "2 Janelas:", "3 Janelas:", etc.) com botões de restauração imediata de foco.
+
+5. Nova Planilha Forense Virtualizada (`SpreadsheetGrid`) com Fixação 2D Arbitrária de Linhas e Colunas
+- Arquitetura Anterior (C++17 / Qt 6): Utilizava `QTableView` acoplada a `EventTableModel` (`QAbstractTableModel`) com conversões repetitivas de `QVariant`, sofrendo degradação sob grandes volumes de eventos e sem capacidade de congelar linhas ou colunas arbitrárias escolhidas pelo auditor.
+- Nova Arquitetura (Rust / SpreadsheetGrid): Motor de planilha eletrônica construído sob medida com renderização sincronizada em 4 quadrantes (Topo-Esquerda, Topo-Direita, Base-Esquerda e Base-Direita) e virtualização `O(linhas_visíveis)`:
+  * Fixação (Congelamento) Flexível de Qualquer Linha: Através do menu "Configurações -> Fixar Linhas" ou do menu de contexto (botão direito), o usuário pode definir se a 1ª linha (Cabeçalhos das Colunas) permanece fixa ou não ao rolar verticalmente, bem como fixar ou desafixar qualquer linha de dados específica da tabela (por seleção direta, clique na linha ou digitação de números/intervalos como `1, 5, 10-12`).
+  * Fixação (Congelamento) Flexível de Qualquer Coluna: Através do menu "Configurações -> Fixar Colunas", barra de ferramentas ou clique direito no cabeçalho, o usuário pode fixar ou desafixar a 1ª coluna numérica (`#`) e qualquer combinação das 58 colunas de metadados para permanecerem imóveis à esquerda durante a rolagem horizontal, com persistência automática em `painel_fixo_config.json`.
+  * Interatividade Completa Estilo Excel: Seleção individual, retangular por arraste/Shift, linhas/colunas inteiras e Selecionar Tudo; redimensionamento contínuo de bordas com AutoFit por duplo-clique; zebrado adaptativo; pílulas cromáticas por operação e tooltips contextuais ricos.
+
+6. Tipagem Estática Estrita de 58 Categorias Forenses (`EventModel` vs. `QVariantMap`)
+- Arquitetura Anterior (C++17 / Qt 6): Trafegava metadados entre coletores, banco e interface usando mapas dinâmicos `QVariantMap` indexados por strings literais, suscetíveis a chaves divergentes, conversões implícitas custosas e falhas silenciosas em tempo de execução.
+- Nova Arquitetura (Rust): Substitui todos os dicionários dinâmicos pela estrutura fortemente tipada `EventModel` e enumeração exaustiva `OperationType`. Extrai e audita 58 colunas forenses antes e depois de cada alteração: inspeção real de MIME por Magic Numbers, hashes criptográficos SHA-256, SHA-1 e MD5 em Rust puro, cálculo de entropia de Shannon, análise estrutural de cabeçalhos/seções PE, validação nativa de assinaturas digitais Authenticode via Win32 `WinTrust`, contagens de linhas e palavras, taxa de compressão e itens internos de arquivos ZIP, dimensões de imagens, duração de mídia, processo ator, status de baseline e custódia de quarentena.
+
+7. Segurança de Memória em Tempo de Compilação e Concorrência Lock-Free
+- Arquitetura Anterior (C++17 / Qt 6): Gerenciamento manual/semi-automático de ponteiros entre `QThread`, `QtConcurrent` e sinais assíncronos, exigindo cautela constante contra condições de corrida (data races), ponteiros pendentes (dangling pointers) e contenção de locks na thread principal.
+- Nova Arquitetura (Rust): Garantias matemáticas do compilador Rust (`Send` + `Sync` + borrow checker) eliminam corrupção de memória, *use-after-free* e *data races* sem qualquer coletor de lixo (zero GC). O monitoramento do kernel Windows via `ReadDirectoryChangesW` (`notify 8.2`) e o escaneamento recursivo de alta vazão comunicam-se com a GUI por canais lock-free `crossbeam-channel` e primitivas ultraleves `parking_lot`, assegurando fluidez absoluta da interface mesmo sob tempestades massivas de eventos de disco.
+
+8. Persistência Transacional Desacoplada (SQLite WAL Embutido + `DbWriter` vs. `Qt6::Sql`)
+- Arquitetura Anterior (C++17 / Qt 6): Baseada em `QSqlDatabase` e `QSqlQuery` dependentes de driver externo e sujeitos a restrições estritas de afinidade de thread do Qt SQL e bloqueios síncronos de I/O.
+- Nova Arquitetura (Rust / rusqlite): Incorpora o motor SQLite C compilado estaticamente dentro do próprio executável (`rusqlite` com feature `bundled`), operando em modo `WAL` (`Write-Ahead Logging`) gerenciado por um `DbWriter` assíncrono dedicado em segundo plano que consolida gravações em transações em lote em `%LOCALAPPDATA%\HuginnSentinel\monitoramento.db` com latência zero para a interface.
+
+9. Motor Determinístico de Segurança, Linha de Base Criptográfica e Quarentena Atômica
+- Arquitetura Anterior (C++17 / Qt 6): Regras heurísticas dispersas e acopladas a subclasses de interface gráfica e threads secundárias, gerando avaliações concorrentes inconsistentes, sem garantias de ordem determinística, sem isolamento atômico de quarentena e sem verificação formal de integridade criptográfica.
+- Nova Arquitetura (Rust): Motor determinístico com avaliação contínua das 6 regras heurísticas canônicas (`SEC-R01` a `SEC-R06`) para detecção autônoma de ransomware (disparo de entropia + padrão de renomeação em massa), extensões duplas suspeitas, criação anômala de scripts/executáveis e violações de integridade, linhas de base criptográficas SHA-256 para auditoria de deriva de conformidade (compliance drift), isolamento atômico em quarentena com manifesto `.meta` verificado por hash e exportação de pacotes forenses de evidências seladas em ZIP criptograficamente auditável.
+
+10. Motor Gráfico Vetorial Nativo na GPU (17 Gráficos Analíticos em `egui::Painter`)
+- Arquitetura Anterior (C++17 / Qt 6): Dividida entre implementações sobrepostas (`LgplChartModel`, `RasterChartView`, `WidgetChartView` e `QuickChartItem`), gerando complexidade gráfica e sobrecarga de repintura em CPU.
+- Nova Arquitetura (Rust): Motor analítico vetorial unificado desenhado diretamente via `egui::Painter` com 17 gráficos interativos (Treemap, Barras por Tipo, Barras por Extensão, Linha do Tempo, Histograma Horário 0h–23h, Curva de Pareto 80/20, Séries Temporais em Linha, Boxplot em Escala Logarítmica, Radar Operacional, Radar Multidimensional de Risco, Mapa de Calor 7×24, Dispersão Tempo×Tamanho, Fluxo Relacional Sankey, DotPlot Volumétrico e Árvore Hierárquica de Diretórios), além de rasterização offscreen direta para exportação PNG de alta resolução.
+
+11. Internacionalização (i18n) Embutida com Tradução Dinâmica Instantânea em Tempo de Execução
+- Arquitetura Anterior (C++17 / Qt 6): Dependia do ciclo `lupdate`/`lrelease` do Qt Linguist e do carregamento externo de arquivos binários `.qm`.
+- Nova Arquitetura (Rust / Localizer): Os 6 dicionários completos (`pt_BR`, `en_US`, `es_ES`, `fr_FR`, `it_IT` e `de_DE`), contendo mais de 2.000 chaves cada, são compilados diretamente dentro do binário via `include_str!`. O sistema detecta nativamente o idioma do Windows 11 (`GetUserDefaultUILanguage`) na primeira execução e permite alternar instantaneamente o idioma de toda a interface — incluindo menus, colunas, painéis fixos, gráficos, rodapé e menus de contexto — em tempo de execução, sem necessidade de reiniciar o aplicativo.
+
+12. Utilitário CLI Headless (`huginnsentinel-cli.exe`), CI/CD Nativo e Soberania de Privacidade
+- Arquitetura Anterior (C++17 / Qt 6): Inexistência de um utilitário CLI autônomo e dependência obrigatória de inicialização do subsistema de interface gráfica `QApplication` do Qt, impedindo operação headless em servidores, pipelines de integração contínua (CI/CD) ou automação via scripts de terminal.
+- Nova Arquitetura (Rust): Utilitário de linha de comando autônomo e ultra-rápido (`huginnsentinel-cli.exe`) baseado em `clap`, compartilhando 100% do motor forense nativo para auditorias via PowerShell, Agendador de Tarefas do Windows e pipelines DevSecOps (`scan`, `monitor`, `metadata`, `baseline`, `alerts`, `quarantine`, `sessions` com saídas em Texto, JSON e CSV), com arquitetura 100% Local-First e Offline: zero telemetria, zero conexões de rede e inteligência analítica 100% determinística sem dependência de modelos externos de IA/LLMs.

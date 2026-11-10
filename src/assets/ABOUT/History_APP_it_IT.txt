@@ -1,0 +1,52 @@
+Storia e Motivazione del Nome: Huginn Sentinel
+
+1. La Fusione Mitologica e Concettuale: Visione e Orientamento
+
+Il nome Huginn Sentinel (Faro di Linceo) non è stato scelto a caso. Sintetizza l'unione di due pilastri fondamentali della sorveglianza e della navigabilità digitale: la percezione dell'impercettibile e la chiarezza dell'orientamento strategico.
+
+La Visione di Linceo: Vedere l'Occulto e l'Impercettibile
+Nella mitologia greca, Linceo fu la leggendaria vedetta della nave degli Argonauti, dotato di un'acutezza visiva sovrumana. La sua vista non si limitava a scorgere distanze infinite: possedeva il dono singolare di penetrare attraverso ostacoli solidi, mura, foreste dense e persino nelle profondità della terra. Nulla sfuggiva al suo sguardo attento; era la sentinella pionieristica che identificava movimenti occulti e pericoli imminenti prima che qualsiasi altro membro dell'equipaggio potesse notarli.
+
+Huginn Sentinel riproduce questa acutezza nel file system del computer. Operando direttamente nel cuore del sistema operativo Windows tramite API native asincrone (ReadDirectoryChangesW via notify), monitora cartelle, sottocartelle e unità con precisione microscopica. Eventi che sarebbero effimeri, impercettibili o silenziosi — modifiche rapide di processi in background, ridenominazioni a catena, spostamenti tra directory, eliminazioni accidentali o creazioni di file temporanei — vengono catturati istantaneamente. Il nostro motore è il Linceo del vostro disco: vede ciò che è nascosto e garantisce che nessuna alterazione passi inosservata.
+
+La Luce del Faro (Lighthouse): Illuminare il Caos in Intelligenza Azionabile
+Tuttavia, limitarsi a vedere l'evento non basta; è imperativo comprendere la rotta e agire in sicurezza. Da questa necessità nasce il concetto del "Faro" (Lighthouse). Nel buio della tempesta e nell'incertezza dei mari, il faro proietta un fascio di luce potente e inconfondibile, dissipando la nebbia e fungendo da bussola incrollabile per chi naviga.
+
+Huginn Sentinel svolge esattamente questo ruolo dinanzi al vortice dei dati del file system:
+* Segnalazione Visiva e Semantica: Ogni operazione riceve distinzione cromatica immediata, badge grafici e categorizzazione accurata, operando come la firma luminosa di un faro nautico.
+* Precisione e Filtraggio Mirato: Strumenti avanzati di filtraggio consentono di dirigere il fascio di luce esattamente sull'intervallo temporale, l'estensione, il processo o la cartella desiderata, eliminando il rumore operativo.
+* Intelligenza Visiva e Statistica: Con 17 tipologie di visualizzazioni grafiche native e un'analisi approfondita di 58 categorie complete di metadati, l'applicazione trasforma i registri grezzi in intelligenza visiva e deterministica.
+* Universalità e Accessibilità: Come la luce di un faro che guida ogni marinaio, il supporto nativo a 6 lingue assicura un'accessibilità globale istantanea.
+
+
+2. L'Origine e la Motivazione del Progetto
+
+Huginn Sentinel è nato dall'identificazione di un vuoto critico nell'ecosistema software per desktop. Storicamente, gli utenti e i professionisti si trovavano di fronte a due estremi insoddisfacenti:
+
+Da un lato, utility gratuite semplicistiche ed effimere che mostrano alterazioni passeggere senza persistenza storica, senza contesto di metadati, senza correlazione tra ridenominazioni e spostamenti e con interfacce ormai datate.
+Dall'altro, giganteschi software aziendali (FIM/SIEM di server) e strumenti di diagnostica a basso livello (come Process Monitor), eccessivamente complessi, costosi (licenze di centinaia di dollari) o che impongono l'invio di dati verso server cloud.
+
+Mancava una piattaforma desktop locale, moderna, visuale e accessibile, dedicata a rispondere alla domanda più fondamentale e frequente di chiunque si trovi davanti a un computer:
+"Che cosa è successo ai miei file?"
+
+
+3. L'Evoluzione Tecnologica: Dal Concetto al Motore Nativo ad Alte Prestazioni e Sicuro in Rust
+
+Il progetto ha iniziato il suo percorso concettuale come prototipo focalizzato sull'audit di integrità. Lungo la sua evoluzione, è apparso chiaro che elaborare centinaia di migliaia di eventi in tempo reale, senza congelare l'interfaccia grafica e con garanzie assolute di stabilità e sicurezza della memoria, richiedeva una vera rivoluzione architetturale.
+
+Huginn Sentinel è stato interamente progettato e implementato in Rust (edizioni 2021/2024), un moderno linguaggio di programmazione di sistema che elimina intere classi di vulnerabilità (come corruzione della memoria, race condition e deadlock) senza il sovraccarico di un garbage collector:
+- Monitoraggio dei File in Tempo Reale: Costruito sull'API nativa di Windows ReadDirectoryChangesW tramite il crate notify, cattura gli eventi con latenza sub-millisecondo e li smista attraverso canali crossbeam-channel ad alta capacità.
+- Scansione Parallela Ricorsiva: Utilizza un pool di thread nativo asincrono per suddividere l'albero delle directory tra più core della CPU in modo bilanciato ed estremamente rapido.
+- Persistenza Disaccoppiata e Resiliente: Implementata con SQLite incorporato (rusqlite) configurato in modalità WAL (Write-Ahead Logging). La scrittura di eventi e metadati avviene in modo asincrono in background tramite un thread DbWriter dedicato, isolando completamente l'interfaccia utente da qualsiasi contesa di I/O del disco.
+- Interfaccia Grafica Immediata e Fluida: Sviluppata con egui ed eframe, offre rendering diretto accelerato via hardware, layout reattivo e un'innovativa architettura di finestre non modali (Modeless) con gestione della profondità (Z-Order) e ridimensionamento interattivo delle colonne tramite trascinamento.
+- Utility da Console Headless: Inclusione dell'eseguibile autonomo `huginnsentinel-cli.exe` per consentire automazioni, audit pianificati e integrazione in pipeline senza necessità di avviare l'interfaccia grafica.
+
+
+4. L'Impegno per una Privacy Sovrana (Local-First)
+
+In un'era dominata dalla dipendenza dal cloud, da telemetrie invasive e dal trasferimento indiscriminato di dati verso server remoti, Huginn Sentinel assume una posizione etica non negoziabile:
+* 100% Offline e Locale: Tutti i database, i metadati, le analisi e le prove risiedono esclusivamente nel computer dell'utente (%LOCALAPPDATA%\Huginn Sentinel).
+* Senza Cloud, Senza Account, Senza Telemetria: Nessuna raccolta di dati analitici, né autenticazione remota forzata.
+* Intelligenza Deterministica senza IA: Tutte le classificazioni, le analisi di pattern e i punteggi di integrità derivano da algoritmi matematici e statistici deterministici, senza modelli linguistici (LLM) o inferenze esterne.
+
+Huginn Sentinel è la fusione perfetta tra la visione penetrante di Linceo e la luce guida del Faro — il guardiano digitale sovrano che vede tutto, illumina tutto e protegge l'integrità del vostro ambiente di lavoro.

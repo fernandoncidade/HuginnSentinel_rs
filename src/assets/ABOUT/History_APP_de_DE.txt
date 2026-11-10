@@ -1,0 +1,52 @@
+Geschichte und Begründung des Namens: Huginn Sentinel
+
+1. Die mythologische und konzeptionelle Fusion: Vision und Orientierung
+
+Der Name Huginn Sentinel (Leuchtturm von Lynkeus) wurde nicht zufällig gewählt. Er vereint zwei grundlegende Säulen der digitalen Überwachung und Navigation: die Wahrnehmung des Unmerklichen und die Klarheit strategischer Orientierung.
+
+Die Sehkraft von Lynkeus: Das Verborgene und Unmerkliche sehen
+In der griechischen Mythologie war Lynkeus der legendäre Ausguck des Argonautenschiffs, gesegnet mit übermenschlicher Sehkraft. Sein Blick war nicht darauf beschränkt, unendliche Weiten zu überblicken: Er besaß die einzigartige Gabe, durch feste Hindernisse, Mauern, dichte Wälder und sogar bis ins Innere der Erde zu blicken. Nichts entging seinen wachsamen Augen; er war die bahnbrechende Schutzinstanz, die verborgene Bewegungen und drohende Gefahren erkannte, bevor irgendein anderes Besatzungsmitglied sie wahrnehmen konnte.
+
+Huginn Sentinel reproduziert diese Schärfe im Dateisystem des Computers. Direkt im Herzen des Windows-Betriebssystems über native asynchrone APIs (ReadDirectoryChangesW via notify) agierend, überwacht es Verzeichnisse, Unterordner und Laufwerke mit mikroskopischer Präzision. Ereignisse, die sonst flüchtig, unmerklich oder lautlos wären — schnelle Hintergrundprozess-Änderungen, kaskadierende Umbenennungen, Verzeichnisverschiebungen, versehentliche Löschungen oder Erstellungen temporärer Dateien — werden unverzüglich erfasst. Unsere Engine ist der Lynkeus Ihrer Festplatte: Sie sieht, was verborgen ist, und stellt sicher, dass keine Änderung unbemerkt bleibt.
+
+Das Licht des Leuchtturms (Lighthouse): Das Chaos in handlungsrelevante Erkenntnisse verwandeln
+Das bloße Sehen eines Ereignisses reicht jedoch nicht aus; es ist unerlässlich, die Route zu verstehen und mit Sicherheit zu handeln. Aus diesem Bedürfnis heraus entstand das Konzept des „Leuchtturms“ (Lighthouse). Inmitten der Dunkelheit des Sturms und der Ungewissheit der Meere wirft der Leuchtturm einen kraftvollen, unverkennbaren Lichtstrahl, durchdringt den Nebel und dient allen Seefahrern als unerschütterlicher Kompass.
+
+Huginn Sentinel erfüllt genau diese Funktion im Datensturm des Dateisystems:
+* Visuelle und semantische Signalisierung: Jede Operation erhält eine sofortige farbliche Kennzeichnung, grafische Badges und eine präzise Kategorisierung, ähnlich der Lichtsignatur eines nautischen Leuchtturms.
+* Gezielter Fokus und Filterung: Fortschrittliche Filterwerkzeuge ermöglichen es, den Lichtstrahl exakt auf den gewünschten Zeitraum, die Dateiendung, den Prozess oder den Ordner zu richten und störendes Betriebsrauschen zu eliminieren.
+* Visuelle und statistische Intelligenz: Mit 17 nativen Diagrammtypen und einer fundierten Analyse von 58 umfassenden Metadatenkategorien wandelt die Anwendung Rohprotokolle in visuelle, deterministische Erkenntnisse um.
+* Universalität und Barrierefreiheit: Wie das Licht eines Leuchtturms, das jeden Seemann leitet, gewährleistet die native Unterstützung von 6 Sprachen weltweite, sofortige Zugänglichkeit.
+
+
+2. Ursprung und Motivation des Projekts
+
+Huginn Sentinel entstand aus der Erkenntnis einer kritischen Lücke im Desktop-Software-Ökosystem. Historisch gesehen sahen sich Benutzer und Fachleute mit zwei unbefriedigenden Extremen konfrontiert:
+
+Einerseits simple und kurzlebige kostenlose Hilfsprogramme, die flüchtige Änderungen ohne historische Persistenz, ohne Metadatenkontext, ohne Verknüpfung von Umbenennungen/Verschiebungen und mit veralteten Benutzeroberflächen anzeigen.
+Andererseits gigantische Unternehmenssoftware (Server-FIM/SIEM) und Low-Level-Diagnosewerkzeuge (wie der Process Monitor), die übermäßig komplex, teuer (Lizenzen von Hunderten von Dollar) sind oder das Hochladen von Daten auf Cloud-Server vorschreiben.
+
+Es fehlte eine lokale, moderne, visuelle und zugängliche Desktop-Plattform, die sich der grundlegendsten und häufigsten Frage jedes Menschen vor einem Computer widmet:
+„Was ist mit meinen Dateien passiert?“
+
+
+3. Die technologische Entwicklung: Vom Konzept zur nativen, hochleistungsfähigen und speichersicheren Rust-Engine
+
+Das Projekt begann seine konzeptionelle Reise als Prototyp mit Schwerpunkt auf Integritätsprüfungen. Im Laufe seiner Entwicklung wurde deutlich, dass die Verarbeitung Hunderttausender von Ereignissen in Echtzeit, ohne Einfrieren der grafischen Benutzeroberfläche und mit absoluter Stabilität und Speichersicherheit, einen grundlegenden architektonischen Wandel erforderte.
+
+Huginn Sentinel wurde vollständig in Rust (Editionen 2021/2024) konzipiert und implementiert — einer modernen Systemsprache, die ganze Klassen von Schwachstellen (wie Speicherbeschädigung, Race Conditions und Deadlocks) ohne den Overhead eines Garbage Collectors eliminiert:
+- Echtzeit-Dateiüberwachung: Aufgebaut auf der nativen Windows-API ReadDirectoryChangesW über die notify-Crate, erfasst sie Ereignisse mit Submillisekunden-Latenz und leitet sie über Crossbeam-Channel-Warteschlangen mit hohem Durchsatz weiter.
+- Parallele rekursive Überprüfung: Verwendet einen asynchronen nativen Thread-Pool, um den Verzeichnisbaum blitzschnell und gleichmäßig auf mehrere CPU-Kerne zu verteilen.
+- Entkoppelte, robuste Persistenz: Implementiert mit eingebettetem SQLite (rusqlite) im WAL-Modus (Write-Ahead Logging). Das Speichern von Ereignissen und Metadaten erfolgt asynchron im Hintergrund über einen dedizierten DbWriter-Thread, wodurch die Benutzeroberfläche vollständig von Festplatten-E/A-Konflikten isoliert wird.
+- Unmittelbare und flüssige grafische Benutzeroberfläche: Entwickelt mit egui und eframe, bietet sie direkte hardwarebeschleunigte Darstellung, responsives Layout und eine innovative Architektur nicht-modaler Fenster (Modeless) mit Tiefenverwaltung (Z-Order) und interaktiver Spaltenbreitenanpassung per Ziehen.
+- Headless-Konsolen-Dienstprogramm: Enthält die eigenständige ausführbare Datei `huginnsentinel-cli.exe`, um Automatisierungen, geplante Audits und Pipeline-Integrationen ohne Starten der Benutzeroberfläche zu ermöglichen.
+
+
+4. Das Bekenntnis zu souveräner Privatsphäre (Local-First)
+
+In einer Zeit, die von Cloud-Abhängigkeit, invasiver Telemetrie und unkontrollierter Datenübertragung an entfernte Server geprägt ist, nimmt Huginn Sentinel eine kompromisslose ethische Haltung ein:
+* 100 % Offline und Lokal: Alle Datenbanken, Metadaten, Analysen und Nachweise verbleiben ausschließlich auf dem Computer des Benutzers (%LOCALAPPDATA%\Huginn Sentinel).
+* Keine Cloud, keine Konten, keine Telemetrie: Es werden weder analytische Daten erfasst noch eine erzwungene Fernauthentifizierung verlangt.
+* Deterministische Intelligenz ohne KI: Alle Klassifizierungen, Musteranalysen und Integritätswerte basieren auf deterministischen mathematischen und statistischen Algorithmen, ohne Sprachmodelle (LLM) oder externe Inferenzen.
+
+Huginn Sentinel ist die perfekte Verschmelzung aus der durchdringenden Sehkraft von Lynkeus und dem weisenden Licht des Leuchtturms — der souveräne digitale Wächter, der alles sieht, alles erleuchtet und die Integrität Ihrer Arbeitsumgebung schützt.

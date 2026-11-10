@@ -1,0 +1,89 @@
+Third-Party Dependencies and Open-Source Licenses Notice
+
+This notice applies to the native Rust implementation of the Huginn Sentinel project (version 2026.11.9.0).
+It supersedes notices from legacy editions. The current codebase is developed in Rust (2021/2024 editions), without dependencies on external interpreters, virtual machines, or managed language runtimes.
+
+Dependencies and Libraries Used in the Current Codebase:
+
+1. Rust Language and Standard Library
+- Repository: https://github.com/rust-lang/rust
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Compiler, native runtime without garbage collector, and core system primitives.
+
+2. egui and eframe
+- Repository: https://github.com/emilk/egui
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Immediate Mode GUI framework, window management, responsive layouts, and hardware-accelerated rendering.
+
+3. rusqlite and Embedded SQLite
+- Repository: https://github.com/rusqlite/rusqlite
+- Licensing: MIT License (rusqlite) / Public Domain (SQLite core)
+- SQLite Reference: https://www.sqlite.org/copyright.html
+- Purpose: Embedded local database engine for event persistence in WAL (Write-Ahead Logging) mode, analytical queries, and forensic exports.
+
+4. notify
+- Repository: https://github.com/notify-rs/notify
+- Licensing: CC0-1.0 / Apache 2.0
+- Purpose: Real-time asynchronous file system monitoring using the native Windows ReadDirectoryChangesW API.
+
+5. crossbeam-channel
+- Repository: https://github.com/crossbeam-rs/crossbeam
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: High-throughput multi-producer multi-consumer communication channels connecting monitoring, database writers, and the visual GUI.
+
+6. chrono
+- Repository: https://github.com/chronotope/chrono
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Local and UTC date and time arithmetic, formatting, and serialization support.
+
+7. serde and serde_json
+- Repository: https://github.com/serde-rs/serde
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Generic serialization/deserialization framework and JSON export.
+
+8. quick-xml
+- Repository: https://github.com/tafia/quick-xml
+- Licensing: MIT License
+- Purpose: Fast XML parsing and serialization for forensic reports and configurations.
+
+9. image
+- Repository: https://github.com/image-rs/image
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Decoding image dimensions, raster metadata, and visual attributes.
+
+10. sha2, md-5, sha1, hex
+- Repositories: https://github.com/RustCrypto/hashes
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Cryptographic hash algorithms for baseline integrity, forensic auditing, and tamper detection.
+
+11. rfd (Rusty File Dialogs)
+- Repository: https://github.com/PolyMeilex/rfd
+- Licensing: MIT License
+- Purpose: Native desktop operating system folder and file picker dialogs.
+
+12. windows-sys
+- Repository: https://github.com/microsoft/windows-rs
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Raw bindings to Windows Win32 APIs (WinTrust, Cryptography, FileSystem, Shell).
+
+13. uuid
+- Repository: https://github.com/uuid-rs/uuid
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Universally Unique Identifier (UUID v4) generation for audit sessions and operations.
+
+14. zip
+- Repository: https://github.com/zip-rs/zip
+- Licensing: MIT License
+- Purpose: Compression, decompression, and internal metadata inspection for ZIP archives and evidence packages.
+
+15. parking_lot
+- Repository: https://github.com/Amanieu/parking_lot
+- Licensing: Dual MIT / Apache 2.0 License
+- Purpose: Compact, high-efficiency synchronization primitives (Mutex, RwLock) preventing deadlocks.
+
+16. Native Windows APIs / Microsoft SDK
+- Components: `ReadDirectoryChangesW`, `CreateFileW`, `WinVerifyTrust`, `CryptQueryObject`, `GetFileVersionInfoW`.
+- Licensing Note: These components are part of Microsoft Windows and the Windows SDK; they are not redistributed as independent third-party open-source libraries.
+
+Final Notes:
+All trademarks, copyrights, and registered names belong to their respective owners. Full license texts are provided in the application's assets directory (`assets/LICENSES/`) and within the "Licenses" tab in the "About" dialog.

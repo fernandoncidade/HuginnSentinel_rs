@@ -1,0 +1,226 @@
+RELEASE NOTES: Version 2026.11.9.0
+
+GENERAL SUMMARY OF IMPROVEMENTS AND NEW FEATURES
+
+Version 2026.11.9.0 consolidates essential improvements in user communication, official support, distribution transparency, legal clarity, and comprehensive international harmonization across all six languages supported by the application.
+
+
+1. NEW CENTRALIZED OFFICIAL SUPPORT CHANNEL
+- Unified and Direct Email: All application modules, help dialogs, terms of use, and informative windows have been updated with the verified official technical support address: linceu_lighthouse@outlook.com.
+- Transparent and Reliable Assistance: Established a direct email channel for user inquiries, guidance, and feedback, delivering responsive individual support without the need for phone calls or remote computer access.
+
+
+2. TRANSPARENCY IN DISTRIBUTION AND DUAL-LICENSING
+- User Freedom and Clarity: Transparent formalization of the coexistence between the community open-source edition and the official commercial edition available on the Microsoft Store.
+- Convenience and Peace of Mind for Businesses and Professionals: Users purchasing through the Microsoft Store benefit from seamless one-click installation, automatic updates, and a commercial license with no obligation to share internal modifications. At the same time, the community wishing to study, audit, and build their own binaries retains full, free access to the project.
+
+
+3. HARMONIZATION AND STRUCTURAL PARITY ACROSS 6 LANGUAGES
+- Identical Experience Worldwide: All descriptive texts detailing project history, end-user license agreements, commercial terms, privacy policies, and release notes have been fully translated and aligned across all 6 languages (Portuguese, English, Spanish, French, Italian, and German).
+- Absolute Structural Fidelity: Every document maintains complete line-by-line parity and the same depth of detail, ensuring that users everywhere receive clear, consistent, and accurate information regardless of their chosen language.
+
+
+4. COMMITMENT TO SOVEREIGN PRIVACY (100% LOCAL-FIRST)
+- Your Files Stay with You: Reaffirmed Huginn Sentinel's strict local privacy philosophy. All integrity checks, report generation, and activity monitoring run 100% locally and offline on your computer.
+- Zero Cloud and No Telemetry: The application never collects, tracks, or transmits any personal data, usage history, or file content to cloud platforms or remote servers, ensuring complete compliance with modern data protection regulations.
+
+
+5. CLARITY ON THIRD-PARTY COMPONENTS AND COPYRIGHT
+- Respect for Authorship: Copyright notices have been refined to clearly identify the independent developer behind the project and explicitly credit all third-party libraries and supporting tools to their respective original creators, providing complete legal confidence.
+
+
+6. ENHANCED RELIABILITY AND NAVIGATION IN HELP GUIDES
+- Clear and Accessible Guidance: All cross-references, quick-start guides, and informative documentation have undergone a full review to ensure all navigation links and explanations work smoothly, making it effortless to learn how to use filters, customize colors, create charts, and export reports.
+
+_________________________________________________
+
+RELEASE NOTES: Version 2026.11.4.0
+
+GENERAL SUMMARY OF IMPROVEMENTS AND NEW FEATURES
+
+Version 2026.11.4.0 introduces a brand-new granular and individual data cleanup system with safety confirmations and feedback dialogs, database reorganization and isolation into dedicated directories with standardized naming, uniform file naming for saved and exported reports, centered startup for the main application window, and comprehensive dynamic translations across all 6 supported languages.
+
+
+1. NEW GRANULAR AND INDIVIDUAL DATA CLEANUP SYSTEM
+- Quick and Centralized Access: The cleanup system can be launched directly from the "Clear" button on the main toolbar, via the Ctrl+L keyboard shortcut, from the "File > Clear..." menu, or from the "Security > Clear Security Database..." menu.
+- Five Clear and Independent Options: The new cleanup window lets you choose exactly what to purge:
+  • Clear Table, Security and Database: Performs a complete cleanup, resetting the on-screen display and purging all stored records.
+  • Clear Database: Removes only the file monitoring event history stored on disk, recreating the file and reclaiming disk storage without affecting security records or the current on-screen table.
+  • Clear UI Table: Clears only the rows currently visible on screen, keeping all stored records in the database intact.
+  • Clear Security Database: Clears only the security incident history and rule alerts, leaving file monitoring events completely unaffected.
+  • Cancel: Closes the cleanup window immediately without making any changes.
+- Safety Confirmations and Feedback Dialogs: Before any permanent deletion takes place, a safety confirmation dialog is displayed with a caution notice explaining the irreversibility of the action, allowing you to proceed or safely step back. Upon completion, a success window details what was done. Should any issue arise, clear error notifications guide you through the situation.
+- Visual Harmony and Symmetrical Layout: All buttons in the cleanup window feature uniform widths matched to the longest label for a clean, balanced look. Text and icons are vertically centered within button boxes, and dialog heights adapt dynamically with comfortable bottom breathing space.
+
+
+2. DATABASE REORGANIZATION AND ISOLATION
+- Dedicated Subdirectories: Application data is now segregated into dedicated folders for enhanced stability and data integrity. File monitoring events reside in their own exclusive "events" folder, while security intelligence is isolated in a separate "security" folder.
+- Standardized Naming: All database files and high-performance temporary companion files are officially standardized using the Huginn Sentinel application name ("huginn_events.db" and "huginn_security.db").
+- Seamless Migration: Existing legacy files are recognized and reorganized automatically into the new subfolders with zero manual setup required.
+
+
+3. STANDARDIZED REPORT SAVING AND EXPORTING
+- Structured Automatic Naming: When saving or exporting scanned and monitored records across any supported format (such as spreadsheets, tables, or structured files), the application automatically formats and suggests the filename "huginn_eventos_YYYYMMDD_HHMMSS" with the exact timestamp, streamlining document organization and forensic archiving.
+
+
+4. CENTERED STARTUP ON PRIMARY DISPLAY
+- Balanced Visual Presentation: The main application window now opens centered on the primary monitor when launched, delivering a clean, natural desktop experience.
+
+
+5. FULL LOCALIZATION ACROSS 6 LANGUAGES
+- Real-Time Dynamic Translations: All new dialogs, cleanup options, confirmation prompts, success notices, and error alerts are fully localized across English, Portuguese, Spanish, French, Italian, and German.
+
+_________________________________________________
+
+RELEASE NOTES: Version 2026.11.3.0
+
+GENERAL SUMMARY OF IMPROVEMENTS AND NEW FEATURES
+
+Version 2026.11.3.0 introduces intelligent workflow chaining between scanning and real-time monitoring, comprehensive visual customization for spreadsheet cell selection, an enhanced operation colors editor with editable HTML color codes, a streamlined column manager, and refined geometric alignment across the user interface.
+
+
+1. INTELLIGENT WORKFLOW CHAINING FOR SCANNING AND MONITORING
+- Interactive Initiation Dialogs: Clicking "Scan" now prompts you to choose whether to automatically start continuous monitoring once scanning finishes or only perform the folder scan. Likewise, clicking "Start Monitoring" prompts whether to perform a preliminary recursive scan of existing files before monitoring begins or start live monitoring immediately.
+- User Preferences: You can configure and toggle these prompt messages anytime in the "Settings > Scanning" and "Settings > Monitoring" menus, enabling or disabling warnings according to your preferred workflow.
+- Strict Scan Isolation: While recursive folder scanning is underway, live filesystem change monitoring is paused temporarily, ensuring that all cataloged items are logged cleanly and exclusively as scanned files without mixing event categories.
+
+
+2. DYNAMIC EVENT COUNTER IN THE FILTER SIDEBAR
+- Real-Time Computation per Operation: The total event counter displayed in the left quick filter sidebar now adapts dynamically to your active filters. Toggling operation checkboxes (such as Added, Modified, Deleted, etc.) immediately recalculates the total count to reflect the exact sum of events for the selected operations.
+
+
+3. COMPREHENSIVE CELL SELECTION COLOR CUSTOMIZATION
+- New Selection Color Dialog: Accessible via "Settings > Selection Behavior", this feature allows you to choose the accent color used to highlight selected cells in the spreadsheet.
+- Recommended Palette with 6 Presets: Select from 6 pre-configured colors with one click: Huginn Sentinel Green (Default), Sapphire Blue, Golden Amber, Amethyst Purple, Ocean Cyan, or Soft Coral.
+- Adaptive Contrast with Windows 11 Theme: When using the recommended palette, the text color of the active selection option dynamically adjusts between white (in Windows Dark Mode) and black (in Light Mode), ensuring flawless readability without needing to restart the application.
+- Custom Colors with Editable HTML Code: In addition to visual color pickers, you can type or paste any hexadecimal color code directly in HTML format (such as #00ff00), updating the selection color instantly.
+- Side-by-Side Comparative Preview: An embedded spreadsheet preview lets you compare your chosen custom color side-by-side with the default green color.
+- Interactive Feedback & Safety: Includes a smooth visual hover highlight over the color rectangle and confirmation dialogs when applying new colors or restoring factory defaults.
+
+
+4. OPERATION COLOR PALETTE WITH EDITABLE HTML INPUT AND QUICK CLOSE
+- Direct HTML Hex Editing: Opening the color picker for any operation in "Settings > Configure Colors" now provides a dedicated text field to input or paste HTML color codes, making corporate visual standardization effortless.
+- Dedicated Close Button: A convenient "❌" button allows you to dismiss the color palette window immediately once your color is chosen.
+- Centered Action Buttons: The numeric space toggle and copy buttons are neatly vertically centered, accompanied by localized tooltips that translate dynamically.
+
+
+5. STREAMLINED COLUMN MANAGER
+- Unified Single-Column Layout: The Column Manager dialog has been redesigned to present a clean, single vertical list with checkboxes, removing unused side areas and maximizing screen space.
+
+
+6. SPREADSHEET SORT ORDER INVERSION
+- Quick Reversible Sorting: An "Invert" button on the table toolbar allows you to quickly flip the sort direction (ascending or descending) of the currently selected column with a single click.
+
+
+7. VISUAL HARMONY AND GEOMETRIC ALIGNMENT
+- Vertical Centering of Toolbar Buttons: The main action buttons (Select Directory, Scan, Start Monitoring, Pause, Save, Clear, and Statistics) are strictly centered along the vertical axis of the toolbar, featuring a continuous rectangular frame without unwanted horizontal divider lines.
+- Refined Dialog Button Alignment: Enhanced vertical centering for buttons in Advanced Filters, Selection Customization, and the About dialog confirmation button.
+- Clean Startup Without Console Window: The desktop application launches directly and cleanly without displaying any transient terminal or console window.
+
+
+8. FULL LOCALIZATION ACROSS 6 LANGUAGES
+- Complete Feature Coverage: All new dialogs, settings, buttons, confirmation messages, and tooltips are fully localized across English, Portuguese, Spanish, French, Italian, and German.
+
+_________________________________________________
+
+RELEASE NOTES: Version 2026.11.1.0
+
+GENERAL SUMMARY OF IMPROVEMENTS AND FIXES
+
+Version 2026.11.1.0 delivers major usability enhancements, precise file monitoring tracking, new interactive features for statistical charts, and visual refinements across the user interface.
+
+
+1. INTERACTIVE CLICK-AND-DRAG SELECTION IN THE TABLE
+- Continuous Cell Range Selection: You can now click any table cell, hold down the mouse button, and drag to select a continuous block of cells. The selected area is highlighted in real time as you move the mouse pointer, providing immediate visual feedback rather than only highlighting after releasing the click.
+- Column and Row Header Drag Selection: The same continuous drag behavior with immediate visual feedback has been implemented for column and row headers. Clicking and dragging across column or row headers highlights all traversed items in real time.
+- Preserved Dividers on Select All: Fixed header boundary rendering when using the global Select All button at the top-left corner of the table. All row and column divider lines now remain perfectly visible and aligned.
+
+
+2. ACCURATE OPERATION MONITORING AND SEPARATION
+- Separation Between Renamed and Moved: Real-time monitoring tracking has been corrected to ensure file renames are no longer incorrectly identified as file move operations.
+- Complete Data in Statistical Charts: The "Operations Timeline", "Multidimensional Risk Radar", "Sankey: Operation → File Type", and "Sankey: Operation → Directory" charts now accurately report and separate "Moved" events, providing complete and reliable audit reports.
+
+
+3. NEW INTERACTIVE CONTROLS IN SANKEY FLOW DIAGRAMS
+- Checkbox Filtering Menus: The "Sankey: Operation → File Type" and "Sankey: Operation → Directory" diagrams now feature dropdown menus with checkboxes, allowing users to choose exactly which operation types should be plotted on screen.
+- Configurable Item Display Limit: Users can choose the number of file extensions or directories displayed (ranging from 10 to 100 in steps of 10, plus an "All" option). When larger quantities are selected, an integrated vertical scrollbar keeps the drawing area organized while maintaining clear legend visibility.
+- Connection Line Stability: Completely resolved line jitter and trembling in the connection ribbons of the "Sankey: Operation → Directory" and related flow diagrams, ensuring smooth, stable curve rendering.
+
+
+4. VISUAL AND ERGONOMIC CHART REFINEMENTS
+- Clean Operations Pie Chart: Removed the unwanted vertical line that previously bisected the "Operations Pie" chart.
+- Centered Chart Legends: Operation legends in the "Hourly Event Evolution" chart are now neatly centered within the plotting area for improved visual balance and readability.
+- Smart Auto-Collapsing Dropdowns: Statistical dropdown menus now close automatically as soon as the mouse pointer moves away from them, preventing menus from lingering over the chart canvas.
+
+
+5. DYNAMIC WINDOWS 11 THEME ADAPTATION
+- Seamless Light and Dark Mode Switching: All charts and diagrams now automatically detect Windows 11 theme changes at runtime. Background colors, gridlines, axis markers, and text contrast instantly adjust without requiring an application restart.
+
+
+6. COMPREHENSIVE LOCALIZATION ACROSS 6 LANGUAGES
+- Complete Security Alert Translations: The security alert summary column and metadata descriptions now feature full translation across all monitoring states.
+- 6 Languages Fully Supported: All newly introduced buttons, filters, legends, and options are seamlessly translated into Portuguese, English, Spanish, French, Italian, and German, updating instantaneously when switching languages.
+
+_________________________________________________
+
+RELEASE NOTES: Version 2026.10.31.0
+
+RELEASE HIGHLIGHTS — DEEP ARCHITECTURAL REFACTORING (C++/Qt6 -> Rust/egui)
+
+This milestone release of Huginn Sentinel consolidates a complete software engineering and architectural refactoring: the legacy codebase developed in C++17 and Qt 6 (Huginn_cpp) has been entirely redesigned, rewritten, and modernized into a pure native Rust ecosystem (Edition 2021) powered by a hardware-accelerated immediate-mode graphical user interface via egui/eframe 0.37 (HuginnSentinel_rs).
+
+Far beyond a simple syntactic translation between languages, this migration represents a foundational structural transformation across all subsystems — from the compilation pipeline and self-contained binary distribution to compile-time memory safety, lock-free concurrency, asynchronous transactional SQLite WAL persistence, a 17-chart GPU vector analytics engine, independent native Win32 multi-viewport modeless child windows, and a virtualized 58-column forensic spreadsheet supporting arbitrary runtime row and column freezing (pinning).
+
+
+IN-DEPTH REFACTORING BREAKDOWN: FROM C++/Qt6 TO RUST/EGUI
+
+1. Toolchain, Build System, and Self-Contained Binary Distribution (CMake/windeployqt -> Cargo/LTO)
+- Legacy Architecture (C++17 / Qt 6): Depended on a monolithic CMakeLists.txt script with over 1,350 lines, Meta-Object preprocessors (CMAKE_AUTOMOC, CMAKE_AUTORCC, CMAKE_AUTOUIC), heavy dynamic linking against ten external Qt 6 framework modules (Core, Gui, Widgets, Sql, Xml, Concurrent, OpenGL, OpenGLWidgets, Quick, and Qml), and mandatory post-processing via windeployqt to package dozens of runtime DLLs, platform plugins (qwindows.dll), SQL drivers (qsqlite.dll), and compiled translation binaries (.qm).
+- New Architecture (Rust / Cargo): Managed declaratively via Cargo.toml with an optimized production profile (lto = true, codegen-units = 1, opt-level = 3, strip = true). Compiles directly into two portable, self-contained native executables (`huginnsentinel.exe` for the Desktop GUI and `huginnsentinel-cli.exe` for the command line), eliminating 100% of Qt DLLs, runtime version conflicts, and fragile packaging workflows.
+
+2. Cohesive Domain Modularity vs. Numbered Procedural Fragmentation
+- Legacy Architecture (C++17 / Qt 6): Concentrated responsibilities within a god-object `InterfaceMonitor` (`QMainWindow`) artificially dismembered across dozens of sequentially numbered files (`gmet_01..47`, `gbank_01..20`, `gob_01..13`, `gst_01..18`, `ui_01..15`, `gmui_*`, `secui_*`), hindering traceability, evolutionary maintenance, and isolated unit testing.
+- New Architecture (Rust): Structured into clean, cohesive, and strongly decoupled domain modules (`core`, `services`, `security`, `data`, `tools`, `locale`, `ui`, `utils`, and `cli`), with explicit data ownership boundaries and auditable internal APIs.
+
+3. Graphical Interface Paradigm: Retained Mode (QtWidgets/QML) -> GPU Immediate Mode (egui/eframe 0.37)
+- Legacy Architecture (C++17 / Qt 6): Based on a retained-mode model of `QObject`/`QWidget` pointer trees, coupling through `Q_OBJECT` macros (signals/slots), and hybrid composition between `QWidgets` and `QQuickWidget`/`QML`, resulting in high baseline RAM consumption and state synchronization overhead between model and widgets.
+- New Architecture (Rust / egui): Hardware-accelerated immediate-mode vector rendering (OpenGL/Glow/WGPU) directly from the application's immutable/controlled state on every frame, providing near-instantaneous startup, minimal memory consumption, zero UI state desynchronization, and automatic real-time adaptation to Windows 11 native Light and Dark themes.
+
+4. Native Win32 Multi-Viewport Modeless Child Windows and Dynamic OS-Level Z-Order Management
+- Legacy Architecture (C++17 / Qt 6): Secondary dialogs inherited focus and hierarchy limitations from `QDialog`/`QWidget`, requiring global event filters (`eventFilter`) and dynamic properties (`linceuManagedChildDialog`) to work around overlap blocking and loss of focus between windows.
+- New Architecture (Rust / Win32 Multi-Viewport): All 13 auxiliary windows (About, Help, User Manual, Statistics, Alert Center, Session Center, Recovery/Quarantine, Multi-Directory, Advanced Filters, Evidence Export, Configure Columns, Configure Colors, and Pop-up Notifications) operate via `show_viewport_immediate` as native, independent Windows 11 `HWND` viewports. They feature standard operating system title bars (Minimize 🗕, Maximize/Restore 🗖/🗗 integrated with Snap Layouts, and Close 🗙), unrestricted movement outside the main window across multiple monitors, native OS Z-Order elevation on click/focus, and a smart footer taskbar dynamically displaying the exact count of open child windows ("1 Window:", "2 Windows:", "3 Windows:", etc.) with immediate focus restoration buttons.
+
+5. New Virtualized Forensic Spreadsheet (`SpreadsheetGrid`) with Arbitrary 2D Row & Column Freezing
+- Legacy Architecture (C++17 / Qt 6): Utilized `QTableView` coupled with `EventTableModel` (`QAbstractTableModel`) with repetitive `QVariant` conversions, suffering performance degradation under large event volumes and lacking the capability to freeze arbitrary rows or columns chosen by the auditor.
+- New Architecture (Rust / SpreadsheetGrid): Custom-built spreadsheet engine featuring synchronized 4-quadrant rendering (Top-Left, Top-Right, Bottom-Left, and Bottom-Right) with `O(visible_rows)` virtualization:
+  * Flexible Freezing (Pinning) of Any Row: Through the "Settings -> Freeze Rows" menu or the context menu (right-click), the user can define whether the 1st row (Column Headers) remains fixed or scrolls vertically, as well as pin or unpin any specific data row in the table (via direct selection, row click, or entering numbers/ranges such as `1, 5, 10-12`).
+  * Flexible Freezing (Pinning) of Any Column: Through the "Settings -> Freeze Columns" menu, table toolbar, or right-clicking on a header, the user can pin or unpin the 1st numerical column (`#`) and any combination of the 58 metadata columns to remain stationary on the left during horizontal scrolling, with automatic persistence in `painel_fixo_config.json`.
+  * Complete Excel-Grade Interactivity: Single-cell, rectangular drag/Shift, whole-row, whole-column, and Select All selection modes; continuous edge resizing with double-click AutoFit; adaptive zebra striping; chromatic badges per operation; and rich contextual tooltips.
+
+6. Strict Static Typing Across 58 Forensic Categories (`EventModel` vs. `QVariantMap`)
+- Legacy Architecture (C++17 / Qt 6): Passed metadata between collectors, database, and interface using loosely typed `QVariantMap` dynamic maps indexed by literal strings, vulnerable to divergent keys, costly implicit conversions, and silent runtime failures.
+- New Architecture (Rust): Replaces all dynamic dictionaries with the strongly typed `EventModel` struct and exhaustive `OperationType` enum. Extracts and audits 58 forensic columns before and after each modification: true MIME detection via Magic Numbers, pure-Rust cryptographic SHA-256, SHA-1, and MD5 hashes, Shannon entropy calculation, PE header/section structural analysis, native Authenticode digital signature validation via Win32 `WinTrust`, line and word counts, compression ratio and internal item inspection of ZIP archives, image dimensions, media duration, actor process attribution, baseline drift status, and quarantine custody tracking.
+
+7. Compile-Time Memory Safety and Lock-Free Concurrency
+- Legacy Architecture (C++17 / Qt 6): Manual and semi-automatic pointer management across `QThread`, `QtConcurrent`, and asynchronous signals, requiring constant vigilance against data races, dangling pointers, and lock contention on the main GUI thread.
+- New Architecture (Rust): Mathematical guarantees of the Rust compiler (`Send` + `Sync` + borrow checker) eliminate memory corruption, *use-after-free*, and *data races* without any garbage collector (zero GC). Windows kernel monitoring via `ReadDirectoryChangesW` (`notify 8.2`) and high-throughput recursive scanning communicate with the GUI through lock-free `crossbeam-channel` queues and ultra-lightweight `parking_lot` primitives, guaranteeing absolute UI smoothness even under massive disk event storms.
+
+8. Decoupled Transactional Persistence (Embedded SQLite WAL + `DbWriter` vs. `Qt6::Sql`)
+- Legacy Architecture (C++17 / Qt 6): Based on `QSqlDatabase` and `QSqlQuery` dependent on external drivers and subject to strict Qt SQL thread affinity restrictions and synchronous I/O blocking.
+- Nova Architecture (Rust / rusqlite): Incorporates the C SQLite engine compiled statically within the executable itself (`rusqlite` with the `bundled` feature), operating in `WAL` (`Write-Ahead Logging`) mode managed by a dedicated background asynchronous `DbWriter` thread that batches transactions into `%LOCALAPPDATA%\HuginnSentinel\monitoramento.db` with zero UI latency.
+
+9. Deterministic Security Engine, Cryptographic Baseline, and Atomic Quarantine
+- Legacy Architecture (C++17 / Qt 6): Heuristic rules scattered across UI subclasses and secondary threads, creating inconsistent concurrent evaluations, without deterministic execution guarantees, lacking atomic quarantine isolation with custody hashes, and without structured cryptographic baseline verification.
+- New Architecture (Rust): Deterministic engine with continuous evaluation of 6 canonical heuristic rules (`SEC-R01` through `SEC-R06`) for autonomous detection of ransomware (entropy spikes + mass rename patterns), suspicious double extensions, anomalous script/executable drops, and integrity violations, SHA-256 cryptographic baselines for compliance drift auditing, atomic quarantine isolation with hash-verified `.meta` rollback manifests, and sealed ZIP forensic evidence package export.
+
+10. Native GPU Vector Charting Engine (17 Analytical Charts in `egui::Painter`)
+- Legacy Architecture (C++17 / Qt 6): Fragmented across overlapping implementations (`LgplChartModel`, `RasterChartView`, `WidgetChartView`, and `QuickChartItem`), creating graphic complexity and CPU repaint overhead.
+- New Architecture (Rust): Unified vector analytics engine rendered directly via `egui::Painter` with 17 interactive charts (Treemap, Bars by Type, Bars by Extension, Event Timeline, 24-Hour Hourly Histogram, 80/20 Pareto Curve, Multi-Series Line Chart, Log-Scale Boxplot, Operational Radar, Multi-Dimensional Risk Radar, 7×24 Activity Heatmap, Time×Size Scatter Plot, Sankey Relational Flow, Volumetric DotPlot, and Directory Hierarchy Tree), alongside direct offscreen rasterization for high-resolution PNG export.
+
+11. Embedded Internationalization (i18n) with Instant Runtime Dynamic Translation
+- Legacy Architecture (C++17 / Qt 6): Depended on the Qt Linguist `lupdate`/`lrelease` workflow and external loading of binary `.qm` translation files.
+- New Architecture (Rust / Localizer): All 6 complete dictionaries (`pt_BR`, `en_US`, `es_ES`, `fr_FR`, `it_IT`, and `de_DE`), containing more than 2,000 keys each, are compiled directly into the binary via `include_str!`. The system natively detects the Windows 11 display language (`GetUserDefaultUILanguage`) on first run and allows switching the entire interface language — including menus, columns, frozen panels, charts, footer, and context menus — instantaneously at runtime, with zero application restarts.
+
+12. Headless CLI Utility (`huginnsentinel-cli.exe`), Native CI/CD, and Sovereign Privacy
+- Legacy Architecture (C++17 / Qt 6): Total lack of an autonomous CLI utility and mandatory dependency on initializing the Qt `QApplication` graphical stack, preventing headless execution on servers, CI/CD integration pipelines, or terminal script automation.
+- New Architecture (Rust): Autonomous and ultra-fast command-line utility (`huginnsentinel-cli.exe`) based on `clap`, sharing 100% of the native forensic engine for automated audits via PowerShell, Windows Task Scheduler, and DevSecOps pipelines (`scan`, `monitor`, `metadata`, `baseline`, `alerts`, `quarantine`, `sessions` with Text, JSON, and CSV outputs), with a strictly 100% Local-First and Offline architecture: zero telemetry, zero network calls, and 100% deterministic analytics without dependency on external AI/LLM models.

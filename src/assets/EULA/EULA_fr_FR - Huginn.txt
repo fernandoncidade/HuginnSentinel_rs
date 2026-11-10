@@ -1,0 +1,94 @@
+CONTRAT DE LICENCE UTILISATEUR FINAL (CLUF / EULA) — HUGINN SENTINEL
+Version 2026.11.9.0, 9 novembre 2026
+Auteur et Développeur : Fernando Nillsson Cidade (Personne Physique)
+Contact Officiel d'Assistance : linceu_lighthouse@outlook.com
+
+================================================================================
+1. MODÈLE DE DOUBLE LICENCE (DUAL-LICENSING FRAMEWORK)
+================================================================================
+
+Le projet HUGINN SENTINEL est distribué sous un modèle transparent de Double Licence :
+
+A. ÉDITION OPEN SOURCE (COMMUNAUTAIRE - GNU AGPLv3) :
+   Le code source intégral de ce logiciel est publié sous les termes de la GNU Affero 
+   General Public License version 3 (AGPLv3). Toute personne a la liberté 
+   d'étudier, d'auditer, de modifier, de compiler et de redistribuer le code source, à condition 
+   de conserver la même licence AGPLv3 et les mentions de paternité originale appropriées.
+
+B. ÉDITION COMMERCIALE ET BINAIRES OFFICIELS (MICROSOFT STORE & DISTRIBUTION DIRECTE) :
+   Le présent CLUF s'applique exclusivement aux utilisateurs finaux qui acquièrent ou 
+   installent les versions compilées (binaires) officielles rendues disponibles commercialement 
+   via le Microsoft Store ou par autorisation commerciale directe de l'auteur.
+
+================================================================================
+2. CONCESSION DE LICENCE COMMERCIALE (MICROSOFT STORE)
+================================================================================
+
+2.1. En acquérant ou en installant la version officielle compilée de Huginn Sentinel via 
+     le Microsoft Store, le Concédant (Fernando Nillsson Cidade) vous concède (personne 
+     physique ou morale) une licence commerciale d'usage personnel ou professionnel sur 
+     les appareils Windows compatibles associés à votre compte Microsoft, selon les termes 
+     des politiques de distribution du Microsoft Store.
+
+2.2. EXEMPTION DE COPYLEFT POUR LE BINAIRE COMMERCIAL :
+     L'utilisation de l'exécutable binaire officiel acquis commercialement sur le Microsoft 
+     Store dispense l'utilisateur des obligations de mise à disposition du code source prévues 
+     à la Section 13 de la GNU AGPLv3 pour ses opérations et modifications locales d'usage interne.
+
+2.3. PRÉSERVATION DES DROITS OPEN SOURCE :
+     Rien dans ce CLUF ne restreint, n'annule ou ne révoque les droits des tiers d'obtenir, 
+     de compiler et d'utiliser le code source disponible publiquement sur le dépôt 
+     officiel sous les termes et conditions de la GNU AGPLv3.
+
+================================================================================
+3. SUPPORT TECHNIQUE ET MISES À JOUR
+================================================================================
+
+3.1. Le support technique est fourni par le développeur (personne physique indépendante) 
+     strictement selon le principe du meilleur effort (best-effort basis), exclusivement par 
+     le biais de l'adresse e-mail officielle : linceu_lighthouse@outlook.com.
+
+3.2. Ne sont pas couverts les services de support téléphonique, de conseil médicolégal 
+     personnalisé en présentiel, de SLA d'entreprise à plein temps ni d'accès à distance.
+
+3.3. Les mises à jour et améliorations de version sont rendues disponibles périodiquement via la 
+     plateforme Microsoft Store elle-même ou le dépôt officiel, à la discrétion de l'auteur.
+
+================================================================================
+4. VIE PRIVÉE ET SOUVERAINETÉ DES DONNÉES (LOCAL-FIRST)
+================================================================================
+
+4.1. Huginn Sentinel fonctionne selon le principe strict de Confidentialité Locale (Local-First) : tout 
+     le traitement d'audit, de métadonnées, de rapports et de hachages SHA-256 est exécuté 
+     à 100 % hors ligne sur l'appareil de l'utilisateur. Aucune information personnelle ou de fichier 
+     n'est envoyée à des serveurs cloud ou collectée par télémétrie par l'auteur.
+
+================================================================================
+5. EXCLUSION DE GARANTIE ET LIMITATION DE RESPONSABILITÉ CIVILE
+================================================================================
+
+5.1. LE LOGICIEL EST FOURNI « EN L'ÉTAT » (AS-IS), « AVEC TOUS SES DÉFAUTS » ET 
+     « SELON DISPONIBILITÉ ». L'UTILISATEUR ASSUME PLEINEMENT LES RISQUES LIÉS À 
+     L'UTILISATION, L'ADÉQUATION À UN USAGE PARTICULIER ET LES RÉSULTATS OBTENUS.
+
+5.2. AUX TERMES DE LA LOI BRÉSILIENNE SUR LES LOGICIELS (LOI Nº 9.609/1998, ART. 7 ET 8) ET DU 
+     CODE CIVIL BRÉSILIEN, LE CONCÉDANT NE SAURAIT EN AUCUN CAS ÊTRE TENU RESPONSABLE DES 
+     DOMMAGES INDIRECTS, ACCESSOIRES, SPÉCIAUX, PUNITIFS OU CONSÉCUTIFS, 
+     Y COMPRIS, SANS S'Y LIMITER, LE MANQUE À GAGNER, L'INTERRUPTION D'ACTIVITÉ, LES PANNES DE 
+     PÉRIPHÉRIQUES DE STOCKAGE OU LA PERTE DE DONNÉES DÉCOULANT DE L'UTILISATION OU DE 
+     L'INCAPACITÉ D'UTILISER CE LOGICIEL.
+
+5.3. La responsabilité totale du Concédant pour d'éventuels dommages prouvés envers 
+     l'acquéreur de la version commerciale sur le Microsoft Store est strictement limitée au montant 
+     effectivement payé pour la licence de l'application sur ledit Store.
+
+================================================================================
+6. LÉGISLATION APPLICABLE ET TRIBUNAL COMPÉTENT
+================================================================================
+
+6.1. Le présent contrat est régi principalement par la législation de la République 
+     Fédérative du Brésil (Loi nº 9.609/1998, Loi nº 10.406/2002 et Loi nº 12.965/2014).
+
+6.2. Pour la résolution de tout litige résultant de ce CLUF, les parties élisent 
+     le tribunal du district judiciaire du domicile de l'auteur, sous réserve des règles impératives 
+     d'ordre public protectrices des consommateurs applicables aux ventes du Microsoft Store.

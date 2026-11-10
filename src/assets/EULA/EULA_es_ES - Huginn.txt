@@ -1,0 +1,94 @@
+CONTRATO DE LICENCIA DE USUARIO FINAL (EULA) — HUGINN SENTINEL
+Versión 2026.11.9.0, 9 de noviembre de 2026
+Autor y Desarrollador: Fernando Nillsson Cidade (Persona Física)
+Contacto Oficial de Soporte: linceu_lighthouse@outlook.com
+
+================================================================================
+1. MODELO DE DOBLE LICENCIAMIENTO (DUAL-LICENSING FRAMEWORK)
+================================================================================
+
+El proyecto HUGINN SENTINEL es distribuido bajo un modelo transparente de Doble Licenciamiento:
+
+A. EDICIÓN DE CÓDIGO ABIERTO (COMUNITARIA - GNU AGPLv3):
+   El código fuente completo de este software es publicado bajo los términos de la GNU Affero 
+   General Public License versión 3 (AGPLv3). Cualquier persona tiene la libertad de 
+   estudiar, auditar, modificar, compilar y redistribuir el código fuente, siempre que 
+   mantenga la misma licencia AGPLv3 y los correspondientes créditos de autoría original.
+
+B. EDICIÓN COMERCIAL Y BINARIOS OFICIALES (MICROSOFT STORE Y DISTRIBUCIÓN DIRECTA):
+   El presente EULA se aplica exclusivamente a los usuarios finales que adquieren o 
+   instalan las versiones compiladas (binarios) oficiales puestas a disposición comercialmente 
+   a través de Microsoft Store o mediante autorización comercial directa del autor.
+
+================================================================================
+2. CONCESIÓN DE LICENCIA COMERCIAL (MICROSOFT STORE)
+================================================================================
+
+2.1. Al adquirir o instalar la versión oficial compilada de Huginn Sentinel a través de 
+     Microsoft Store, el Licenciante (Fernando Nillsson Cidade) concede a usted (persona 
+     física o jurídica) una licencia comercial de uso personal o corporativo en los 
+     dispositivos Windows compatibles vinculados a su cuenta Microsoft, en los términos 
+     de las políticas de distribución de Microsoft Store.
+
+2.2. EXENCIÓN DE COPYLEFT PARA EL BINARIO COMERCIAL:
+     La utilización del ejecutable binario oficial adquirido comercialmente en Microsoft 
+     Store exime al usuario de las obligaciones de puesta a disposición del código fuente previstas 
+     en la Sección 13 de la GNU AGPLv3 para sus operaciones locales y modificaciones de uso interno.
+
+2.3. PRESERVACIÓN DE LOS DERECHOS OPEN SOURCE:
+     Nada en este EULA restringe, anula o revoca los derechos de terceros para obtener, 
+     compilar y utilizar el código fuente disponible públicamente en el repositorio 
+     oficial bajo los términos y condiciones de la GNU AGPLv3.
+
+================================================================================
+3. SOPORTE TÉCNICO Y ACTUALIZACIONES
+================================================================================
+
+3.1. El soporte técnico es prestado por el desarrollador (persona física independiente) 
+     estrictamente en el régimen de mejor esfuerzo (best-effort basis), exclusivamente a 
+     través de la dirección de correo electrónico oficial: linceu_lighthouse@outlook.com.
+
+3.2. No están contemplados servicios de soporte telefónico, consultoría forense 
+     personalizada presencial, SLA corporativo a tiempo completo ni acceso remoto.
+
+3.3. Las actualizaciones y mejoras de versión son puestas a disposición periódicamente a través de la 
+     propia plataforma Microsoft Store o repositorio oficial, a criterio del autor.
+
+================================================================================
+4. PRIVACIDAD Y SOBERANÍA DE LOS DATOS (LOCAL-FIRST)
+================================================================================
+
+4.1. Huginn Sentinel opera bajo el principio estricto de Privacidad Local (Local-First): todo el 
+     procesamiento de auditoría, metadados, informes y hashes SHA-256 es realizado 
+     100% fuera de línea en el dispositivo del usuario. Ninguna información personal o de archivos 
+     es enviada a servidores en la nube o recopilada vía telemetría por el autor.
+
+================================================================================
+5. EXENCIÓN DE GARANTÍAS Y LIMITACIÓN DE RESPONSABILIDAD CIVIL
+================================================================================
+
+5.1. EL SOFTWARE ES SUMINISTRADO "TAL CUAL" (AS-IS), "CON TODOS SUS DEFECTOS" Y 
+     "SEGÚN DISPONIBILIDAD". EL USUARIO ASUME ÍNTEGRAMENTE LOS RIESGOS RELATIVOS A LA 
+     UTILIZACIÓN, IDONEIDAD PARA UN PROPÓSITO DETERMINADO Y RESULTADOS OBTENIDOS.
+
+5.2. EN LOS TÉRMINOS DE LA LEY DE SOFTWARE BRASILEÑA (LEY Nº 9.609/1998, ARTS. 7 Y 8) Y DEL 
+     CÓDIGO CIVIL BRASILEÑO, EN NINGÚN CASO EL LICENCIANTE SERÁ RESPONSABLE POR 
+     CUALQUIER DAÑO INDIRECTO, INCIDENTAL, ESPECIAL, PUNITIVO O CONSECUENTE, 
+     INCLUYENDO, SIN LIMITACIÓN, LUCRO CESANTE, INTERRUPCIÓN DE NEGOCIOS, FALLOS EN 
+     DISPOSITIVOS DE ALMACENAMIENTO O PÉRDIDA DE DATOS DERIVADOS DEL USO O DE LA 
+     INCAPACIDAD DE USO DE ESTE SOFTWARE.
+
+5.3. La responsabilidad total del Licenciante por eventuales daños comprobados frente al 
+     adquirente de la versión comercial en Microsoft Store se limita estrictamente al valor 
+     efectivamente pagado por la licencia de la aplicación en dicha tienda.
+
+================================================================================
+6. LEGISLACIÓN APLICABLE Y FUERO
+================================================================================
+
+6.1. El presente contrato se rige primordialmente por la legislación de la República 
+     Federativa de Brasil (Ley nº 9.609/1998, Ley nº 10.406/2002 y Ley nº 12.965/2014).
+
+6.2. Para la resolución de cualquier controversia derivada de este EULA, las partes eligen 
+     el fuero de la comarca del domicilio del autor, salvo las disposiciones protectoras de orden 
+     público internacionalmente aplicables a las ventas de la plataforma Microsoft Store.

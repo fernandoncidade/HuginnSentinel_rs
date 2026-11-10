@@ -1,0 +1,85 @@
+CONDITIONS DE LICENCE COMMERCIALE ET DE DISTRIBUTION MICROSOFT STORE — HUGINN SENTINEL
+Version 2026.11.9.0, 9 novembre 2026
+Auteur et Titulaire : Fernando Nillsson Cidade (Développeur Indépendant, Personne Physique)
+Canal Officiel d'Assistance : linceu_lighthouse@outlook.com
+Canal Officiel de Distribution Commerciale : Microsoft Store
+
+================================================================================
+1. TITULARITÉ ET NATURE DU DÉVELOPPEMENT
+================================================================================
+
+1.1. Le logiciel Huginn Sentinel est une œuvre intellectuelle de la titularité exclusive de Fernando 
+     Nillsson Cidade, personne physique et développeur indépendant, protégé par la Loi sur le 
+     Logiciel (Loi Fédérale nº 9.609/1998) et la Loi sur le Droit d'Auteur (Loi nº 9.610/1998).
+
+1.2. Le développeur agit en tant que personne physique, ne constituant pas un institut financier 
+     ou une société commerciale. Aucun intérêt moratoire, pénalité ou facturation directe 
+     par des moyens bancaires externes (tels que PIX ou traites émises par l'auteur) n'est appliqué.
+
+================================================================================
+2. DISTRIBUTION COMMERCIALE VIA LE MICROSOFT STORE
+================================================================================
+
+2.1. La commercialisation officielle de la version compilée (binaire exécutable) de Huginn Sentinel est 
+     réalisée prioritairement à travers la plateforme numérique Microsoft Store.
+
+2.2. Le traitement des paiements, encaissements, remboursements, conversions de devises et la 
+     gestion des droits d'installation sur de multiples appareils Windows liés au compte 
+     de l'utilisateur sont opérés et garantis directement par l'infrastructure de 
+     Microsoft Corporation, conformément aux Conditions de Vente du Microsoft Store et aux 
+     Conditions Générales de Licence d'Application Standard (Standard Application License Terms - SALT).
+
+2.3. L'acquisition commerciale via le Microsoft Store garantit à l'acquéreur le droit 
+     d'utiliser l'application conformément au CLUF commercial, incluant les mises à jour 
+     automatiques du Store et l'exemption des obligations copyleft de GNU AGPLv3 pour usage interne.
+
+================================================================================
+3. COEXISTENCE AVEC L'ÉDITION OPEN SOURCE (GNU AGPLv3)
+================================================================================
+
+3.1. La distribution commerciale sur le Microsoft Store coexiste avec la mise à disposition publique 
+     du code source sur le dépôt GitHub sous licence GNU Affero General Public License v3.
+
+3.2. Les utilisateurs et développeurs qui ne souhaitent pas acquérir la version commerciale sur le 
+     Microsoft Store ont le plein droit légal d'obtenir le code source, de l'auditer, de compiler 
+     leurs propres versions et de les utiliser gratuitement, devant maintenir une stricte 
+     observation des clauses de partage et de réciprocité de la GNU AGPLv3.
+
+================================================================================
+4. PORTÉE ET LIMITES DU SUPPORT TECHNIQUE
+================================================================================
+
+4.1. S'agissant d'un projet maintenu individuellement par le développeur, le support 
+     technique aux acquéreurs du Microsoft Store et aux utilisateurs est assuré 
+     exclusivement via l'e-mail officiel : linceu_lighthouse@outlook.com.
+
+4.2. LIMITATIONS EXPRESSES DE PRISE EN CHARGE :
+     - AUCUN support téléphonique n'est fourni ;
+     - AUCUN accès à distance aux ordinateurs ou serveurs d'utilisateurs n'est fourni ;
+     - AUCUN engagement de SLA commercial continu de 24 heures n'est souscrit ;
+     - L'assistance est assurée selon le principe du meilleur effort raisonnable (best-effort), en 
+       temps opportun compatible avec la disponibilité du mainteneur.
+
+================================================================================
+5. PROTECTION DES DONNÉES PERSONNELLES ET VIE PRIVÉE (LGPD - LOI Nº 13.709/2018)
+================================================================================
+
+5.1. Huginn Sentinel a été structuré selon le concept de Confidentialité Locale (Local-First). L'auteur 
+     ne collecte, ne stocke et ne traite aucune donnée personnelle, télémétrique ou de facturation.
+
+5.2. Les données d'inscription et financières collectées lors de l'acte d'achat sur le Microsoft Store 
+     relèvent de la responsabilité exclusive de Microsoft Corporation, s'appliquant la Politique 
+     de Confidentialité de ladite plateforme.
+
+================================================================================
+6. EXONÉRATION DE RESPONSABILITÉ CIVILE (LOI SUR LE LOGICIEL ET CODE CIVIL)
+================================================================================
+
+6.1. Aux termes des articles 7 et 8 de la Loi nº 9.609/1998 et du Code Civil Brésilien, 
+     le logiciel est fourni « en l'état » (as-is). Le développeur décline toute responsabilité 
+     pour les incompatibilités de fonctionnement avec des systèmes tiers, pannes matérielles, 
+     manques à gagner, pertes d'exploitation ou corruptions de fichiers.
+
+6.2. La responsabilité du développeur envers l'utilisateur acquéreur de la version commerciale, 
+     en cas de condamnation judiciaire définitive, sera strictement limitée au montant payé 
+     pour l'acquisition de la licence sur le Microsoft Store.

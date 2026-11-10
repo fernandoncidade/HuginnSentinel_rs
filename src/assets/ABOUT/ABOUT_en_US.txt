@@ -1,0 +1,54 @@
+Project: HUGINN SENTINEL
+Version: 2026.11.9.0
+Authors: Fernando Nillsson Cidade
+
+Description: Local File Activity Intelligence, History & Audit Platform
+"Know exactly what happened to your files — locally, visually, and with searchable history."
+
+Huginn Sentinel is a native desktop application engineered in Rust (2021/2024 edition) with an immediate-mode GUI powered by egui/eframe and hardware-accelerated rendering (OpenGL/WGPU). Designed to provide total visibility, structured history, and deterministic auditing over the Windows file system, the platform seamlessly integrates three essential layers into a fluid, modern, and high-performance experience:
+
+1. Continuous Activity Monitoring: Real-time tracking of file system events (creation, modification, deletion, renaming, moving, and initial scanning) through the native Windows ReadDirectoryChangesW API (asynchronous notify engine and crossbeam-channel queues), featuring precise semantic correlation of complex events (accurate identification of RENAMED and MOVED without false deletion records).
+2. Searchable History and File Intelligence without AI: Automatic construction of a local historical database in SQLite (rusqlite in WAL mode with decoupled background persistence via DbWriter), enriched with 58 comprehensive metadata categories before and after each change, accompanied by 17 types of native chart visualizations and detailed statistics.
+3. Security, Audit, and Evidence Generation: Cryptographic baseline (SHA-256 hashes), deterministic risk score calculation (0–100), heuristic local rules engine, secure file quarantine, assisted restoration with integrity verification, and export of forensic evidence packages and executive reports (XLSX, CSV, JSON, XML, TXT, and SQLite).
+
+Absolute Commitment to Sovereign Privacy (Local-First):
+Your data never leaves your computer. Huginn Sentinel operates 100% offline, without cloud dependency, without telemetry collection, without account creation, and without artificial intelligence or large language models (LLM/RAG). All analytical intelligence stems from deterministic statistical and computational algorithms executed directly on your processor.
+
+
+The 5 Operating Modes of Huginn Sentinel
+
+* Monitoring Mode: Real-time visual tracking of work folders, source code, or critical directories with instant chromatic signaling, operation pill badges, and risk badges.
+* History Mode (File History / What Changed?): Temporal queries to answer "What happened to my file?", tracking its full genealogical tree of edits, renames, and moves.
+* Intelligence & Analytics Mode: Understanding operational patterns, peak activity times, most modified file types, and temporal heatmaps via 17 native charts.
+* Security & Integrity Mode: Deterministic anomaly detection, cryptographic hash auditing, integrity preservation, quarantine, and session management.
+* Evidence Mode: Generation of consolidated reports and exported databases for compliance purposes, internal auditing, or incident resolution.
+
+
+Key Use Cases and Target Audiences
+
+- Software Developers and Engineers: Track exactly which files were created, modified, or deleted by compilation processes, automation scripts, IDEs, or version control tools.
+- System Administrators and Technical Support: Diagnose missing files, improper changes in shared folders, and trace root causes of failures in the local environment.
+- Professionals with Sensitive Data (Legal, Healthcare, Finance, Engineering): Audit confidential file movements without exposing data to external servers or third-party services.
+- Content Creators (Designers, Video Editors, Photographers): Maintain strict control over large volumes of media, heavy projects, and rendering pipelines.
+- General Users: Preventive control against accidental file loss in download folders, documents, or backup drives.
+
+
+How Huginn Sentinel Works
+
+1. Establishment of the Baseline (Snapshot): Upon selecting a folder, the multithreaded asynchronous scanner performs a recursive scan creating an initial snapshot with 58 categories of detailed metadata for each item.
+2. Asynchronous Monitoring with Native APIs: The ReadDirectoryChangesW engine (notify) captures Windows notifications in the background, handling high I/O bursts through high-throughput crossbeam-channel queues without event drops.
+3. Normalization and Correlation of Events: Raw events are correlated to distinguish renames and moves from standalone creations/deletions, eliminating operational noise.
+4. Deep Metadata Enrichment: Specific attributes are extracted (real MIME via Magic Numbers, image dimensions, duration, text line and word counts, zip archive file counts and compression ratios, PE digital signatures, and SHA-256 hashes).
+5. Decoupled Persistence in SQLite: Asynchronous batch writing to the local SQLite database in WAL mode via a dedicated DbWriter thread, guaranteeing zero GUI latency.
+6. Presentation in Native Modeless Interface with Z-Order: Immediate-mode GUI in egui/eframe featuring independent OS-level windows (Win32 HWND multi-viewports) with traditional Windows 11 title bars, native Minimize (🗕), Maximize/Restore (🗖/🗗) and Close (🗙) buttons, dynamic Z-Order elevation, unconstrained multi-monitor movement, high-performance virtualized table with edge drag-to-resize columns, 17 native charts, and complete exports.
+7. Standalone Command Line Tool: The `huginnsentinel-cli.exe` utility allows scanning, metadata extraction, baseline validation, and monitoring directly via the terminal and scripts.
+
+
+Analysis Tools and Available Resources
+
+- Native Modeless Interface with OS Z-Order Management: Independent child dialogs at the operating system level, not trapped within the main GUI, supporting free dragging across multiple monitors, resizing beyond GUI boundaries, full-screen maximizing with Snap Layouts, standard title bar buttons (Minimize 🗕, Maximize 🗖/🗗, Close 🗙), and instant elevation to the foreground (Z-Order raise) on click or focus.
+- High-Performance Interactive Table: Virtualized table supporting thousands of events, interactive column edge dragging to resize, auto-fit on double-click, alternating zebra stripes, styled badges, and complete tooltips.
+- Quick and Advanced Filters: Filter by event type, date range, text, file extension, attributes, or direct selection in the table.
+- Native Visual Statistics (17 Charts): Pie, Bar, Timeline, Treemap, Histogram, Pareto Curve, Line, Boxplot, Radar, Temporal Heatmap, Scatter, Sankey Diagrams, Dotplot, and Directory Tree visualization.
+- Complete Evidence Export: Export reports to Excel (.xlsx), CSV (.csv), Text (.txt), JSON (.json), XML (.xml), and SQLite Database (.db).
+- Full Internationalization: Interface and manuals available natively in Portuguese (pt_BR), English (en_US), Spanish (es_ES), French (fr_FR), Italian (it_IT), and German (de_DE).

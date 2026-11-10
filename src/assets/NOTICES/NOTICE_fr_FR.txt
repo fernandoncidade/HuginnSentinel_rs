@@ -1,0 +1,89 @@
+Avis sur les Dépendances Tierces et Licences Open Source
+
+Cet avis s'applique à l'implémentation native en Rust du projet Huginn Sentinel (version 2026.11.9.0).
+Il remplace les avis des éditions précédentes. La base actuelle a été développée en Rust (éditions 2021/2024), sans dépendance envers des interpréteurs externes, des machines virtuelles ou des runtimes de langages interprétés.
+
+Dépendances et Bibliothèques Utilisées dans la Base Actuelle :
+
+1. Langage Rust et Bibliothèque Standard
+- Dépôt : https://github.com/rust-lang/rust
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Compilateur, runtime natif sans ramasse-miettes (garbage collector) et primitives système fondamentales.
+
+2. egui et eframe
+- Dépôt : https://github.com/emilk/egui
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Framework d'interface graphique immédiate (Immediate Mode GUI), gestion des fenêtres, mise en page réactive et rendu accéléré par le matériel.
+
+3. rusqlite et SQLite Intégré
+- Dépôt : https://github.com/rusqlite/rusqlite
+- Licence : Licence MIT (rusqlite) / Domaine Public (noyau SQLite)
+- Référence SQLite : https://www.sqlite.org/copyright.html
+- Objectif : Moteur de base de données locale intégrée pour la persistance des événements en mode WAL (Write-Ahead Logging), requêtes analytiques et exportations médico-légales/judiciaires.
+
+4. notify
+- Dépôt : https://github.com/notify-rs/notify
+- Licence : CC0-1.0 / Apache 2.0
+- Objectif : Surveillance asynchrone du système de fichiers en temps réel via l'API native Windows ReadDirectoryChangesW.
+
+5. crossbeam-channel
+- Dépôt : https://github.com/crossbeam-rs/crossbeam
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Canaux de communication multi-producteurs et multi-consommateurs à très haut débit entre les threads de surveillance, d'enregistrement et l'interface visuelle.
+
+6. chrono
+- Dépôt : https://github.com/chronotope/chrono
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Manipulation, formatage et calculs temporels de date et heure locales et UTC avec prise en charge de la sérialisation.
+
+7. serde et serde_json
+- Dépôt : https://github.com/serde-rs/serde
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Framework générique de sérialisation et désérialisation de structures de données et exportation JSON.
+
+8. quick-xml
+- Dépôt : https://github.com/tafia/quick-xml
+- Licence : Licence MIT
+- Objectif : Sérialisation et analyse rapide de documents XML pour les rapports d'expertise et les configurations.
+
+9. image
+- Dépôt : https://github.com/image-rs/image
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Décodage des métadonnées visuelles d'images, dimensions et formats matriciels.
+
+10. sha2, md-5, sha1, hex
+- Dépôts : https://github.com/RustCrypto/hashes
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Fonctions de hachage cryptographique pour la ligne de base d'intégrité, la vérification légale et la détection d'altérations.
+
+11. rfd (Rusty File Dialogs)
+- Dépôt : https://github.com/PolyMeilex/rfd
+- Licence : Licence MIT
+- Objectif : Boîtes de dialogue natives du système d'exploitation pour la sélection de répertoires et de fichiers.
+
+12. windows-sys
+- Dépôt : https://github.com/microsoft/windows-rs
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Liaisons directes avec les API natives Windows Win32 (WinTrust, Cryptographie, FileSystem, Shell).
+
+13. uuid
+- Dépôt : https://github.com/uuid-rs/uuid
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Génération d'identifiants uniques universels (UUID v4) pour les sessions d'audit et les transactions.
+
+14. zip
+- Dépôt : https://github.com/zip-rs/zip
+- Licence : Licence MIT
+- Objectif : Compression, décompression et inspection des métadonnées internes des archives ZIP et lots de preuves.
+
+15. parking_lot
+- Dépôt : https://github.com/Amanieu/parking_lot
+- Licence : Double Licence MIT / Apache 2.0
+- Objectif : Primitives de synchronisation efficaces et compactes (Mutex, RwLock) prévenant les interblocages.
+
+16. API Natives Windows / Microsoft SDK
+- Composants : `ReadDirectoryChangesW`, `CreateFileW`, `WinVerifyTrust`, `CryptQueryObject`, `GetFileVersionInfoW`.
+- Note : Ces composants font partie intégrante du système d'exploitation Microsoft Windows et ne sont pas redistribués en tant que bibliothèques tierces indépendantes.
+
+Avis Finaux :
+Tous les droits d'auteur, marques déposées et licences appartiennent à leurs propriétaires respectifs. Le texte intégral des licences correspondantes est accessible dans le répertoire des ressources de l'application (`assets/LICENSES/`) et sous l'onglet "Licences" de la boîte de dialogue "À propos".

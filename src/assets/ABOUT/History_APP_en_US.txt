@@ -1,0 +1,52 @@
+History and Justification of the Name: Huginn Sentinel
+
+1. The Mythological and Conceptual Fusion: Vision and Guidance
+
+The name Huginn Sentinel (Lynceus Lighthouse) was not chosen by chance. It synthesizes the union of two fundamental pillars of digital surveillance and navigability: the perception of the imperceptible and the clarity of strategic guidance.
+
+The Vision of Lynceus: Seeing the Hidden and Imperceptible
+In Greek mythology, Lynceus was the legendary lookout of the ship of the Argonauts, blessed with superhuman visual acuity. His vision was not restricted to seeing across infinite distances: he possessed the singular gift of gazing through solid obstacles, walls, dense forests, and even deep into the earth. Nothing escaped his attentive gaze; he was the pioneering safeguard who identified hidden movements and imminent perils before any other member of the crew could notice them.
+
+Huginn Sentinel reproduces this acuity in the computer's file system. Operating directly at the heart of the Windows operating system via native asynchronous APIs (ReadDirectoryChangesW via notify), it monitors directories, subfolders, and drives with microscopic precision. Events that would otherwise be fleeting, imperceptible, or silent — rapid background process modifications, cascading renames, directory moves, accidental deletions, or temporary file creations — are captured instantaneously. Our engine is the Lynceus of your disk: it sees what is hidden and ensures that no change goes unnoticed.
+
+The Light of the Lighthouse: Illuminating Chaos into Actionable Intelligence
+However, merely seeing the event is not enough; it is imperative to understand the route and act with safety. From this necessity arises the concept of the "Lighthouse." Amidst the darkness of the storm and the uncertainty of the seas, the lighthouse projects a powerful and unmistakable beam of light, dispersing the fog and serving as an unwavering compass for those who navigate.
+
+Huginn Sentinel performs this exact role amidst the whirlwind of file system data:
+* Visual and Semantic Signaling: Each operation receives immediate chromatic distinction, graphical badges, and precise categorization, acting like the light signature of a nautical lighthouse.
+* Focus and Targeted Filtering: Advanced filtering tools allow directing the light beam precisely onto the desired date range, extension, process, or folder, eliminating operational noise.
+* Visual and Statistical Intelligence: With 17 types of native chart visualizations and in-depth analysis of 58 comprehensive categories of metadata, the application transforms raw logs into visual and deterministic intelligence.
+* Universality and Accessibility: Just as a lighthouse's light guides any sailor, native support for 6 languages ensures immediate global accessibility.
+
+
+2. The Origin and Motivation of the Project
+
+Huginn Sentinel was born from identifying a critical gap in the desktop software ecosystem. Historically, users and professionals faced two unsatisfactory extremes:
+
+On one side, simplistic and ephemeral free utilities that display fleeting changes without historical persistence, without metadata context, without move/rename correlation, and with dated interfaces.
+On the other side, massive enterprise software (server FIM/SIEM) and low-level diagnostic tools (such as Process Monitor) that are excessively complex, expensive (hundreds of dollars in licenses), or mandate sending data to cloud servers.
+
+There was a profound lack of a modern, local, visual, and accessible desktop platform dedicated to answering the single most elementary and frequent question of anyone in front of a computer:
+"What happened to my files?"
+
+
+3. Technological Evolution: From Concept to High-Performance, Memory-Safe Native Rust Engine
+
+The project began its conceptual journey as a prototype focused on integrity auditing. Throughout its evolution, it became evident that processing hundreds of thousands of events in real time, without freezing the graphical user interface and with absolute guarantees of stability and memory safety, demanded an architectural breakthrough.
+
+Huginn Sentinel was fully designed and implemented in Rust (2021/2024 editions), a modern systems language that eliminates entire classes of vulnerabilities (such as memory corruption, race conditions, and deadlocks) without the overhead of a garbage collector:
+- Real-Time File Monitoring: Built upon the native Windows ReadDirectoryChangesW API through the notify crate, capturing events with sub-millisecond latency and dispatching them through high-throughput crossbeam-channel queues.
+- Parallel Recursive Scanning: Utilizes an asynchronous native worker thread pool to distribute directory trees across multi-core CPUs in an ultra-fast, balanced fashion.
+- Decoupled and Resilient Persistence: Implemented with embedded SQLite (rusqlite) configured in WAL (Write-Ahead Logging) mode. Event and metadata persistence takes place asynchronously in the background via a dedicated DbWriter thread, completely isolating the user interface from disk I/O contention.
+- Immediate-Mode and Fluid Graphical Interface: Developed with egui and eframe, offering direct hardware-accelerated rendering, responsive layouts, and an innovative modeless floating window architecture with dynamic depth management (Z-Order) and interactive column edge drag-to-resize.
+- Headless Console Utility: Inclusion of the standalone `huginnsentinel-cli.exe` executable to enable automations, scheduled audits, and CI/CD pipeline integration without launching the visual interface.
+
+
+4. The Commitment to Sovereign Privacy (Local-First)
+
+In an era dominated by cloud dependency, invasive telemetry, and indiscriminate data transmission to remote servers, Huginn Sentinel upholds an uncompromising ethical stance:
+* 100% Offline and Local: All databases, metadata, analytics, and evidence reside exclusively on the user's computer (%LOCALAPPDATA%\Huginn Sentinel).
+* No Cloud, No Accounts, No Telemetry: There is no collection of analytical data, nor forced remote authentication.
+* Deterministic Intelligence without AI: All classification, pattern analysis, and integrity scoring derive from deterministic mathematical and statistical algorithms, free from language models (LLM) or external inferences.
+
+Huginn Sentinel is the perfect fusion between the penetrating vision of Lynceus and the guiding light of the Lighthouse — the sovereign digital guardian that sees all, illuminates all, and protects the integrity of your workspace.

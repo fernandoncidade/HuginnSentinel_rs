@@ -1,0 +1,12 @@
+/target
+/build
+/builds
+/build_*
+.vscode/
+/repo/Huginn.iss
+/repo/Huginn_mingw.iss
+/repo/Huginn_msvc.iss
+/repo/Huginn_msvc_mingw.iss
+/repo/PRINCIPAIS_RECURSOS_HUGINN.txt
+/scripts/
+/repo/AppxManifest.xml

@@ -1,0 +1,89 @@
+Aviso de Dependências de Terceiros e Licenças de Código Aberto
+
+Este aviso aplica-se à implementação nativa em Rust do projeto Huginn Sentinel (versão 2026.11.9.0).
+Ele substitui avisos de edições legadas. A base atual foi desenvolvida em Rust (edições 2021/2024), sem dependências de interpretadores externos, máquinas virtuais ou runtimes de linguagens interpretadas.
+
+Dependências e Bibliotecas Utilizadas na Base Atual:
+
+1. Linguagem Rust e Biblioteca Padrão
+- Repositório: https://github.com/rust-lang/rust
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Compilador, runtime nativo sem garbage collector e primitivas fundamentais de sistema.
+
+2. egui e eframe
+- Repositório: https://github.com/emilk/egui
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Framework de interface gráfica imediata (Immediate Mode GUI), gerenciamento de janelas, layout responsivo e renderização acelerada por hardware.
+
+3. rusqlite e SQLite Embutido
+- Repositório: https://github.com/rusqlite/rusqlite
+- Licenciamento: MIT License (rusqlite) / Domínio Público (SQLite core)
+- Referência SQLite: https://www.sqlite.org/copyright.html
+- Finalidade: Mecanismo de banco de dados embutido local para persistência de eventos em modo WAL (Write-Ahead Logging), consultas analíticas e exportação forense.
+
+4. notify
+- Repositório: https://github.com/notify-rs/notify
+- Licenciamento: CC0-1.0 / Apache 2.0
+- Finalidade: Observação assíncrona do sistema de arquivos em tempo real utilizando a API nativa do Windows ReadDirectoryChangesW.
+
+5. crossbeam-channel
+- Repositório: https://github.com/crossbeam-rs/crossbeam
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Canais de comunicação multi-produtor e multi-consumidor de altíssima vazão entre as threads de monitoramento, gravação e a interface visual.
+
+6. chrono
+- Repositório: https://github.com/chronotope/chrono
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Manipulação, formatação e cálculos temporais de data e hora locais e UTC com suporte a serialização.
+
+7. serde e serde_json
+- Repositório: https://github.com/serde-rs/serde
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Framework genérico de serialização e desserialização de estruturas de dados e exportação JSON.
+
+8. quick-xml
+- Repositório: https://github.com/tafia/quick-xml
+- Licenciamento: MIT License
+- Finalidade: Serialização e leitura rápida de documentos XML para laudos periciais e configurações.
+
+9. image
+- Repositório: https://github.com/image-rs/image
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Decodificação de metadados visuais de imagens, dimensões e formatos raster.
+
+10. sha2, md-5, sha1, hex
+- Repositórios: https://github.com/RustCrypto/hashes
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Funções criptográficas de hash para baseline de integridade, verificação forense e identificação de adulterações.
+
+11. rfd (Rusty File Dialogs)
+- Repositório: https://github.com/PolyMeilex/rfd
+- Licenciamento: MIT License
+- Finalidade: Diálogos nativos do sistema operacional para seleção de pastas e arquivos.
+
+12. windows-sys
+- Repositório: https://github.com/microsoft/windows-rs
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Vínculos com as APIs nativas do Windows Win32 (WinTrust, Cryptography, FileSystem, Shell).
+
+13. uuid
+- Repositório: https://github.com/uuid-rs/uuid
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Geração de identificadores únicos universais (UUID v4) para sessões de auditoria e transações.
+
+14. zip
+- Repositório: https://github.com/zip-rs/zip
+- Licenciamento: MIT License
+- Finalidade: Compactação e descompactação de pacotes de evidência e extração de metadados internos de arquivos zip.
+
+15. parking_lot
+- Repositório: https://github.com/Amanieu/parking_lot
+- Licenciamento: Licença Dupla MIT / Apache 2.0
+- Finalidade: Primitivas eficientes e compactas de sincronização (Mutex, RwLock) sem deadlocks.
+
+16. APIs Nativas do Windows / Microsoft SDK
+- Componentes: `ReadDirectoryChangesW`, `CreateFileW`, `WinVerifyTrust`, `CryptQueryObject`, `GetFileVersionInfoW`.
+- Observação: Estes componentes são fornecidos pelo sistema operacional Microsoft Windows e não são redistribuídos como bibliotecas independentes de terceiros.
+
+Avisos Finais:
+Todos os direitos autorais, marcas e licenças pertencem aos seus respectivos proprietários. Os textos integrais das licenças correspondentes encontram-se disponíveis no diretório de ativos do aplicativo (`assets/LICENSES/`) e na aba "Licenças" do diálogo "Sobre".

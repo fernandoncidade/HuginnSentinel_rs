@@ -1,0 +1,89 @@
+Avviso sulle Dipendenze di Terze Parti e Licenze Open Source
+
+Questo avviso si applica all'implementazione nativa in Rust del progetto Huginn Sentinel (versione 2026.11.9.0).
+Sostituisce gli avvisi delle edizioni precedenti. La base attuale è stata sviluppata in Rust (edizioni 2021/2024), senza dipendenze da interpreti esterni, macchine virtuali o runtime di linguaggi interpretati.
+
+Dipendenze e Librerie Utilizzate nella Base Attuale:
+
+1. Linguaggio Rust e Libreria Standard
+- Repository: https://github.com/rust-lang/rust
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Compilatore, runtime nativo senza garbage collector e primitive fondamentali di sistema.
+
+2. egui ed eframe
+- Repository: https://github.com/emilk/egui
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Framework per interfaccia grafica immediata (Immediate Mode GUI), gestione delle finestre, layout reattivo e rendering accelerato via hardware.
+
+3. rusqlite e SQLite Incorporato
+- Repository: https://github.com/rusqlite/rusqlite
+- Licenza: Licenza MIT (rusqlite) / Dominio Pubblico (core SQLite)
+- Riferimento SQLite: https://www.sqlite.org/copyright.html
+- Scopo: Motore di database locale incorporato per la persistenza degli eventi in modalità WAL (Write-Ahead Logging), query analitiche ed esportazione forense.
+
+4. notify
+- Repository: https://github.com/notify-rs/notify
+- Licenza: CC0-1.0 / Apache 2.0
+- Scopo: Monitoraggio asincrono del file system in tempo reale tramite l'API nativa di Windows ReadDirectoryChangesW.
+
+5. crossbeam-channel
+- Repository: https://github.com/crossbeam-rs/crossbeam
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Canali di comunicazione multi-produttore e multi-consumatore ad altissimo throughput tra i thread di monitoraggio, scrittura e l'interfaccia visiva.
+
+6. chrono
+- Repository: https://github.com/chronotope/chrono
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Gestione, formattazione e calcoli di date e orari locali e UTC con supporto alla serializzazione.
+
+7. serde e serde_json
+- Repository: https://github.com/serde-rs/serde
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Framework generico di serializzazione e deserializzazione di strutture dati ed esportazione JSON.
+
+8. quick-xml
+- Repository: https://github.com/tafia/quick-xml
+- Licenza: Licenza MIT
+- Scopo: Serializzazione e analisi rapida di documenti XML per report peritali e configurazioni.
+
+9. image
+- Repository: https://github.com/image-rs/image
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Decodifica dei metadati visivi di immagini, dimensioni e formati raster.
+
+10. sha2, md-5, sha1, hex
+- Repository: https://github.com/RustCrypto/hashes
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Funzioni crittografiche di hash per baseline di integrità, verifica forense e rilevamento manomissioni.
+
+11. rfd (Rusty File Dialogs)
+- Repository: https://github.com/PolyMeilex/rfd
+- Licenza: Licenza MIT
+- Scopo: Finestre di dialogo native del sistema operativo per la selezione di cartelle e file.
+
+12. windows-sys
+- Repository: https://github.com/microsoft/windows-rs
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Collegamenti diretti alle API native di Windows Win32 (WinTrust, Crittografia, FileSystem, Shell).
+
+13. uuid
+- Repository: https://github.com/uuid-rs/uuid
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Generazione di identificatori univoci universali (UUID v4) per sessioni di audit e transazioni.
+
+14. zip
+- Repository: https://github.com/zip-rs/zip
+- Licenza: Licenza MIT
+- Scopo: Compressione, decompressione e ispezione dei metadati interni per archivi ZIP e pacchetti probatori.
+
+15. parking_lot
+- Repository: https://github.com/Amanieu/parking_lot
+- Licenza: Doppia Licenza MIT / Apache 2.0
+- Scopo: Primitive di sincronizzazione compatte ed efficienti (Mutex, RwLock) immuni da deadlock.
+
+16. API Native Windows / Microsoft SDK
+- Componenti: `ReadDirectoryChangesW`, `CreateFileW`, `WinVerifyTrust`, `CryptQueryObject`, `GetFileVersionInfoW`.
+- Nota: Questi componenti sono parte integrante del sistema operativo Microsoft Windows e non vengono ridistribuiti come librerie di terze parti indipendenti.
+
+Avvisi Finali:
+Tutti i marchi, i diritti d'autore e le licenze appartengono ai rispettivi proprietari. I testi completi delle licenze sono consultabili nella directory delle risorse (`assets/LICENSES/`) e nella scheda "Licenze" della finestra "Informazioni".

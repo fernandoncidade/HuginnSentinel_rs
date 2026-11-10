@@ -1,0 +1,89 @@
+Hinweis zu Abhängigkeiten von Drittanbietern und Open-Source-Lizenzen
+
+Dieser Hinweis gilt für die native Rust-Implementierung des Projekts Huginn Sentinel (Version 2026.11.9.0).
+Er ersetzt Hinweise aus früheren Editionen. Die aktuelle Codebasis wurde in Rust (Editionen 2021/2024) entwickelt, ohne Abhängigkeiten von externen Interpretern, virtuellen Maschinen oder verwalteten Runtimes interpretierter Sprachen.
+
+Verwendete Abhängigkeiten und Bibliotheken in der aktuellen Codebasis:
+
+1. Rust-Programmiersprache und Standardbibliothek
+- Repository: https://github.com/rust-lang/rust
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Compiler, native Laufzeitumgebung ohne Garbage Collector und fundamentale Systemprimitive.
+
+2. egui und eframe
+- Repository: https://github.com/emilk/egui
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Immediate-Mode-GUI-Framework, Fensterverwaltung, responsives Layout und hardwarebeschleunigtes Rendering.
+
+3. rusqlite und eingebettetes SQLite
+- Repository: https://github.com/rusqlite/rusqlite
+- Lizenzierung: MIT-Lizenz (rusqlite) / Public Domain (SQLite-Kern)
+- SQLite-Referenz: https://www.sqlite.org/copyright.html
+- Zweck: Lokale eingebettete Datenbank-Engine für die Ereignispersistenz im WAL-Modus (Write-Ahead Logging), analytische Abfragen und forensische Exporte.
+
+4. notify
+- Repository: https://github.com/notify-rs/notify
+- Lizenzierung: CC0-1.0 / Apache 2.0
+- Zweck: Asynchrone Dateisystemüberwachung in Echtzeit über die native Windows-API ReadDirectoryChangesW.
+
+5. crossbeam-channel
+- Repository: https://github.com/crossbeam-rs/crossbeam
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Multi-Producer- und Multi-Consumer-Kommunikationskanäle mit extrem hohem Durchsatz zwischen Überwachungs-Threads, Schreiber-Threads und der visuellen Benutzeroberfläche.
+
+6. chrono
+- Repository: https://github.com/chronotope/chrono
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Verwaltung, Formatierung und Berechnung lokaler und UTC-Datums- und Zeitangaben mit Serialisierungsunterstützung.
+
+7. serde und serde_json
+- Repository: https://github.com/serde-rs/serde
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Universelles Framework zur Serialisierung und Deserialisierung von Datenstrukturen und JSON-Export.
+
+8. quick-xml
+- Repository: https://github.com/tafia/quick-xml
+- Lizenzierung: MIT-Lizenz
+- Zweck: Schnelle Serialisierung und Analyse von XML-Dokumenten für Berichte und Konfigurationen.
+
+9. image
+- Repository: https://github.com/image-rs/image
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Dekodierung visueller Bildmetadaten, Dimensionen und Rasterformate.
+
+10. sha2, md-5, sha1, hex
+- Repository: https://github.com/RustCrypto/hashes
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Kryptografische Hash-Funktionen für Integritäts-Baselines, forensische Verifikation und Manipulationserkennung.
+
+11. rfd (Rusty File Dialogs)
+- Repository: https://github.com/PolyMeilex/rfd
+- Lizenzierung: MIT-Lizenz
+- Zweck: Native Betriebssystem-Dialoge zur Auswahl von Ordnern und Dateien.
+
+12. windows-sys
+- Repository: https://github.com/microsoft/windows-rs
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Direkte Anbindungen an native Windows-Win32-APIs (WinTrust, Kryptografie, Dateisystem, Shell).
+
+13. uuid
+- Repository: https://github.com/uuid-rs/uuid
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Generierung universell eindeutiger Identifikatoren (UUID v4) für Auditsitzungen und Transaktionen.
+
+14. zip
+- Repository: https://github.com/zip-rs/zip
+- Lizenzierung: MIT-Lizenz
+- Zweck: Komprimierung, Dekomprimierung und Metadateninspektion für ZIP-Archive und Beweispakete.
+
+15. parking_lot
+- Repository: https://github.com/Amanieu/parking_lot
+- Lizenzierung: Doppellizenz MIT / Apache 2.0
+- Zweck: Kompakte und hocheffiziente Synchronisationsprimitive (Mutex, RwLock) zur Vermeidung von Deadlocks.
+
+16. Native Windows-APIs / Microsoft SDK
+- Komponenten: `ReadDirectoryChangesW`, `CreateFileW`, `WinVerifyTrust`, `CryptQueryObject`, `GetFileVersionInfoW`.
+- Hinweis: Diese Komponenten sind integraler Bestandteil des Betriebssystems Microsoft Windows und werden nicht als eigenständige Drittanbieter-Bibliotheken weiterverbreitet.
+
+Schlussbestimmungen:
+Alle Marken, Urheberrechte und Lizenzen gehören ihren jeweiligen Eigentümern. Die vollständigen Lizenztexte sind im Ressourcenverzeichnis (`assets/LICENSES/`) sowie im Dialogfeld „Über Huginn Sentinel“ unter der Registerkarte „Lizenzen“ verfügbar.

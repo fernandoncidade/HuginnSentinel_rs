@@ -1,0 +1,54 @@
+Projet : HUGINN SENTINEL
+Version: 2026.11.9.0
+Auteurs : Fernando Nillsson Cidade
+
+Description : Plateforme Locale d'Intelligence, d'Historique et d'Audit de Fichiers
+"Sachez exactement ce qui est arrivé à vos fichiers — localement, visuellement et avec un historique consultable."
+
+Huginn Sentinel est une application de bureau native développée en Rust (édition 2021/2024) avec une interface graphique en mode immédiat via egui/eframe et accélération graphique matérielle (OpenGL/WGPU). Conçue pour offrir une visibilité totale, un historique structuré et un audit déterministe sur le système de fichiers Windows, la plateforme intègre trois couches essentielles dans une expérience fluide, moderne et de très haute performance :
+
+1. Surveillance Continue des Activités : Suivi en temps réel des événements du système de fichiers (création, modification, suppression, renommage, déplacement et analyse initiale) via l'API native Windows ReadDirectoryChangesW (moteur asynchrone notify et canaux crossbeam-channel), avec une corrélation sémantique précise des événements complexes (identification réelle de RENAMED et MOVED sans fausses suppressions).
+2. Historique Consultable et Intelligence de Fichiers sans IA : Construction automatique d'une base de données locale dans SQLite (rusqlite en mode WAL avec écriture asynchrone en arrière-plan via DbWriter), enrichie de 58 catégories exhaustives de métadonnées avant et après chaque modification, accompagnée de 17 visualisations graphiques natives et statistiques détaillées.
+3. Sécurité, Audit et Génération de Preuves : Ligne de base cryptographique (baseline avec hachages SHA-256), calcul déterministe du score de risque (0–100), moteur de règles heuristiques locales, mise en quarantaine sécurisée, restauration assistée avec vérification d'intégrité et exportation de paquets de preuves médicolégales et rapports exécutifs (XLSX, CSV, JSON, XML, TXT et SQLite).
+
+Engagement Absolu envers la Confidentialité Souveraine (Local-First) :
+Vos données ne quittent jamais votre ordinateur. Huginn Sentinel fonctionne 100 % hors ligne, sans dépendance au cloud, sans collecte de télémétrie, sans création de compte et sans modèles d'intelligence artificielle ou de langage (LLM/RAG). Toute l'analyse découle d'algorithmes statistiques et computationnels déterministes exécutés directement sur votre processeur.
+
+
+Les 5 Modes d'Utilisation de Huginn Sentinel
+
+* Mode Surveillance : Suivi visuel en temps réel des dossiers de travail, du code source ou des répertoires sensibles avec signalétique chromatique instantanée et badges visuels d'opération et de risque.
+* Mode Historique (File History / What Changed?) : Requêtes temporelles pour répondre à la question "Qu'est-il arrivé à mon fichier ?", en retraçant l'arbre généalogique complet des modifications, renommages et déplacements.
+* Mode Intelligence & Analytics : Compréhension des schémas d'activité, périodes de pointe, types de fichiers les plus modifiés et cartes thermiques grâce à 17 graphiques natifs.
+* Mode Sécurité & Intégrité : Détection déterministe d'anomalies, audit de hachages cryptographiques, préservation d'intégrité, quarantaine et gestion des sessions.
+* Mode Preuve : Génération de rapports consolidés et bases exportées pour la conformité, l'audit interne ou la résolution d'incidents.
+
+
+Principaux Cas d'Usage et Publics Cibles
+
+- Développeurs et Ingénieurs Logiciels : Suivre précisément quels fichiers ont été créés, modifiés ou supprimés par les processus de compilation, scripts d'automatisation, IDE ou outils de contrôle de version.
+- Administrateurs Système et Support Technique : Diagnostiquer les fichiers disparus, modifications indues dans les dossiers partagés et causes premières de pannes sur l'environnement local.
+- Professionnels traitant des Données Sensibles (Juridique, Santé, Finance, Ingénierie) : Auditer les mouvements de fichiers confidentiels sans exposer les données à des serveurs externes ou services tiers.
+- Créateurs de Contenu (Designers, Monteurs Vidéo, Photographes) : Conserver un contrôle rigoureux sur d'importants volumes de médias, projets lourds et pipelines de rendu.
+- Utilisateurs en Général : Contrôle préventif contre les pertes accidentelles de fichiers dans les dossiers de téléchargements, documents ou unités de sauvegarde.
+
+
+Comment Fonctionne Huginn Sentinel
+
+1. Établissement de la Ligne de Base (Baseline / Snapshot) : Lors de la sélection d'un dossier, le scanner multithread asynchrone effectue une analyse récursive générant un instantané initial avec 58 catégories de métadonnées détaillées pour chaque élément.
+2. Surveillance Asynchrone avec APIs Natives : Le moteur ReadDirectoryChangesW (notify) capture les notifications Windows en arrière-plan, gérant les pointes d'E/S via des canaux crossbeam-channel à haut débit sans perte d'événements.
+3. Normalisation et Corrélation d'Événements : Les événements bruts sont corrélés pour différencier les renommages et déplacements des créations/suppressions isolées, éliminant le bruit opérationnel.
+4. Enrichissement Approfondi en Métadonnées : Des attributs précis sont extraits (vrai type MIME via Magic Numbers, dimensions d'images, durée, comptage de lignes et de mots, nombre de fichiers et taux de compression dans les archives zip, signatures numériques PE et hachages SHA-256).
+5. Persistance Découplée dans SQLite : Écriture asynchrone par lots dans la base SQLite locale en mode WAL via un thread DbWriter dédié, assurant une latence nulle de l'interface.
+6. Présentation dans une Interface Modeless Native avec Z-Order : Interface graphique immédiate en egui/eframe avec fenêtres filles indépendantes au niveau du système d'exploitation (multi-viewports Win32), dotées de la barre de titre standard de Windows 11 avec boutons natifs Réduire (🗕), Agrandir/Restaurer (🗖/🗗) et Fermer (🗙), élévation dynamique de Z-Order, déplacement fluide sur plusieurs moniteurs, tableau interactif virtualisé avec colonnes redimensionnables par glissement, 17 graphiques natifs et exportation complète.
+7. Outil en Ligne de Commande Autonome : L'utilitaire `huginnsentinel-cli.exe` permet des analyses, l'extraction de métadonnées, la vérification de baseline et la surveillance directement depuis le terminal et des scripts.
+
+
+Outils d'Analyse et Fonctionnalités Disponibles
+
+- Interface Modeless Native avec Gestion Z-Order de l'OS : Boîtes de dialogue indépendantes dans le système d'exploitation, non confinées dans la GUI principale, déplaçables sur plusieurs écrans, redimensionnables librement, agrandissables en plein écran avec Snap Layouts, boutons standard sur la barre de titre (Réduire 🗕, Agrandir 🗖/🗗, Fermer 🗙) et élévation dynamique au premier plan (Z-Order raise) au clic ou au focus.
+- Tableau Interactif Hautes Performances : Tableau virtualisé prenant en charge des milliers d'événements, redimensionnement des colonnes par glissement de bordure, ajustement automatique par double-clic, lignes zébrées alternées, badges stylisés et infobulles complètes.
+- Filtres Rapides et Avancés : Filtrage par type d'événement, plage de dates, texte, extension de fichier, attributs ou sélection directe dans le tableau.
+- Statistiques Visuelles Natives (17 Graphiques) : Graphiques circulaires, barres, chronologie, treemap, histogramme, courbe de Pareto, lignes, boxplot, radar, carte thermique temporelle, dispersion, diagrammes de Sankey, dotplot et arborescence de répertoires.
+- Exportation Complète de Preuves : Exportez des rapports vers Excel (.xlsx), CSV (.csv), Texte (.txt), JSON (.json), XML (.xml) et Base de Données SQLite (.db).
+- Internationalisation Complète : Interface et manuels disponibles nativement en Portugais (pt_BR), Anglais (en_US), Espagnol (es_ES), Français (fr_FR), Italien (it_IT) et Allemand (de_DE).

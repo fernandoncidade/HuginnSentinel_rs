@@ -1,0 +1,226 @@
+RELEASE-HINWEISE: Version 2026.11.9.0
+
+ALLGEMEINE ZUSAMMENFASSUNG DER VERBESSERUNGEN UND NEUERUNGEN
+
+Die Version 2026.11.9.0 konsolidiert grundlegende Verbesserungen bei der Benutzerkommunikation, dem offiziellen Kundendienst, der Transparenz des Vertriebsmodells, der rechtlichen Klarheit und der vollständigen internationalen Harmonisierung in allen sechs unterstützten Sprachen der Anwendung.
+
+
+1. NEUER ZENTRALISIERTER OFFIZIELLER KUNDENDIENST-KANAL
+- Einheitliche und direkte E-Mail: Alle Anwendungsmodule, Hilfefenster, Nutzungsbedingungen und Informationsdialoge wurden mit der verifizierten offiziellen Support-E-Mail-Adresse aktualisiert: linceu_lighthouse@outlook.com.
+- Transparenter und verlässlicher Support: Einrichtung eines direkten E-Mail-Kanals zur Beantwortung von Fragen, Hilfestellungen und Entgegennahme von Feedback mit schnellen Antworten und persönlicher Betreuung ohne Notwendigkeit von Telefonaten oder Fernwartungszugriffen auf Benutzercomputer.
+
+
+2. TRANSPARENZ BEIM VERTRIEBSMODELL UND DER DUALEN LIZENZIERUNG
+- Wahlfreiheit und Klarheit für Benutzer: Transparente Formalisierung der Koexistenz zwischen der quelloffenen Community-Edition und der offiziellen kommerziellen Ausgabe im Microsoft Store.
+- Komfort und Sicherheit für Unternehmen und Anwender: Benutzer, welche die Anwendung über den Microsoft Store erwerben, profitieren von einer einfachen Ein-Klick-Installation, automatischen Updates und einer kommerziellen Nutzungslizenz ohne Verpflichtung zur Veröffentlichung interner Anpassungen. Gleichzeitig behält die Community, die den Quellcode prüfen, studieren oder selbst kompilieren möchte, vollen und kostenfreien Zugriff auf das Projekt.
+
+
+3. HARMONISIERUNG UND STRUKTURELLE PARITÄT IN ALLEN 6 SPRACHEN
+- Weltweit identisches Erlebnis: Alle Informationstexte zur Geschichte der Anwendung, Endnutzer-Lizenzverträge, Geschäftsbedingungen, Datenschutzerklärungen und Versionshinweise wurden in allen 6 Sprachen (Portugiesisch, Englisch, Spanisch, Französisch, Italienisch und Deutsch) vollständig übersetzt und synchronisiert.
+- Absolute strukturelle Treue: Jedes Dokument weist eine exakte Parität und denselben Detaillierungsgrad auf, sodass alle Benutzer unabhängig von der gewählten Sprache stets klare, verlässliche und identische Informationen erhalten.
+
+
+4. VERPFLICHTUNG ZU SOUVERÄNER PRIVATSPHÄRE (100 % LOKAL)
+- Ihre Dateien verbleiben bei Ihnen: Bekräftigung der strikten Local-First-Philosophie von Huginn Sentinel. Alle Integritätsprüfungen, Berichterstellungen und Aktivitätsüberwachungen erfolgen zu 100 % offline und isoliert auf Ihrem eigenen Computer.
+- Keine Cloud und keine Telemetrie: Die Anwendung sammelt, überwacht oder überträgt keinerlei personenbezogene Daten, Nutzungshistorien oder Dateiinhalte an entfernte Server oder Cloud-Dienste – in voller Übereinstimmung mit geltenden Datenschutzgesetzen.
+
+
+5. KLARHEIT BEI DRITTKOMPONENTEN UND URHEBERRECHTEN
+- Vollständiger Schutz der Urheberschaft: Die Urheberrechtshinweise wurden präzisiert, um die Urheberschaft des unabhängigen Entwicklers transparent darzulegen und ausdrücklich zu bestätigen, dass sämtliche verwendeten Drittanbieter-Bibliotheken und -Komponenten ihren jeweiligen ursprünglichen Autoren gehören, was absolute Rechtssicherheit gewährleistet.
+
+
+6. ZUVERLÄSSIGKEIT UND VERBESSERTE NAVIGATION IN DEN BENUTZERHANDBÜCHERN
+- Klare und zugängliche Dokumentation: Alle Querverweise, Kurzanleitungen und Benutzerhandbücher wurden einer sorgfältigen Prüfung aller internen Verknüpfungen unterzogen, sodass Anleitungen zu Filtern, Farbanpassungen, Diagrammen und Berichtsexporten jederzeit mühelos und direkt auffindbar sind.
+
+_________________________________________________
+
+RELEASE-HINWEISE: Version 2026.11.4.0
+
+GESAMTÜBERSICHT DER VERBESSERUNGEN UND NEUERUNGEN
+
+Version 2026.11.4.0 führt ein neues, granular und individuell steuerbares Datenbereinigungssystem mit Sicherheitsabfragen und Rückmeldedialogen ein, reorganisiert und isoliert die Datenbanken in dedizierten Verzeichnissen mit einheitlicher Namensgebung, vereinheitlicht die Benennung gespeicherter und exportierter Berichte, zentriert das Hauptfenster beim Programmstart auf dem primären Bildschirm und bietet vollständige dynamische Lokalisierung in allen 6 unterstützten Sprachen.
+
+
+1. NEUES INDIVIDUELLES UND GRANULARES DATENBEREINIGUNGSSYSTEM
+- Schneller und zentraler Zugriff: Das Bereinigungssystem kann direkt über die Schaltfläche "Leeren" in der Hauptsymbolleiste, über das Tastaturkürzel Strg+L, über das Menü "Datei > Leeren..." oder über das Menü "Sicherheit > Sicherheitsdatenbank leeren..." aufgerufen werden.
+- Fünf klare und unabhängige Optionen: Das neue Bereinigungsfenster ermöglicht die gezielte Auswahl der zu bereinigenden Daten:
+  • Tabelle, Sicherheits- und Datenbank leeren: Führt eine vollständige Bereinigung durch, setzt die Bildschirmanzeige zurück und leert alle gespeicherten Datensätze.
+  • Datenbank leeren: Löscht ausschließlich den auf der Festplatte gespeicherten Ereignisverlauf der Dateiüberwachung, erstellt die Datei neu und gibt Speicherplatz frei, ohne Sicherheitsdaten oder die aktuelle Bildschirmanzeige zu beeinträchtigen.
+  • UI-Tabelle leeren: Leert nur die in der Tabelle auf dem Bildschirm sichtbaren Zeilen, während alle in der Datenbank gespeicherten Einträge vollständig erhalten bleiben.
+  • Sicherheitsdatenbank leeren: Leert ausschließlich die vom Sicherheitsmodul erfassten Vorfälle und Regelwarnungen, ohne die Dateiüberwachungsdaten zu verändern.
+  • Abbrechen: Schließt das Bereinigungsfenster sofort, ohne Änderungen vorzunehmen.
+- Sicherheitsbestätigung und Hinweismeldungen: Vor jeder endgültigen Löschung erscheint ein Bestätigungsdialog mit einem ausdrücklichen Hinweis auf die Unwiderruflichkeit des Vorgangs, sodass Sie die Aktion bestätigen oder sicher zurückkehren können. Nach Abschluss informiert ein Erfolgsdialog detailliert über das Ergebnis. Sollte ein Hindernis auftreten, informieren verständliche Fehlermeldungen über die Ursache.
+- Geometrische Ausrichtung und harmonisches Design: Alle Schaltflächen im Bereinigungsfenster besitzen eine einheitliche, symmetrische Breite, die am längsten Beschriftungstext ausgerichtet ist. Texte und Symbole sind präzise auf der vertikalen Achse der Schaltflächen zentriert, und die Fensterhöhe passt sich dynamisch mit einem angenehmen unteren Freiraum an.
+
+
+2. ISOLIERUNG UND REORGANISATION DER DATENBANKEN
+- Eigene und individuelle Verzeichnisse: Die Anwendungsdaten wurden zur Erhöhung von Stabilität und Datenintegrität in dedizierte Unterordner aufgeteilt. Die Ereignisse der Dateiüberwachung liegen nun in einem eigenen Unterordner ("events"), während die Sicherheitsdaten isoliert in ihrem separaten Ordner ("security") gespeichert werden.
+- Standardisierte Dateinamen: Sämtliche Datenbanken und ihre temporären Begleitdateien tragen nun einheitlich den offiziellen Anwendungsnamen Huginn Sentinel ("huginn_events.db" und "huginn_security.db").
+- Nahtlose Migration: Bestehende Altdateien werden beim Programmstart automatisch erkannt und ohne manuellen Aufwand in die neuen Verzeichnisse überführt.
+
+
+3. STANDARDISIERUNG BEIM SPEICHERN UND EXPORTIEREN VON DATEN
+- Strukturierte automatische Dateinamen: Beim Speichern oder Exportieren erfasster Daten in den unterstützten Dateiformaten (wie Tabellenkalkulationen, Tabellen oder strukturierten Dateien) vergibt die Anwendung nun automatisch den einheitlichen Namen "huginn_eventos_JJJJMMTT_HHMMSS" mit aktuellem Datums- und Zeitstempel, was die strukturierte Ablage und forensische Archivierung erleichtert.
+
+
+4. ZENTRIERTER START AUF DEM PRIMÄREN BILDSCHIRM
+- Angenehme und ausgewogene Darstellung: Das Hauptfenster der Anwendung öffnet sich beim Start nun automatisch zentriert auf dem primären Monitor des Benutzers und sorgt so für eine harmonische Integration in den Desktop.
+
+
+5. VOLLSTÄNDIGE UNTERSTÜTZUNG ALLER 6 SPRACHEN
+- Dynamische Lokalisierung in Echtzeit: Alle neuen Fenster, Schaltflächen, Auswahloptionen, Bestätigungsdialoge, Erfolgsbenachrichtigungen und Fehlermeldungen werden dynamisch und unmittelbar auf Deutsch, Englisch, Portugiesisch, Spanisch, Französisch und Italienisch übersetzt.
+
+_________________________________________________
+
+RELEASE-HINWEISE: Version 2026.11.3.0
+
+GESAMTÜBERSICHT DER VERBESSERUNGEN UND NEUERUNGEN
+
+Version 2026.11.3.0 führt intelligente Ablaufverkettungen für Suchlauf und Echtzeit-Überwachung ein, bietet umfassende visuelle Anpassungsmöglichkeiten für die Zellauswahl in der Tabelle, erweiterte Werkzeuge zur Farbkonfiguration mit editierbarem HTML-Farbcode, einen übersichtlichen Spalten-Manager und verfeinerte geometrische Ausrichtungen der Benutzeroberfläche.
+
+
+1. INTELLIGENTE ABLAUFVERKETTUNG FÜR SUCHLAUF UND ÜBERWACHUNG
+- Interaktive Startdialoge: Beim Klick auf "Suchlauf" fragt das System nun, ob nach Abschluss des Verzeichnissuchlaufs direkt die kontinuierliche Überwachung gestartet werden soll oder ob ausschließlich der Suchlauf gewünscht ist. Ebenso wird beim Klick auf "Überwachung starten" gefragt, ob vor Beginn der Überwachung ein anfänglicher Suchlauf über die vorhandenen Dateien durchgeführt werden soll oder ob sofort die reine Echtzeit-Überwachung beginnen soll.
+- Benutzerdefinierte Einstellungen: Diese Abfragen lassen sich in den Menüs "Einstellungen > Suchlauf" und "Einstellungen > Überwachung" jederzeit aktivieren oder deaktivieren und an den bevorzugten Arbeitsablauf anpassen.
+- Strikte Suchlauf-Isolierung: Während eines rekursiven Verzeichnissuchlaufs wird die Echtzeit-Überwachung vorübergehend pausiert. Dadurch ist gewährleistet, dass alle gefundenen Dateien in der Tabelle sauber und ausschließlich als gescannte Elemente erfasst werden, ohne Vermischung von Ereigniskategorien.
+
+
+2. DYNAMISCHER EREIGNISZÄHLER IN DER FILTERLEISTE
+- Echtzeitberechnung nach Operationsart: Der Gesamtereigniszähler in der linken Schnellfilterleiste passt sich nun dynamisch an die getroffene Auswahl an. Beim Aktivieren oder Deaktivieren der Kontrollkästchen für Operationsarten (wie Hinzugefügt, Geändert, Gelöscht usw.) zeigt der Gesamtwert sofort die exakte Summe der Ereignisse für die gewählten Optionen an.
+
+
+3. UMFASSENDE FARBANPASSUNG FÜR DIE ZELLAUSWAHL
+- Neues Dialogfenster zur Farbanpassung: Über das Menü "Einstellungen > Auswahlverhalten" erreichbar, ermöglicht es die individuelle Festlegung der Hervorhebungsfarbe für markierte Zellen in der Tabelle.
+- Empfohlene Palette mit 6 Farbtönen: Wählen Sie mit einem Klick zwischen Huginn-Grün (Standard), Saphirblau, Goldgelber Bernstein, Amethystviolett, Ozean-Cyan oder Sanftes Korallrot.
+- Dynamischer Kontrast zum Windows 11-Design: Bei Verwendung der empfohlenen Farbpalette wechselt die Schriftfarbe der ausgewählten Option automatisch zwischen Weiß (im dunklen Windows-Modus) und Schwarz (im hellen Modus), sodass die Lesbarkeit auch bei Designwechseln des Betriebssystems ohne Neustart der Anwendung optimal bleibt.
+- Benutzerdefinierte Farben mit HTML-Eingabe: Neben den visuellen Farbreglern kann der hexadezimale Farbcode direkt im HTML-Format (z. B. #00ff00) eingetippt oder eingefügt werden, mit sofortiger Aktualisierung auf dem Bildschirm.
+- Vergleichende Seit-an-Seit-Vorschau: Eine integrierte Tabellenvorschau stellt die gewählte Farbe direkt der Standardfarbe Grün gegenüber.
+- Visuelle Rückmeldung am Mauszeiger und Sicherheit: Sanfte Hervorhebung beim Überfahren des Farbrechtecks mit der Maus sowie Bestätigungsdialoge beim Anwenden neuer Farben oder Wiederherstellen der Werkseinstellungen.
+
+
+4. OPERATIONS-FARBPALETTE MIT EDITIERBAREM HTML-CODE UND SCHNELLEM SCHLIESSEN
+- Direkte Eingabe von HTML-Farbcodes: In den Farbeinstellungen für Dateioperationen steht beim Öffnen der Farbpalette nun ein editierbares Textfeld zur Verfügung, um Farbcodes direkt im HTML-Format einzugeben oder einzufügen.
+- Eigene Schließen-Schaltfläche: Eine praktische Schaltfläche mit dem Symbol "❌" ermöglicht das sofortige Schließen der Farbpalette, sobald der gewünschte Farbton gewählt wurde.
+- Zentrierte Hilfsschaltflächen: Die Schaltflächen für Zahlenformate und das Kopieren von Farbwerten sind sauber vertikal zentriert, mit dynamisch übersetzten Hilfetexten.
+
+
+5. OPTIMIERTER SPALTEN-MANAGER
+- Einheitliche Einspaltenliste: Das Dialogfenster zur Spaltenverwaltung wurde neu gestaltet und präsentiert nun eine übersichtliche, vertikale Liste mit Kontrollkästchen, wodurch ungenutzte Freiflächen vermieden und der Bildschirmplatz optimal genutzt werden.
+
+
+6. SCHALTFLÄCHE ZUM UMKEHREN DER TABELLENSORTIERUNG
+- Schnelle Richtungsumkehr: Eine "Umkehren"-Schaltfläche in der Tabellenleiste ermöglicht es, die Sortierreihenfolge (aufsteigend oder absteigend) der aktuell ausgewählten Spalte mit einem einzigen Klick umzuschalten.
+
+
+7. OPTISCHE HARMONIE UND GEOMETRISCHE AUSRICHTUNG
+- Vertikale Zentrierung der Hauptschaltflächen: Die Aktionsschaltflächen der Werkzeugleiste (Verzeichnis wählen, Suchlauf, Überwachung starten, Pause, Speichern, Leeren und Statistiken) sind strikt entlang der vertikalen Achse ausgerichtet, mit nahtloser Umrahmung und ohne überflüssige horizontale Trennlinien.
+- Verfeinerte Schaltflächenzentrierung in Dialogen: Verbesserte vertikale Zentrierung für Schaltflächen in den erweiterten Filtern, der Farbanpassung sowie der Bestätigungsschaltfläche im Info-Fenster.
+- Sauberer Programmstart ohne Konsolenfenster: Die Anwendung startet direkt und sauber, ohne kurzzeitig ein Terminal- oder Konsolenfenster anzuzeigen.
+
+
+8. VOLLSTÄNDIGE ÜBERSETZUNG IN 6 SPRACHEN
+- Lückenlose Sprachunterstützung: Alle neuen Dialoge, Einstellungen, Schaltflächen, Warnhinweise und Hilfetexte sind vollständig und dynamisch in Deutsch, Englisch, Portugiesisch, Spanisch, Französisch und Italienisch integriert.
+
+_________________________________________________
+
+RELEASE-HINWEISE: Version 2026.11.1.0
+
+GESAMTÜBERSICHT DER VERBESSERUNGEN UND KORREKTUREN
+
+Version 2026.11.1.0 bietet wesentliche Verbesserungen bei der Bedienbarkeit, höhere Präzision bei der Dateiüberwachung, neue interaktive Funktionen für statistische Diagramme sowie optische Verfeinerungen in der gesamten Benutzeroberfläche.
+
+
+1. INTERAKTIVE KLICK- UND ZIEHAUSWAHL IN DER TABELLE
+- Kontinuierliche Zellbereichsauswahl: Sie können nun auf eine beliebige Zelle in der Tabelle klicken, die Maustaste gedrückt halten und ziehen, um einen zusammenhängenden Zellblock zu markieren. Der ausgewählte Bereich wird in Echtzeit hervorgehoben, während Sie den Mauszeiger bewegen, sodass eine sofortige visuelle Rückmeldung erfolgt, ohne auf das Loslassen der Maustaste warten zu müssen.
+- Spalten- und Zeilenauswahl durch Ziehen: Das gleiche kontinuierliche Auswahlverhalten mit sofortiger visueller Rückmeldung wurde für Spalten- und Zeilenköpfe umgesetzt. Beim Klicken und Ziehen über Spalten- oder Zeilenköpfe werden alle überstrichenen Elemente in Echtzeit hervorgehoben.
+- Erhalt der Trennlinien bei "Alles auswählen": Die Darstellung der Zeilenköpfe beim Klicken auf die Schaltfläche zur Gesamtauswahl in der oberen linken Ecke der Tabelle wurde korrigiert. Alle Trennlinien und visuellen Begrenzungen bleiben vollständig erhalten und sauber ausgerichtet.
+
+
+2. DATEIÜBERWACHUNG UND GENAUE OPERATIONSTRENNUNG
+- Saubere Unterscheidung zwischen Umbenennen und Verschieben: Die Echtzeitüberwachung wurde korrigiert, sodass das Umbenennen einer Datei nicht mehr fälschlicherweise als Verschiebevorgang in ein anderes Verzeichnis gemeldet wird.
+- Vollständige Daten in statistischen Diagrammen: Die Diagramme "Operations-Zeitachse", "Multidimensionales Risiko-Radar", "Sankey: Operation → Dateityp" und "Sankey: Operation → Verzeichnis" erfassen und unterscheiden nun zuverlässig "Verschoben"-Ereignisse und gewährleisten vollständige und aussagekräftige Berichte.
+
+
+3. NEUE INTERAKTIVE STEUERUNGEN IN SANKEY-FLUSSDIAGRAMMEN
+- Filterung über Kontrollkästchen: Die Diagramme "Sankey: Operation → Dateityp" und "Sankey: Operation → Verzeichnis" verfügen über Dropdown-Menüs mit Kontrollkästchen, mit denen der Benutzer gezielt auswählen kann, welche Operationsarten dargestellt werden sollen.
+- Konfigurierbare Begrenzung der angezeigten Elemente: Der Benutzer kann festlegen, wie viele Dateiendungen oder Verzeichnisse angezeigt werden sollen (in 10er-Schritten von 10 bis 100 sowie die Option "Alle"). Bei umfangreichen Listen sorgt eine integrierte Bildlaufleiste für Übersichtlichkeit, ohne die Zeichenfläche zu überladen, und gewährleistet die Lesbarkeit aller Legenden.
+- Stabilität der Verbindungslinien: Vollständige Beseitigung von Zitterbewegungen und Schwingungen in den Verbindungsbändern und Flusskurven des Diagramms "Sankey: Operation → Verzeichnis" und weiterer Flüsse für eine ruhige und stabile Darstellung.
+
+
+4. OPTISCHE UND ERGONOMISCHE VERFEINERUNGEN DER DIAGRAMME
+- Sauberes Kreisdiagramm: Die unerwünschte vertikale Trennlinie, die das Kreisdiagramm "Operationsverteilung" zuvor durchtrennte, wurde entfernt.
+- Zentrierte Legenden: Die Operationslegenden im Diagramm "Ereignisentwicklung pro Stunde" wurden in der Mitte der Zeichenfläche zentriert, was die optische Symmetrie und Lesbarkeit verbessert.
+- Intelligente Dropdown-Menüs: Die Auswahllisten im Statistikbereich schließen sich nun automatisch, sobald der Benutzer den Mauszeiger von ihnen wegbewegt, wodurch eine Verdeckung der Diagramme vermieden wird.
+
+
+5. DYNAMISCHE WINDOWS 11-DESIGNANPASSUNG
+- Nahtlose Umschaltung zwischen hellem und dunklem Modus: Alle Diagramme erkennen Designänderungen von Windows 11 nun automatisch zur Laufzeit. Hintergrundfarben, Achsen, Textkontraste und Gitterlinien passen sich sofort an, ohne dass die Anwendung neu gestartet werden muss.
+
+
+6. VOLLSTÄNDIGE ÜBERSETZUNG IN 6 SPRACHEN
+- Vollständige Alarmübersetzung: Die Übersichtsspalte für Sicherheitswarnungen und die zugehörigen Beschreibungen sind für alle Überwachungszustände vollständig übersetzt.
+- Volle Unterstützung für 6 Sprachen: Alle neu hinzugefügten Schaltflächen, Filter, Legenden und Optionen sind vollständig und konsistent in Deutsch, Englisch, Portugiesisch, Spanisch, Französisch und Italienisch verfügbar und aktualisieren sich bei Sprachwechsel sofort.
+
+_________________________________________________
+
+RELEASE-HINWEISE: Version 2026.10.31.0
+
+HIGHLIGHTS DIESER VERSION — TIEFGREIFENDES ARCHITEKTUR-REFACTORING (C++/Qt6 -> Rust/egui)
+
+Diese Meilenstein-Version von Huginn Sentinel vollendet ein umfassendes Software-Engineering- und Architektur-Refactoring: Das bisherige in C++17 und Qt 6 entwickelte Legacy-Projekt (Huginn_cpp) wurde vollständig neu konzipiert, von Grund auf neu implementiert und in ein rein natives Rust-Ökosystem (Edition 2021) mit GPU-beschleunigter Immediate-Mode-Benutzeroberfläche auf Basis von egui/eframe 0.37 überführt (HuginnSentinel_rs).
+
+Weit über eine bloße syntaktische Übersetzung zwischen Programmiersprachen hinaus transformiert diese Migration sämtliche Subsysteme grundlegend — von der Build- und eigenständigen Binär-Deployment-Pipeline über zur Kompilierzeit garantierte Speichersicherheit, Lock-Free-Nebenläufigkeit und asynchrone transaktionale SQLite-WAL-Persistenz bis hin zu einer 17 Diagramme umfassenden GPU-Vektor-Analyse-Engine, unabhängigen nativen nicht-modalen (Modeless) Win32-Kindfenstern und einer maßgeschneiderten virtualisierten forensischen 58-Spalten-Tabelle mit frei wählbarer Zeilen- und Spaltenfixierung zur Laufzeit.
+
+
+DETAILLIERTE ANALYSE DES REFACTORINGS: VON C++/Qt6 NACH RUST/EGUI
+
+1. Toolchain, Build-System und Eigenständiges Binär-Deployment (CMake/windeployqt -> Cargo/LTO)
+- Bisherige Architektur (C++17 / Qt 6): Basierte auf einem monolithischen CMakeLists.txt-Skript mit über 1.350 Zeilen, Meta-Object-Präprozessoren (CMAKE_AUTOMOC, CMAKE_AUTORCC, CMAKE_AUTOUIC), schwergewichtiger dynamischer Verlinkung gegen zehn externe Qt-6-Framework-Module (Core, Gui, Widgets, Sql, Xml, Concurrent, OpenGL, OpenGLWidgets, Quick und Qml) sowie zwingendem Post-Build-Packaging über windeployqt zur Bündelung von Dutzenden Runtime-DLLs, Plattform-Plugins (qwindows.dll), SQL-Treibern (qsqlite.dll) und kompilierten Übersetzungsdateien (.qm).
+- Neue Architektur (Rust / Cargo): Deklarativ verwaltet über Cargo.toml mit optimiertem Produktionsprofil (lto = true, codegen-units = 1, opt-level = 3, strip = true). Kompiliert direkt in zwei portable, eigenständige native ausführbare Dateien (`huginnsentinel.exe` für die Desktop-GUI und `huginnsentinel-cli.exe` für die Befehlszeile) — unter 100-prozentiger Beseitigung von Qt-DLLs, Laufzeitversionskonflikten und fragilen Paketierungsschritten.
+
+2. Modulare Entkopplung in Kohärente Domänen statt Nummerierter Prozeduraler Dateifragmentierung
+- Bisherige Architektur (C++17 / Qt 6): Konzentrierte die Gesamtverantwortung in einer Superklasse `InterfaceMonitor` (`QMainWindow`), künstlich aufgeteilt auf Dutzende sequentiell nummerierte Dateien (`gmet_01..47`, `gbank_01..20`, `gob_01..13`, `gst_01..18`, `ui_01..15`, `gmui_*`, `secui_*`), was Rückverfolgbarkeit, evolutionäre Wartung und isolierte Modultests erheblich behinderte.
+- Neue Architektur (Rust): Strukturiert in saubere, kohärente und stark entkoppelte Fachdomänen (`core`, `services`, `security`, `data`, `tools`, `locale`, `ui`, `utils` und `cli`) mit expliziten Daten-Ownership-Grenzen und auditierbaren internen Programmierschnittstellen.
+
+3. GUI-Paradigmenwechsel: Retained Mode (QtWidgets/QML) -> GPU Immediate Mode (egui/eframe 0.37)
+- Bisherige Architektur (C++17 / Qt 6): Basierte auf einem retained-mode Modell von `QObject`/`QWidget`-Zeigerbäumen, Kopplung über `Q_OBJECT`-Makros (Signale/Slots) und hybrider Komposition zwischen `QWidgets` und `QQuickWidget`/`QML`, was zu hohem Basisspeicherverbrauch und Synchronisierungsaufwand zwischen Modell und Widgets führte.
+- Neue Architektur (Rust / egui): Hardwarebeschleunigtes Immediate-Mode-Vektor-Rendering (OpenGL/Glow/WGPU) direkt aus dem unveränderlichen/kontrollierten Anwendungszustand in jedem Frame. Dies gewährleistet nahezu verzögerungsfreien Start, minimalen Speicherbedarf, null UI-Zustandsdesynchronisation und automatische Echtzeitanpassung an die nativen hellen und dunklen Windows 11-Designs.
+
+4. Native Win32-Multi-Viewport-Modeless-Kindfenster und Dynamisches Z-Order-Management auf Betriebssystemebene
+- Bisherige Architektur (C++17 / Qt 6): Sekundäre Dialoge erbten Fokus- und Hierarchie-Einschränkungen von `QDialog`/`QWidget`, was globale Ereignisfilter (`eventFilter`) und dynamische Eigenschaften (`linceuManagedChildDialog`) erforderlich machte, um Überlagerungsblockaden und Fokusverlust zu umgehen.
+- Neue Architektur (Rust / Win32 Multi-Viewport): Alle 13 Hilfsfenster (Über, Hilfe, Benutzerhandbuch, Statistiken, Alarmzentrale, Sitzungszentrale, Wiederherstellung/Quarantäne, Multi-Verzeichnis, Erweiterte Filter, Beweismittelexport, Spalten konfigurieren, Farben konfigurieren und Pop-up-Benachrichtigungen) arbeiten über `show_viewport_immediate` als native, eigenständige Windows 11 `HWND`-Viewports. Sie verfügen über standardmäßige Fenstertitelleisten des Betriebssystems (Minimieren 🗕, Maximieren/Wiederherstellen 🗖/🗗 mit Snap-Layout-Unterstützung und Schließen 🗙), freie Verschiebbarkeit über mehrere Bildschirme hinweg, native Z-Achsen-Anhebung bei Fokus und eine intelligente Fußzeile, die dynamisch die exakte Anzahl geöffneter Fenster anzeigt ("1 Fenster:", "2 Fenster:", "3 Fenster:", etc.) inklusive Direktwiederherstellungs-Schaltflächen.
+
+5. Neue Virtualisierte Forensische Tabelle (`SpreadsheetGrid`) mit Beliebiger 2D-Zeilen- und Spaltenfixierung
+- Bisherige Architektur (C++17 / Qt 6): Verwendete `QTableView` in Verbindung mit `EventTableModel` (`QAbstractTableModel`) und wiederholten `QVariant`-Konvertierungen, was bei hohen Ereigniszahlen zu Leistungseinbußen führte und keine freie Fixierung individueller Zeilen oder Spalten ermöglichte.
+- Neue Architektur (Rust / SpreadsheetGrid): Maßgeschneiderte Tabellen-Engine mit synchronisiertem 4-Quadranten-Rendering (Oben-Links, Oben-Rechts, Unten-Links und Unten-Rechts) und `O(sichtbare_zeilen)`-Virtualisierung:
+  * Flexible Zeilenfixierung: Über das Menü "Einstellungen -> Zeilen fixieren" oder das Kontextmenü (Rechtsklick) kann der Benutzer bestimmen, ob die 1. Zeile (Spaltenüberschriften) beim vertikalen Scrollen fixiert bleibt oder nicht, sowie jede beliebige Datenzeile fixieren oder lösen (per Direktauswahl, Klick oder Eingabe von Zahlenbereichen wie `1, 5, 10-12`).
+  * Flexible Spaltenfixierung: Über das Menü "Einstellungen -> Spalten fixieren", die Werkzeugleiste oder Rechtsklick auf den Spaltenkopf kann die 1. numerische Spalte (`#`) sowie jede Kombination der 58 Metadatenspalten fixiert werden, um beim horizontalen Scrollen links sichtbar zu bleiben, mit automatischer Speicherung in `painel_fixo_config.json`.
+  * Umfassende Interaktivität im Excel-Stil: Einzel-, Rechteck- und Bereichsauswahl durch Ziehen/Umschalttaste, Auswahl ganzer Zeilen/Spalten sowie Alles Auswählen; kontinuierliche Randanpassung mit Doppelklick-AutoFit; adaptive Zebrastreifen; Farbkennzeichnungen pro Operation und kontextreiche Tooltips.
+
+6. Strikte Statische Typisierung über 58 Forensische Kategorien (`EventModel` vs. `QVariantMap`)
+- Bisherige Architektur (C++17 / Qt 6): Tauschte Metadaten zwischen Erfassern, Datenbank und Oberfläche über dynamische, string-indizierte `QVariantMap`-Maps aus, was anfällig für abweichende Schlüssel, teure implizite Konvertierungen und unbemerkte Laufzeitfehler war.
+- Neue Architektur (Rust): Ersetzt alle dynamischen Dictionaries durch das streng typisierte `EventModel`-Struct und das `OperationType`-Enum. Erfasst und auditiert 58 forensische Spalten vor und nach jeder Änderung: echte MIME-Erkennung über Magic Numbers, reine Rust-Kryptografie-Hashes (SHA-256, SHA-1, MD5), Shannon-Entropie-Berechnung, PE-Header/Sektions-Strukturanalyse, native Authenticode-Signaturprüfung via Win32 `WinTrust`, Zeilen- und Wortzählungen, ZIP-Archiv-Inspektion, Bildabmessungen, Mediendauer, Akteurprozess-Zuordnung, Baseline-Status und Quarantäne-Protokollierung.
+
+7. Speichersicherheit zur Kompilierzeit und Lock-Free-Nebenläufigkeit
+- Bisherige Architektur (C++17 / Qt 6): Manuelle und halbautomatische Zeigerverwaltung über `QThread`, `QtConcurrent` und asynchrone Signale, was permanente Wachsamkeit gegen Race Conditions, hängende Zeiger (Dangling Pointers) und Lock-Konflikte im GUI-Thread erforderte.
+- Neue Architektur (Rust): Mathematische Garantien des Rust-Compilers (`Send` + `Sync` + Borrow Checker) eliminieren Speicherkorruption, *Use-after-free* und *Data Races* vollständig ohne Garbage Collector (Zero GC). Die Windows-Kernel-Überwachung über `ReadDirectoryChangesW` (`notify 8.2`) und der rekursive Hochdurchsatz-Suchlauf kommunizieren mit der GUI über lock-freie `crossbeam-channel`-Warteschlangen und extrem leichtgewichtige `parking_lot`-Primitive, was absolute Ruckelfreiheit selbst bei massiven Festplatten-Ereigniswellen garantiert.
+
+8. Entkoppelte Transaktionale Persistenz (Eingebettetes SQLite WAL + `DbWriter` vs. `Qt6::Sql`)
+- Bisherige Architektur (C++17 / Qt 6): Basiert auf `QSqlDatabase` und `QSqlQuery`, abhängig von externen Treibern und unterworfen an strikte Qt-SQL-Thread-Affinitätsregeln und synchrone E/A-Blockaden.
+- Neue Architektur (Rust / rusqlite): Integriert die statisch kompilierte C-SQLite-Engine direkt im Executable (`rusqlite` mit `bundled`-Feature) im sicheren `WAL`-Modus (`Write-Ahead Logging`), gesteuert von einem dedizierten asynchronen `DbWriter`-Hintergrundthread, der Transaktionen in `%LOCALAPPDATA%\HuginnSentinel\monitoramento.db` bündelt — mit null Latenz für die Benutzeroberfläche.
+
+9. Deterministische Sicherheits-Engine, Kryptografische Baseline und Atomare Quarantäne
+- Bisherige Architektur (C++17 / Qt 6): Heuristische Regeln waren über UI-Unterklassen und Hilfsthreads verstreut, was zu inkonsistenten parallelen Auswertungen ohne deterministische Ausführungsreihenfolge, ohne atomare Quarantäne-Isolation und ohne formale kryptografische Integritätsprüfung führte.
+- Neue Architektur (Rust): Deterministische Engine mit kontinuierlicher Auswertung von 6 kanonischen Heuristikregeln (`SEC-R01` bis `SEC-R06`) zur automatischen Erkennung von Ransomware (Entropieanstieg + Massenumbenennungen), verdächtigen Doppelerweiterungen, anomalen Skript-/Binärdateien und Integritätsverletzungen, kryptografische SHA-256-Baselines für Compliance-Drift-Audits, atomare Quarantäne-Isolation mit hash-geprüften `.meta`-Rollback-Manifesten und Export kryptografisch auditierbarer, versiegelter ZIP-Beweismittelpakete.
+
+10. Native GPU-Vektor-Diagramm-Engine (17 Analytische Diagramme in `egui::Painter`)
+- Bisherige Architektur (C++17 / Qt 6): Fragmentiert über überlappende Implementierungen (`LgplChartModel`, `RasterChartView`, `WidgetChartView` und `QuickChartItem`), was grafische Komplexität und CPU-Repaint-Overhead erzeugte.
+- Neue Architektur (Rust): Vereinheitlichte Vektor-Analyse-Engine, direkt über `egui::Painter` gerendert, mit 17 interaktiven Diagrammen (Treemap, Balken nach Typ, Balken nach Erweiterung, Ereignis-Zeitachse, 24-Stunden-Histogramm, 80/20-Pareto-Kurve, Mehrfachlinien-Zeitreihe, Log-Skalen-Boxplot, operatives Radar, multidimensionales Risiko-Radar, 7×24-Aktivitäts-Heatmap, Zeit×Größe-Scatterplot, Sankey-Beziehungsfluss, volumetrischer DotPlot und Verzeichnishierarchiebaum) sowie direkter Offscreen-Rasterisierung für hochauflösenden PNG-Export.
+
+11. Eingebettete Internationalisierung (i18n) mit Sofortiger Dynamischer Laufzeit-Übersetzung
+- Bisherige Architektur (C++17 / Qt 6): Abhängig vom `lupdate`/`lrelease`-Workflow von Qt Linguist und dem externen Nachladen binärer `.qm`-Übersetzungsdateien.
+- Neue Architektur (Rust / Localizer): Alle 6 vollständigen Wörterbücher (`pt_BR`, `en_US`, `es_ES`, `fr_FR`, `it_IT` und `de_DE`) mit jeweils über 2.000 Schlüsseln sind über `include_str!` direkt in das Executable kompiliert. Das System erkennt die Windows 11-Anzeigesprache (`GetUserDefaultUILanguage`) beim ersten Start und ermöglicht den sofortigen Wechsel der gesamten Oberflächensprache zur Laufzeit ohne Neustart.
+
+12. Autonomes CLI-Dienstprogramm (`huginnsentinel-cli.exe`), Native CI/CD und Datensouveränität
+- Bisherige Architektur (C++17 / Qt 6): Vollständiges Fehlen eines eigenständigen CLI-Tools und zwingende Bindung an die Initialisierung des Qt-Grafiksubsystems `QApplication`, was den Headless-Betrieb auf Servern oder in automatisierten Terminal-Skripten verhinderte.
+- Neue Architektur (Rust): Eigenständiges, blitzschnelles Befehlszeilenprogramm (`huginnsentinel-cli.exe`) auf Basis von `clap`, das 100% der nativen forensischen Engine für automatisierte Audits über PowerShell, Windows-Aufgabenplanung und DevSecOps-Pipelines teilt (`scan`, `monitor`, `metadata`, `baseline`, `alerts`, `quarantine`, `sessions` mit Text-, JSON- und CSV-Ausgaben) — bei strikter 100% Local-First- und Offline-Architektur: null Telemetrie, null Netzwerkverbindungen und 100% deterministische Analytik ohne Abhängigkeit von externen KI-/LLM-Modellen.

@@ -1,0 +1,10 @@
+AVISO DE DERECHOS DE AUTOR Y MARCA REGISTRADA
+==================================================
+
+Copyright (C) 2025-2026 Fernando Nillsson Cidade. Todos los derechos reservados.
+
+El software Huginn Sentinel y su documentación original asociada son propiedad intelectual de Fernando Nillsson Cidade. La protección de los derechos de autor abarca, pero no se limita a, el código fuente original del programa, la arquitectura, la interfaz gráfica, los textos, los manuales y la descripción del proyecto.
+
+Todas las bibliotecas, crates y dependencias de terceros (incluyendo egui, rusqlite, notify, windows-sys, crossbeam, etc.) pertenecen a sus respectivos autores y titulares de derechos de autor, utilizándose bajo los términos de sus respectivas licencias de código abierto (MIT, Apache 2.0, CC0-1.0, Dominio Público), tal como se detalla en el archivo de Avisos de Terceros (NOTICES).
+
+El nombre "Huginn Sentinel" es una marca comercial perteneciente a Fernando Nillsson Cidade. El uso no autorizado del nombre, logotipo o cualquier material distintivo asociado al proyecto para respaldar o promocionar productos derivados sin autorización previa está estrictamente prohibido, de conformidad con la Sección 7(e) de la licencia GNU AGPLv3.

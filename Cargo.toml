@@ -1,0 +1,59 @@
+[package]
+name = "huginn_rs"
+version = "2026.11.9"
+edition = "2021"
+description = "Huginn Sentinel — Plataforma Desktop Local de Monitoramento, Auditoria e Segurança de Arquivos"
+authors = ["Fernando Cidade"]
+build = "src/build.rs"
+
+[lib]
+name = "huginn_rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "huginnsentinel"
+path = "src/main.rs"
+
+[[bin]]
+name = "huginnsentinel-cli"
+path = "src/bin/main_cli.rs"
+
+[dependencies]
+chrono = { version = "0.4.45", features = ["serde"] }
+crossbeam-channel = "0.5.17"
+eframe = "0.37.0"
+egui = "0.37.0"
+hex = "0.4.3"
+image = "0.25.10"
+md-5 = "0.11.0"
+notify = "8.2.1"
+parking_lot = "0.13.0"
+quick-xml = "0.42.0"
+rfd = "0.17.2"
+rusqlite = { version = "0.41.0", features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+sha1 = "0.11.0"
+sha2 = "0.11.1"
+windows-sys = { version = "0.61.2", features = [
+    "Win32_Foundation",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Threading",
+    "Win32_Security_Cryptography",
+    "Win32_Security_WinTrust",
+    "Win32_System_Registry",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Console"
+] }
+uuid = { version = "1.10", features = ["v4", "serde"] }
+zip = "9.1.2"
+
+[build-dependencies]
+winres = "0.1"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
