@@ -1,5 +1,5 @@
 Project: HUGINN SENTINEL
-Version: 2026.11.9.0
+Version: 2026.11.11.0
 Authors: Fernando Nillsson Cidade
 
 Description: Local File Activity Intelligence, History & Audit Platform

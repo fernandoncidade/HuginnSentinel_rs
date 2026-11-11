@@ -14,8 +14,8 @@
 
 # Huginn Sentinel — Referência da Linha de Comando (CLI) & Console
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 **Executáveis:** `huginnsentinel.exe` (Interface gráfica desktop) | `huginnsentinel-cli.exe` (Utilitário de console headless)  
 **Plataforma Alvo:** Windows 10 / Windows 11 / Windows Server 2022+ (x64)  
 **Diretório dos Binários:** `builds\huginnsentinel\release\`  
@@ -118,8 +118,8 @@ huginnsentinel-cli.exe <subcomando> [argumentos...] [opções]
 
 # Huginn Sentinel — Command-Line Interface (CLI) Reference
 
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 **Binaries:** `huginnsentinel.exe` (Desktop GUI) | `huginnsentinel-cli.exe` (Headless Console CLI)  
 **Target Platform:** Windows 10 / Windows 11 / Windows Server 2022+ (x64)  
 **Binary Output Path:** `builds\huginnsentinel\release\`  

@@ -1,5 +1,5 @@
 BEDINGUNGEN FÜR DIE KOMMERZIELLE LIZENZIERUNG UND DEN MICROSOFT STORE-VERTRIEB — HUGINN SENTINEL
-Version 2026.11.9.0, 9. November 2026
+Version 2026.11.11.0, 11. November 2026
 Urheber und Rechteinhaber: Fernando Nillsson Cidade (Unabhängiger Entwickler, Natürliche Person)
 Offizieller Kundendienstkanal: linceu_lighthouse@outlook.com
 Offizieller kommerzieller Vertriebskanal: Microsoft Store

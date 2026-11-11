@@ -14,8 +14,8 @@
 
 # Política de Segurança — Huginn Sentinel
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 
 ## 1. Versões com Suporte Oficial
 
@@ -67,8 +67,8 @@ Se você identificou uma potencial vulnerabilidade de segurança (como falha na 
 
 # Security Policy — Huginn Sentinel
 
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 
 ## 1. Supported Versions
 

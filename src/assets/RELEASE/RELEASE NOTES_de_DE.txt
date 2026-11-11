@@ -1,3 +1,26 @@
+RELEASE-HINWEISE: Version 2026.11.11.0
+
+GESAMTÜBERSICHT DER VERBESSERUNGEN UND NEUERUNGEN
+
+Version 2026.11.11.0 verbessert die Eigenständigkeit, Kompatibilität und Leichtgewichtigkeit der Anwendung unter Windows, indem zusätzliche externe Zusatzpakete für den Betrieb entfallen, die offizielle Auslieferung an die Anforderungen des Microsoft Store angepasst wird und visuelle Ressourcen in einer saubereren, schlankeren Struktur geordnet werden.
+
+
+1. EIGENSTÄNDIGER BETRIEB OHNE ZUSÄTZLICHE EXTERNE PAKETE
+- Alles direkt in der Anwendung integriert: Sowohl die Hauptanwendung als auch das Befehlszeilenwerkzeug enthalten nun intern alle erforderlichen Ressourcen, um direkt unter Windows zu starten und zu arbeiten, ohne dass zusätzliche Systemkomponenten separat heruntergeladen oder installiert werden müssen.
+- Zuverlässiger Start auf jedem Computer: Selbst auf neu eingerichteten Rechnern oder frischen Windows-Installationen startet Huginn Sentinel bereits beim ersten Ausführen reibungslos und vermeidet Hinweise auf fehlende Dateien oder Startfehler.
+
+
+2. VOLLSTÄNDIGE ERFÜLLUNG DER MICROSOFT-STORE-ANFORDERUNGEN
+- Anpassung an Abhängigkeitsrichtlinien: Die offiziellen Installationspakete wurden so angepasst, dass unnötige externe Abhängigkeiten entfallen und die Sicherheits-, Transparenz- und Zertifizierungskriterien des Microsoft Store direkt erfüllt werden.
+- Einfache Einrichtung ohne Zwischenschritte: Benutzer installieren und starten die Anwendung direkt – sowohl über den offiziellen Store als auch über die klassischen Installationsprogramme –, ohne weitere Umgebungseinrichtungen vornehmen zu müssen.
+
+
+3. BEREINIGUNG VISUELLER RESSOURCEN UND SCHLANKERES PAKET
+- Entfernung ungenutzter Altdateien: Dutzende veralteter Symbole und Bilder, die von der aktuellen Oberfläche nicht mehr genutzt wurden, wurden entfernt, wodurch unnötige Dateien in den Installationspaketen reduziert werden.
+- Einheitliche visuelle Struktur: Alle offiziellen Markensymbole und -bilder wurden an einem einzigen geordneten Ort zusammengeführt, sodass die in Anwendungsfenster, Systemverknüpfungen und Installationsprogrammen angezeigten Symbole konsistent, scharf und aktuell bleiben.
+
+_________________________________________________
+
 RELEASE-HINWEISE: Version 2026.11.9.0
 
 ALLGEMEINE ZUSAMMENFASSUNG DER VERBESSERUNGEN UND NEUERUNGEN

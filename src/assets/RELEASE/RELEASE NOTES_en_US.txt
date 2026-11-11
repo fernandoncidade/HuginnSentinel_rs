@@ -1,3 +1,26 @@
+RELEASE NOTES: Version 2026.11.11.0
+
+GENERAL SUMMARY OF IMPROVEMENTS AND NEW FEATURES
+
+Version 2026.11.11.0 improves the independence, compatibility, and lightness of the application on Windows by removing the need for external companion packages for the program to run, aligning official distribution with Microsoft Store requirements, and organizing visual resources into a cleaner, streamlined structure.
+
+
+1. STANDALONE OPERATION WITHOUT ADDITIONAL EXTERNAL PACKAGES
+- Everything Built Into the Application: Both the main desktop application and the command-line tool now include internally all resources needed to open and run directly on Windows, without requiring separate downloads or installations of additional system components.
+- Reliable Startup on Any Computer: Even on freshly formatted machines or clean Windows installations, Huginn Sentinel launches smoothly on the very first run, preventing missing-file alerts or startup failures.
+
+
+2. FULL COMPLIANCE WITH MICROSOFT STORE REQUIREMENTS
+- Dependency Rule Alignment: Official installation packages have been adjusted to eliminate unnecessary external dependencies, directly fulfilling the security, transparency, and certification standards of the Microsoft Store.
+- Simple Setup with No Extra Steps: Users can install and run the application seamlessly, whether from the official store or traditional installers, without extra environment setup steps.
+
+
+3. VISUAL RESOURCE CLEANUP AND LIGHTER PACKAGE
+- Removal of Unused Legacy Files: Dozens of outdated icons and images that were no longer used by the current interface have been removed, reducing unnecessary files across installation packages.
+- Unified Visual Structure: All official brand icons and images have been gathered into a single organized location, ensuring that icons displayed in the application window, system shortcuts, and installers remain consistent, crisp, and up to date.
+
+_________________________________________________
+
 RELEASE NOTES: Version 2026.11.9.0
 
 GENERAL SUMMARY OF IMPROVEMENTS AND NEW FEATURES

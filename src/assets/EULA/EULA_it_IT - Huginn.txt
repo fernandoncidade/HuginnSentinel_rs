@@ -1,5 +1,5 @@
 CONTRATTO DI LICENZA PER L'UTENTE FINALE (EULA) — HUGINN SENTINEL
-Versione 2026.11.9.0, 9 novembre 2026
+Versione 2026.11.11.0, 11 novembre 2026
 Autore e Sviluppatore: Fernando Nillsson Cidade (Persona Fisica)
 Contatto Ufficiale di Supporto: linceu_lighthouse@outlook.com
 

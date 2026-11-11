@@ -1,6 +1,6 @@
 Politique de Confidentialité de Huginn Sentinel
-Dernière mise à jour: 9 novembre 2026
-Version: 2026.11.9.0
+Dernière mise à jour: 11 novembre 2026
+Version: 2026.11.11.0
 
 Votre vie privée est fondamentale pour nous. Cette Politique de Confidentialité explique quelles informations Huginn Sentinel ("Logiciel") utilise et, plus important encore, comment elles restent sous votre contrôle.
 

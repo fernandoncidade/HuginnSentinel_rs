@@ -15,7 +15,7 @@ static _STOP_REQUESTED: AtomicBool = AtomicBool::new(false);
 fn print_banner() {
     println!("===============================================================");
     println!("  Huginn Sentinel CLI — File Integrity & Security Auditor   ");
-    println!("  Version 2026.11.9.0 | Rust Security & Monitoring Engine    ");
+    println!("  Version 2026.11.11.0 | Rust Security & Monitoring Engine    ");
     println!("===============================================================\n");
 }
 
@@ -169,7 +169,7 @@ fn execute_command(args: &[String]) {
     let cmd = effective_args[0].to_lowercase();
     match cmd.as_str() {
         "--version" | "-v" | "version" => {
-            println!("Huginn Sentinel CLI v2026.11.9.0 (Rust Edition)");
+            println!("Huginn Sentinel CLI v2026.11.11.0 (Rust Edition)");
         }
         "--help" | "-h" | "help" | "?" => {
             print_help();

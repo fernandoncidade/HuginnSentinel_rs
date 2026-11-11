@@ -1,6 +1,6 @@
 Datenschutzrichtlinie für Huginn Sentinel
-Letzte Aktualisierung: 9. November 2026
-Version: 2026.11.9.0
+Letzte Aktualisierung: 11. November 2026
+Version: 2026.11.11.0
 
 Ihre Privatsphäre ist für uns von grundlegender Bedeutung. Diese Datenschutzrichtlinie erklärt, welche Informationen Huginn Sentinel ("Software") verwendet und, was noch wichtiger ist, wie diese unter Ihrer Kontrolle bleiben.
 

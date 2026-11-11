@@ -12,12 +12,12 @@ use engine::*;
 
 fn carregar_icone_app(base_dir: &Path) -> Option<egui::IconData> {
     let candidate_paths = [
-        base_dir.join("src/assets/images/imgs/huginn_150-150.png"),
-        base_dir.join("src/assets/images/imgs/huginn.png"),
-        base_dir.join("source/assets/images/imgs/huginn_150-150.png"),
-        base_dir.join("source/assets/images/imgs/huginn.png"),
-        base_dir.join("src/assets/images/icons/icon_256x256.png"),
-        base_dir.join("source/assets/images/icons/icon_256x256.png"),
+        base_dir.join("src/assets/icons/huginn_150-150.png"),
+        base_dir.join("src/assets/icons/huginn.png"),
+        base_dir.join("src/assets/icons/huginn.ico"),
+        base_dir.join("source/assets/icons/huginn_150-150.png"),
+        base_dir.join("source/assets/icons/huginn.png"),
+        base_dir.join("source/assets/icons/huginn.ico"),
     ];
 
     for path in &candidate_paths {

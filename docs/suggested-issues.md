@@ -133,7 +133,7 @@ Adicionar suporte a operadores booleanos avançados no campo de busca rápida (e
 - **Conteúdo:**
 ```markdown
 ### Resumo
-Ao realizar o push de uma nova tag de versão (ex: `v2026.11.9.0`), a esteira do GitHub Actions deve compilar os binários de release MSVC, gerar os pacotes ZIP e calcular os hashes SHA-256 automaticamente.
+Ao realizar o push de uma nova tag de versão (ex: `v2026.11.11.0`), a esteira do GitHub Actions deve compilar os binários de release MSVC, gerar os pacotes ZIP e calcular os hashes SHA-256 automaticamente.
 
 ### Critérios de Aceite
 - [ ] Workflow em `.github/workflows/` ativado por tags de versão.
@@ -271,7 +271,7 @@ Add support for composite boolean expressions in the quick search box (e.g., `ex
 - **Content:**
 ```markdown
 ### Summary
-Upon tagging a new release (e.g., `v2026.11.9.0`), the GitHub Actions workflow should compile optimized release binaries, package them into ZIP files, and compute SHA-256 checksums automatically.
+Upon tagging a new release (e.g., `v2026.11.11.0`), the GitHub Actions workflow should compile optimized release binaries, package them into ZIP files, and compute SHA-256 checksums automatically.
 
 ### Acceptance Criteria
 - [ ] Workflow triggered on version tags.

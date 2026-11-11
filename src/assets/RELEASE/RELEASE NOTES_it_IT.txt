@@ -1,3 +1,26 @@
+NOTE DI RILASCIO: Versione 2026.11.11.0
+
+RIEPILOGO GENERALE DEI MIGLIORAMENTI E DELLE NOVITÀ
+
+La versione 2026.11.11.0 migliora l'autonomia, la compatibilità e la leggerezza dell'applicazione su Windows eliminando la necessità di pacchetti esterni aggiuntivi per il funzionamento del programma, adeguando la distribuzione ufficiale ai requisiti di Microsoft Store e organizzando le risorse visive in una struttura più pulita ed essenziale.
+
+
+1. FUNZIONAMENTO AUTONOMO SENZA PACCHETTI ESTERNI AGGIUNTIVI
+- Tutto Integrato nell'Applicazione: Sia l'applicazione principale sia lo strumento da riga di comando includono ora internamente tutte le risorse necessarie per avviarsi e funzionare direttamente su Windows, senza richiedere il download o l'installazione separata di componenti di sistema aggiuntivi.
+- Avvio Affidabile su Qualsiasi Computer: Anche su computer appena formattati o installazioni pulite di Windows, Huginn Sentinel si avvia regolarmente sin dalla prima esecuzione, evitando avvisi di file mancanti o errori all'apertura.
+
+
+2. PIENA CONFORMITÀ AI REQUISITI DI MICROSOFT STORE
+- Adeguamento alle Regole sulle Dipendenze: I pacchetti di installazione ufficiali sono stati adattati per eliminare dipendenze esterne non necessarie, soddisfacendo direttamente i criteri di sicurezza, trasparenza e certificazione di Microsoft Store.
+- Installazione Semplice e Senza Passaggi Extra: L'utente installa e avvia l'applicazione in modo diretto, sia tramite lo store ufficiale sia mediante i programmi di installazione tradizionali, senza configurazioni aggiuntive dell'ambiente.
+
+
+3. PULIZIA DELLE RISORSE VISIVE E PACCHETTO PIÙ LEGGERO
+- Rimozione dei Vecchi File Inutilizzati: Sono state eliminate decine di icone e immagini datate che non erano più impiegate dall'interfaccia attuale, riducendo i file superflui nei pacchetti di installazione.
+- Struttura Visiva Unificata: Tutte le icone e le immagini ufficiali del marchio sono state riunite in un unico spazio ordinato, assicurando che le icone mostrate nella finestra dell'applicazione, nei collegamenti di sistema e negli installer restino coerenti, nitide e aggiornate.
+
+_________________________________________________
+
 NOTE DI RILASCIO: Versione 2026.11.9.0
 
 RIEPILOGO GENERALE DEI MIGLIORAMENTI E DELLE NOVITÀ

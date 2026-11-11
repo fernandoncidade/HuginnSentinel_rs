@@ -1,3 +1,26 @@
+NOTAS DE LANZAMIENTO: Versión 2026.11.11.0
+
+RESUMEN GENERAL DE MEJORAS Y NOVEDADES
+
+La versión 2026.11.11.0 mejora la autonomía, la compatibilidad y la ligereza de la aplicación en Windows, eliminando la necesidad de paquetes complementarios externos para su funcionamiento, adaptando la distribución oficial a los requisitos de la tienda de Microsoft y organizando los recursos visuales en una estructura más limpia y compacta.
+
+
+1. FUNCIONAMIENTO AUTÓNOMO SIN PAQUETES EXTERNOS ADICIONALES
+- Todo Integrado en la Aplicación: Tanto la aplicación principal como la herramienta de línea de comandos incorporan ahora internamente todos los recursos necesarios para abrir y funcionar directamente en Windows, sin exigir la descarga ni la instalación separada de componentes adicionales del sistema.
+- Apertura Confiable en Cualquier Equipo: Incluso en ordenadores recién formateados o instalaciones limpias de Windows, Huginn Sentinel se inicia con normalidad desde el primer momento, evitando avisos de archivos faltantes o fallos al abrir.
+
+
+2. ADECUACIÓN COMPLETA A LOS REQUISITOS DE MICROSOFT STORE
+- Cumplimiento de Reglas de Dependencias: Los paquetes oficiales de instalación se han ajustado para eliminar dependencias externas innecesarias, cumpliendo directamente con los criterios de seguridad, transparencia y certificación de Microsoft Store.
+- Instalación Sencilla y Sin Pasos Adicionales: El usuario instala y ejecuta la aplicación de forma directa, tanto desde la tienda oficial como mediante los instaladores tradicionales, sin configuraciones previas de entorno.
+
+
+3. LIMPIEZA DE RECURSOS VISUALES Y PAQUETE MÁS LIGERO
+- Eliminación de Archivos Antiguos Sin Uso: Se han eliminado decenas de iconos e imágenes antiguos que ya no utilizaba la interfaz actual, reduciendo el volumen de archivos innecesarios en los paquetes de instalación.
+- Estructura Visual Unificada: Todos los iconos e imágenes oficiales de la marca se han reunido en un único espacio organizado, garantizando que los iconos mostrados en la ventana de la aplicación, los accesos directos del sistema y los instaladores se mantengan coherentes, nítidos y actualizados.
+
+_________________________________________________
+
 NOTAS DE LANZAMIENTO: Versión 2026.11.9.0
 
 RESUMEN GENERAL DE MEJORAS Y NOVEDADES

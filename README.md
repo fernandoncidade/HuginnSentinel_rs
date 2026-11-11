@@ -2,7 +2,7 @@
 
 **Plataforma de alta performance para auditoria de integridade de arquivos, monitoramento em tempo real do sistema de arquivos Windows, detecção autônoma de ransomware e inteligência analítica local. Desenvolvido em Rust (Edição 2021) com interface gráfica imediata em egui e persistência SQLite WAL.**
 
-[![Latest Release](https://img.shields.io/badge/Release-v2026.11.9.0-blue.svg)](../../releases/latest)
+[![Latest Release](https://img.shields.io/badge/Release-v2026.11.11.0-blue.svg)](../../releases/latest)
 [![Rust 2021](https://img.shields.io/badge/Rust-2021-DEA584?logo=rust)](Cargo.toml)
 [![egui 0.37](https://img.shields.io/badge/egui-0.37-5C7CFA?logo=rust)](Cargo.toml)
 [![Platform](https://img.shields.io/badge/Platform-Windows_11_%2F_10_%2F_Server-0078D4?logo=windows)](https://microsoft.com)
@@ -26,7 +26,7 @@
 ---
 <h2 id="ptbr">🇧🇷 Português (BR)</h2>
 
-> **Observação:** Este repositório refere-se à versão estável **`2026.11.9.0`** do Projeto Huginn Sentinel (implementação nativa em **Rust**). Apoie o projeto e instale a versão oficial assinada digitalmente através do link: [Instalar via Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
+> **Observação:** Este repositório refere-se à versão estável **`2026.11.11.0`** do Projeto Huginn Sentinel (implementação nativa em **Rust**). Apoie o projeto e instale a versão oficial assinada digitalmente através do link: [Instalar via Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
 
 <details>
 <summary><b>Clique para expandir / recolher o README em português</b></summary><br>
@@ -58,7 +58,7 @@
 ### 📌 Ficha Técnica do Projeto
 
 - **Projeto:** HUGINN SENTINEL<br>
-- **Versão:** `2026.11.9.0` (Data: 9 de novembro de 2026)<br>
+- **Versão:** `2026.11.11.0` (Data: 11 de novembro de 2026)<br>
 - **Autor e Detentor dos Direitos:** Fernando Nillsson Cidade<br>
 - **Linguagem & Ecossistema:** Rust (Edição 2021) | Cargo<br>
 - **Framework de Interface:** `egui 0.37` / `eframe 0.37` (Modo imediato acelerado na GPU via DirectX/OpenGL)<br>
@@ -249,7 +249,7 @@ O projeto disponibiliza tarefas manuais pré-configuradas em `.vscode/tasks.json
 
 <h2 id="enus">🇺🇸 English (US)</h2>
 
-> **Note:** This repository refers to stable version **`2026.11.9.0`** of the Huginn Sentinel Project (native **Rust** implementation). Support the project and get the officially signed release via: [Install via Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
+> **Note:** This repository refers to stable version **`2026.11.11.0`** of the Huginn Sentinel Project (native **Rust** implementation). Support the project and get the officially signed release via: [Install via Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
 
 <details>
 <summary><b>Click to expand / collapse the README in English</b></summary><br>
@@ -281,7 +281,7 @@ O projeto disponibiliza tarefas manuais pré-configuradas em `.vscode/tasks.json
 ### 📌 Project Technical Specifications
 
 - **Project:** HUGINN SENTINEL<br>
-- **Version:** `2026.11.9.0` (Date: November 9, 2026)<br>
+- **Version:** `2026.11.11.0` (Date: November 11, 2026)<br>
 - **Author & Copyright Holder:** Fernando Nillsson Cidade<br>
 - **Language & Ecosystem:** Rust (Edition 2021) | Cargo<br>
 - **UI Framework:** `egui 0.37` / `eframe 0.37` (Immediate mode hardware-accelerated via DirectX/OpenGL)<br>
@@ -411,7 +411,7 @@ Configured in `.vscode/tasks.json`:
 
 <h2 id="eses">🇪🇸 Español (ES)</h2>
 
-> **Nota:** Este repositorio se refiere a la versión estable **`2026.11.9.0`** del Proyecto Huginn Sentinel (implementación nativa en **Rust**). Apoye el proyecto e instale la versión oficial firmada digitalmente a través de: [Instalar vía Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
+> **Nota:** Este repositorio se refiere a la versión estable **`2026.11.11.0`** del Proyecto Huginn Sentinel (implementación nativa en **Rust**). Apoye el proyecto e instale la versión oficial firmada digitalmente a través de: [Instalar vía Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
 
 <details>
 <summary><b>Haga clic para expandir / contraer el README en español</b></summary><br>
@@ -443,7 +443,7 @@ Configured in `.vscode/tasks.json`:
 ### 📌 Ficha Técnica del Proyecto
 
 - **Proyecto:** HUGINN SENTINEL<br>
-- **Versión:** `2026.11.9.0` (Fecha: 9 de noviembre de 2026)<br>
+- **Versión:** `2026.11.11.0` (Fecha: 11 de noviembre de 2026)<br>
 - **Autor y Titular de Derechos:** Fernando Nillsson Cidade<br>
 - **Lenguaje y Ecosistema:** Rust (Edición 2021) | Cargo<br>
 - **Interfaz Gráfica:** `egui 0.37` / `eframe 0.37` (Modo inmediato acelerado en GPU vía DirectX/OpenGL)<br>
@@ -526,7 +526,7 @@ cargo test
 
 <h2 id="frfr">🇫🇷 Français (FR)</h2>
 
-> **Remarque :** Ce dépôt fait référence à la version stable **`2026.11.9.0`** du Projet Huginn Sentinel (implémentation native en **Rust**). Soutenez le projet et installez la version officielle signée numériquement via : [Installer via Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
+> **Remarque :** Ce dépôt fait référence à la version stable **`2026.11.11.0`** du Projet Huginn Sentinel (implémentation native en **Rust**). Soutenez le projet et installez la version officielle signée numériquement via : [Installer via Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
 
 <details>
 <summary><b>Cliquez pour afficher / masquer le README en français</b></summary><br>
@@ -558,7 +558,7 @@ cargo test
 ### 📌 Fiche Technique du Projet
 
 - **Projet :** HUGINN SENTINEL<br>
-- **Version :** `2026.11.9.0` (Date : 9 novembre 2026)<br>
+- **Version :** `2026.11.11.0` (Date : 11 novembre 2026)<br>
 - **Auteur et Titulaire des Droits :** Fernando Nillsson Cidade<br>
 - **Langage & Écosystème :** Rust (Édition 2021) | Cargo<br>
 - **Framework Graphique :** `egui 0.37` / `eframe 0.37` (Mode immédiat accéléré GPU via DirectX/OpenGL)<br>
@@ -641,7 +641,7 @@ cargo test
 
 <h2 id="itit">🇮🇹 Italiano (IT)</h2>
 
-> **Nota:** Questo repository fa riferimento alla versione stabile **`2026.11.9.0`** del Progetto Huginn Sentinel (implementazione nativa in **Rust**). Sostieni il progetto e installa la versione ufficiale con firma digitale tramite: [Installa via Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
+> **Nota:** Questo repository fa riferimento alla versione stabile **`2026.11.11.0`** del Progetto Huginn Sentinel (implementazione nativa in **Rust**). Sostieni il progetto e installa la versione ufficiale con firma digitale tramite: [Installa via Microsoft Store](https://apps.microsoft.com/detail/9NHQTGB26LMK)
 
 <details>
 <summary><b>Clicca per espandere / comprimere il README in italiano</b></summary><br>
@@ -673,7 +673,7 @@ cargo test
 ### 📌 Specifiche Tecniche del Progetto
 
 - **Progetto:** HUGINN SENTINEL<br>
-- **Versione:** `2026.11.9.0` (Data: 9 novembre 2026)<br>
+- **Versione:** `2026.11.11.0` (Data: 11 novembre 2026)<br>
 - **Autore e Titolare dei Diritti:** Fernando Nillsson Cidade<br>
 - **Linguaggio ed Ecosistema:** Rust (Edizione 2021) | Cargo<br>
 - **Interfaccia Grafica:** `egui 0.37` / `eframe 0.37` (Modalità immediata accelerata su GPU tramite DirectX/OpenGL)<br>
@@ -756,7 +756,7 @@ cargo test
 
 <h2 id="dede">🇩🇪 Deutsch (DE)</h2>
 
-> **Hinweis:** Dieses Repository bezieht sich auf die stabile Version **`2026.11.9.0`** des Projekts Huginn Sentinel (native Implementierung in **Rust**). Unterstützen Sie das Projekt und installieren Sie die offiziell digital signierte Version über: [Über Microsoft Store installieren](https://apps.microsoft.com/detail/9NHQTGB26LMK)
+> **Hinweis:** Dieses Repository bezieht sich auf die stabile Version **`2026.11.11.0`** des Projekts Huginn Sentinel (native Implementierung in **Rust**). Unterstützen Sie das Projekt und installieren Sie die offiziell digital signierte Version über: [Über Microsoft Store installieren](https://apps.microsoft.com/detail/9NHQTGB26LMK)
 
 <details>
 <summary><b>Klicken Sie hier, um das README auf Deutsch ein-/auszublenden</b></summary><br>
@@ -788,7 +788,7 @@ cargo test
 ### 📌 Technische Projektdaten
 
 - **Projekt:** HUGINN SENTINEL<br>
-- **Version:** `2026.11.9.0` (Datum: 9. November 2026)<br>
+- **Version:** `2026.11.11.0` (Datum: 11. November 2026)<br>
 - **Autor und Urheberrechtsinhaber:** Fernando Nillsson Cidade<br>
 - **Programmiersprache & Ökosystem:** Rust (Edition 2021) | Cargo<br>
 - **Grafik-Framework:** `egui 0.37` / `eframe 0.37` (Immediate-Mode GPU-beschleunigt über DirectX/OpenGL)<br>

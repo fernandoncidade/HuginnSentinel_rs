@@ -1,5 +1,5 @@
 TERMINI DI LICENZA COMMERCIALE E DISTRIBUZIONE MICROSOFT STORE — HUGINN SENTINEL
-Versione 2026.11.9.0, 9 novembre 2026
+Versione 2026.11.11.0, 11 novembre 2026
 Autore e Titolare: Fernando Nillsson Cidade (Sviluppatore Indipendente, Persona Fisica)
 Canale Ufficiale di Assistenza: linceu_lighthouse@outlook.com
 Canale Ufficiale di Distribuzione Commerciale: Microsoft Store

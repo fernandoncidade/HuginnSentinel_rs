@@ -194,12 +194,11 @@ pub fn resolver_caminho_asset(rel_path: &str) -> Option<PathBuf> {
     let subprefixes = [
         "",
         "src/assets",
+        "src/assets/icons",
         "src/language",
         "assets",
         "language",
-        "images",
-        "images/icons",
-        "images/imgs",
+        "icons",
         "docs",
     ];
 

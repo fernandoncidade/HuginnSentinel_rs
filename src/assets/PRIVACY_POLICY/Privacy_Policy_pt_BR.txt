@@ -1,6 +1,6 @@
 Política de Privacidade do Huginn Sentinel
-Última atualização: 9 de novembro de 2026
-Versão: 2026.11.9.0
+Última atualização: 11 de novembro de 2026
+Versão: 2026.11.11.0
 
 A sua privacidade é fundamental para nós. Esta Política de Privacidade explica quais informações o Huginn Sentinel ("Software") utiliza e, mais importante, como elas permanecem sob seu controle.
 

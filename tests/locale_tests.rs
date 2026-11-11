@@ -173,10 +173,10 @@ fn test_asset_and_language_path_resolution() {
     use huginn_rs::utils::resolver_caminho_asset;
 
     // Verifica se os assets são resolvidos em src/assets
-    let icon_path = resolver_caminho_asset("images/icons/huginn.ico");
+    let icon_path = resolver_caminho_asset("icons/huginn.ico");
     assert!(
         icon_path.is_some(),
-        "Ícone deve ser resolvido em src/assets/images/icons"
+        "Ícone deve ser resolvido em src/assets/icons"
     );
     let icon_data = huginn_rs::utils::icons::carregar_icone_janela();
     assert!(

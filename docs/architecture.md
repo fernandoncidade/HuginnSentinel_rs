@@ -14,8 +14,8 @@
 
 # Huginn Sentinel — Arquitetura de Sistema e Especificações Técnicas
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 **Padrão:** Rust (Edition 2021) | `egui 0.37.0` / `eframe 0.37.0` | Win32 API (`windows-sys 0.61.2`: `ReadDirectoryChangesW`, `WinTrust`, `crypt32`) | SQLite3 (`rusqlite 0.41.0` `bundled`, modo WAL)  
 **Plataforma Alvo:** Windows 11 / Windows 10 / Windows Server 2022+ (x64)  
 **Binários (`builds/huginnsentinel/release/`):** `huginnsentinel.exe` (`src/main.rs`) | `huginnsentinel-cli.exe` (`src/bin/main_cli.rs`)  
@@ -126,10 +126,10 @@ Estruturalmente, o sistema opera como uma **pipeline local dividida em 7 domíni
 ## 2. Dependências Efetivas e Ambiente de Compilação
 
 ### 2.1. Linguagem, Perfil de Compilação e Binários
-- **Edição da Linguagem:** Rust `edition = "2021"` gerenciada via `Cargo.toml` (`version = "2026.10.29"` / versão de exibição `2026.10.29.0`).
+- **Edição da Linguagem:** Rust `edition = "2021"` gerenciada via `Cargo.toml` (`version = "2026.11.11"` / versão de exibição `2026.11.11.0`).
 - **Toolchain Homologada:** `rustc` estável sobre `x86_64-pc-windows-msvc`.
 - **Perfil Release (`[profile.release]`):** `opt-level = 3`, `lto = true`, `codegen-units = 1`, `strip = true` — gera binários nativos enxutos e estaticamente vinculados sem necessidade de DLLs externas de interface gráfica ou banco de dados.
-- **Diretório de Saída (`.cargo/config.toml`):** `target-dir = "builds/huginnsentinel"`, produzindo os artefatos finais em `builds/huginnsentinel/release/`:
+- **Configuração de Build e Linkagem Estática (`.cargo/config.toml`):** `target-dir = "builds/huginnsentinel"` e `[target.x86_64-pc-windows-msvc]` com `rustflags = ["-C", "target-feature=+crt-static"]` — embute estaticamente a runtime C/C++ (eliminando qualquer dependência externa de `VCRUNTIME140.dll` ou `Microsoft Visual C++ Redistributable`), produzindo os artefatos finais em `builds/huginnsentinel/release/`:
   - `huginnsentinel.exe` (`src/main.rs`, com `#![windows_subsystem = "windows"]`): aplicação gráfica desktop.
   - `huginnsentinel-cli.exe` (`src/bin/main_cli.rs`): utilitário de linha de comando headless para servidores e automação DevSecOps.
 
@@ -169,7 +169,7 @@ Não há servidores HTTP embutidos, WebSockets remotos, motores de navegador ou 
 | `src/tools/` | Motor de filtros multidimensionais (`filters.rs`: `FiltroEstado`, `ContadoresEventos`) e seletor de calendário (`calendar.rs`). |
 | `src/ui/` | Orquestrador `HuginnApp` (`app.rs`), barra de menus (`menu_bar.rs`), barra de ferramentas (`toolbar.rs`), painel lateral (`filter_panel.rs`), widgets customizados e guardião de hover (`widgets.rs`), visualização de tabela (`table_view.rs`), 13 módulos de diálogos (`dialogs/`) e motor de planilha congelada (`spreadsheet/`). |
 | `src/utils/` | Resolução resiliente de diretórios e assets (`paths.rs`), ícones (`icons.rs`), logger central (`logger.rs`), temas claro/escuro (`theme.rs`) e integração com o Windows Explorer (`app_association.rs`). |
-| `src/assets/` | Ícones `.ico`/`.png` e documentos regulatórios multilíngues (`ABOUT`, `CLC`, `COPYRIGHT`, `EULA`, `LICENSES`, `NOTICES`, `PRIVACY_POLICY`, `RELEASE`). A documentação técnica detalhada reside em `docs/`. |
+| `src/assets/` | Ícones e imagens oficiais consolidados em `src/assets/icons/` (`.ico`/`.png`) e documentos regulatórios multilíngues (`ABOUT`, `CLC`, `COPYRIGHT`, `EULA`, `LICENSES`, `NOTICES`, `PRIVACY_POLICY`, `RELEASE`). A documentação técnica detalhada reside em `docs/`. |
 
 ---
 
@@ -388,8 +388,8 @@ O módulo `src/data/` implementa 17 visualizações estatísticas determinístic
 
 # Huginn Sentinel — System Architecture & Technical Specifications
 
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 **Standard:** Rust (Edition 2021) | `egui 0.37.0` / `eframe 0.37.0` | Win32 API (`windows-sys 0.61.2`: `ReadDirectoryChangesW`, `WinTrust`, `crypt32`) | SQLite3 (`rusqlite 0.41.0` `bundled`, WAL mode)  
 **Target Platform:** Windows 11 / Windows 10 / Windows Server 2022+ (x64)  
 **Binaries (`builds/huginnsentinel/release/`):** `huginnsentinel.exe` (`src/main.rs`) | `huginnsentinel-cli.exe` (`src/bin/main_cli.rs`)  
@@ -500,10 +500,10 @@ Structurally, the platform operates as a **local data pipeline organized into 7 
 ## 2. Dependencies & Build Environment
 
 ### 2.1. Language Edition, Release Profile, and Output Binaries
-- **Language Standard:** Rust `edition = "2021"` configured via `Cargo.toml` (`version = "2026.10.29"` / display release `2026.10.29.0`).
+- **Language Standard:** Rust `edition = "2021"` configured via `Cargo.toml` (`version = "2026.11.11"` / display release `2026.11.11.0`).
 - **Target Toolchain:** Stable `rustc` targeting `x86_64-pc-windows-msvc`.
 - **Release Optimization Profile (`[profile.release]`):** `opt-level = 3`, `lto = true`, `codegen-units = 1`, `strip = true` — produces compact, statically linked native Windows executables with zero external GUI or SQLite DLL dependencies.
-- **Build Target Directory (`.cargo/config.toml`):** `target-dir = "builds/huginnsentinel"`, emitting production binaries in `builds/huginnsentinel/release/`:
+- **Build Target Directory & Static CRT (`.cargo/config.toml`):** `target-dir = "builds/huginnsentinel"` and `[target.x86_64-pc-windows-msvc]` with `rustflags = ["-C", "target-feature=+crt-static"]` — statically embeds the C/C++ runtime (eliminating any external dependency on `VCRUNTIME140.dll` or `Microsoft Visual C++ Redistributable`), emitting production binaries in `builds/huginnsentinel/release/`:
   - `huginnsentinel.exe` (`src/main.rs`, `#![windows_subsystem = "windows"]`): native desktop graphical application.
   - `huginnsentinel-cli.exe` (`src/bin/main_cli.rs`): standalone headless console CLI for servers, Task Scheduler jobs, and DevSecOps pipelines.
 
@@ -543,7 +543,7 @@ There are zero embedded HTTP servers, remote WebSockets, web browser runtimes, o
 | `src/tools/` | Multi-dimensional filtering engine (`filters.rs`: `FiltroEstado`, `ContadoresEventos`) and date/calendar picker (`calendar.rs`). |
 | `src/ui/` | Main orchestrator `HuginnApp` (`app.rs`), menu bar (`menu_bar.rs`), toolbar (`toolbar.rs`), sidebar filter panel (`filter_panel.rs`), custom geometry widgets & hover menu guardian (`widgets.rs`), spreadsheet view (`table_view.rs`), 13 dialog modules (`dialogs/`), and 2D frozen spreadsheet engine (`spreadsheet/`). |
 | `src/utils/` | Resilient user-data and asset path resolution (`paths.rs`), window icons (`icons.rs`), structured logger (`logger.rs`), dark/light themes (`theme.rs`), and Explorer file association helpers (`app_association.rs`). |
-| `src/assets/` | Application `.ico`/`.png` icons and multilingual regulatory assets (`ABOUT`, `CLC`, `COPYRIGHT`, `EULA`, `LICENSES`, `NOTICES`, `PRIVACY_POLICY`, `RELEASE`). Detailed technical documentation is located in `docs/`. |
+| `src/assets/` | Official `.ico`/`.png` icons and brand images consolidated under `src/assets/icons/` alongside multilingual regulatory assets (`ABOUT`, `CLC`, `COPYRIGHT`, `EULA`, `LICENSES`, `NOTICES`, `PRIVACY_POLICY`, `RELEASE`). Detailed technical documentation is located in `docs/`. |
 
 ---
 

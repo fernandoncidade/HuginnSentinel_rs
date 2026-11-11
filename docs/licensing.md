@@ -14,8 +14,8 @@
 
 # Huginn Sentinel — Licenciamento, Termos de Código Aberto e Esclarecimento Comercial
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 **Licença do Código-Fonte:** GNU Affero General Public License v3.0 (`GNU AGPLv3`)  
 **Autor e Detentor dos Direitos Autorais:** Fernando Nillsson Cidade  
 
@@ -82,8 +82,8 @@ O Huginn Sentinel é construído com dependências Rust modernas e auditadas:
 
 # Huginn Sentinel — Licensing, Open Source Terms & Commercial Clarification
 
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 **Source Code License:** GNU Affero General Public License v3.0 (`GNU AGPLv3`)  
 **Author & Copyright Holder:** Fernando Nillsson Cidade  
 

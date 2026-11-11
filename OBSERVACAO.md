@@ -16,8 +16,8 @@
 
 # HUGINN SENTINEL - OBSERVAÇÃO TÉCNICA E POSICIONAMENTO ESTRATÉGICO
 
-Versão documentada: `2026.11.9.0`  
-Data do snapshot técnico: `9 de novembro de 2026`  
+Versão documentada: `2026.11.11.0`  
+Data do snapshot técnico: `11 de novembro de 2026`  
 Repositório: `Huginn_rs`  
 Autor identificado no projeto: `Fernando Nillsson Cidade`  
 Licença do repositório: `GNU AGPLv3`  
@@ -33,7 +33,7 @@ Sua proposta de valor central responde diretamente à pergunta de governança e 
 
 O produto atua como uma solução **100% Local-First** (sem nuvem, sem telemetria, sem contas e **sem qualquer dependência de modelos de IA/LLMs externos**), calculando todas as métricas, categorizações, harmonização de 58 colunas de metadados e laudos periciais através de lógica algorítmica e matemática determinística pura.
 
-## 2. Linha Técnica e Destaques da Versão 2026.11.9.0
+## 2. Linha Técnica e Destaques da Versão 2026.11.11.0
 
 Esta versão consolida a maturidade técnica da engine Rust e a estabilização completa dos subsistemas de auditoria corporativa:
 
@@ -81,10 +81,14 @@ Dados validados no arquivo `Cargo.toml`:
 - Manipulação de Datas: `chrono 0.4.45`
 - Integração Nativa Windows: `windows-sys 0.61.2` (`ReadDirectoryChangesW`, `WinTrust`, `crypt32`)
 - Exportação & Empacotamento: `quick-xml 0.42.0`, `zip 9.1.2`, `rfd 0.17.2`
-- Compilação de Recursos Windows: `winres 0.1` (`src/build.rs`, embutimento de `huginn.ico`)
+- Compilação de Recursos Windows: `winres 0.1` (`src/build.rs`, embutimento de `src/assets/icons/huginn.ico`)
+- Linkagem Estática da Runtime MSVC (`.cargo/config.toml`): `[target.x86_64-pc-windows-msvc]` com `rustflags = ["-C", "target-feature=+crt-static"]`, eliminando dependência externa de `VCRUNTIME140.dll` e `Microsoft Visual C++ Redistributable`
 
-## 5. Atualização Funcional Observada na Versão 2026.11.9.0
+## 5. Atualização Funcional Observada na Versão 2026.11.11.0
 
+- Linkagem estática completa da runtime MSVC (`+crt-static`), tornando `huginnsentinel.exe` e `huginnsentinel-cli.exe` totalmente autônomos e livres da dependência externa de `VCRUNTIME140.dll` / `Microsoft Visual C++ Redistributable` (conformidade Microsoft Store `10.2.4.1`);
+- Remoção de dependências não utilizadas no manifesto MSIX (`repo/AppxManifest.xml`) e limpeza das referências/fluxos de redistribuíveis nos instaladores Inno Setup (`repo/Huginn*.iss`);
+- Limpeza de 38 arquivos legados de ícones/imagens não utilizados e unificação de todos os ícones e imagens oficiais em `src/assets/icons/` (com atualização em `src/build.rs`, `src/utils/icons.rs`, `src/utils/paths.rs`, `tests/locale_tests.rs`, `version/src/main.rs` e `repo/Huginn*.iss`);
 - Migração integral e definitiva da base de código legada C++20/Qt6 para Rust e egui;
 - Implementação de menus, submenus e menus de contexto persistentes por hover (não fecham com cliques em opções; fecham apenas ao sair da área);
 - Fixação bidimensional arbitrária de linhas e colunas (Freeze Panes em 4 quadrantes) com suporte a intervalos numéricos (`1, 3, 5-8`) e persistência JSON;
@@ -114,8 +118,8 @@ Dados validados no arquivo `Cargo.toml`:
 
 # HUGINN SENTINEL - TECHNICAL OBSERVATION AND STRATEGIC POSITIONING
 
-Documented version: `2026.11.9.0`  
-Technical snapshot date: `November 9, 2026`  
+Documented version: `2026.11.11.0`  
+Technical snapshot date: `November 11, 2026`  
 Repository: `Huginn_rs`  
 Author identified in the project: `Fernando Nillsson Cidade`  
 Repository License: `GNU AGPLv3`  
@@ -131,7 +135,7 @@ Its core value proposition directly answers the most critical governance and inc
 
 The product operates as a **100% Local-First** solution (no cloud, no telemetry, no accounts, and **zero dependency on external AI/LLMs**), computing all metrics, categorizations, 58-column metadata harmonization, and forensic reports through pure algorithmic logic and deterministic mathematics.
 
-## 2. Technical Highlights of Version 2026.11.9.0
+## 2. Technical Highlights of Version 2026.11.11.0
 
 This version consolidates the technical maturity of the Rust engine and the complete stabilization of enterprise audit subsystems:
 
@@ -179,10 +183,14 @@ Data verified in the `Cargo.toml` manifest:
 - Date & Time Handling: `chrono 0.4.45`
 - Native Windows Integration: `windows-sys 0.61.2` (`ReadDirectoryChangesW`, `WinTrust`, `crypt32`)
 - Export & Packaging: `quick-xml 0.42.0`, `zip 9.1.2`, `rfd 0.17.2`
-- Windows Resource Compilation: `winres 0.1` (`src/build.rs`, embedding `huginn.ico`)
+- Windows Resource Compilation: `winres 0.1` (`src/build.rs`, embedding `src/assets/icons/huginn.ico`)
+- Static MSVC Runtime Linking (`.cargo/config.toml`): `[target.x86_64-pc-windows-msvc]` with `rustflags = ["-C", "target-feature=+crt-static"]`, eliminating external dependency on `VCRUNTIME140.dll` and `Microsoft Visual C++ Redistributable`
 
-## 5. Functional Updates Observed in Version 2026.11.3.0
+## 5. Functional Updates Observed in Version 2026.11.11.0
 
+- Full static linking of the MSVC C/C++ runtime (`+crt-static`), making `huginnsentinel.exe` and `huginnsentinel-cli.exe` completely self-contained without external `VCRUNTIME140.dll` / `Microsoft Visual C++ Redistributable` dependencies (Microsoft Store Policy `10.2.4.1` compliance);
+- Removal of unused framework dependencies from the MSIX manifest (`repo/AppxManifest.xml`) and cleanup of redistributable handling in Inno Setup installers (`repo/Huginn*.iss`);
+- Removal of 38 unused legacy icon/image assets and consolidation of all official brand icons and images into `src/assets/icons/` (updated across `src/build.rs`, `src/utils/icons.rs`, `src/utils/paths.rs`, `tests/locale_tests.rs`, `version/src/main.rs`, and `repo/Huginn*.iss`);
 - Complete and definitive migration of the legacy C++20/Qt6 codebase to Rust and egui;
 - Implementation of persistent hover-open menus, submenus, and context menus (they do not close upon clicking options; they close only when the cursor leaves the area);
 - Arbitrary two-dimensional pinning of rows and columns (Freeze Panes across 4 quadrants) with numerical range support (`1, 3, 5-8`) and JSON persistence;
@@ -282,67 +290,27 @@ Data verified in the `Cargo.toml` manifest:
 │   │   ├── 📄 RELEASE NOTES_fr_FR.txt
 │   │   ├── 📄 RELEASE NOTES_it_IT.txt
 │   │   └── 📄 RELEASE NOTES_pt_BR.txt
-│   └── 📁 images
-│       ├── 📁 icons
-│       │   ├── 📄 analyze.ico
-│       │   ├── 📄 atualizar.ico
-│       │   ├── 📄 blocos-de-cores.ico
-│       │   ├── 📄 calendar.ico
-│       │   ├── 📄 clear.ico
-│       │   ├── 📄 clear_button3.ico
-│       │   ├── 📄 filtro.ico
-│       │   ├── 📄 huginn.ico
-│       │   ├── 📄 huginn_1080-1080.ico
-│       │   ├── 📄 huginn_1440-2160.ico
-│       │   ├── 📄 huginn_150-150.ico
-│       │   ├── 📄 huginn_1920-1080.ico
-│       │   ├── 📄 huginn_2160-2160.ico
-│       │   ├── 📄 huginn_300-300.ico
-│       │   ├── 📄 huginn_3840-2160.ico
-│       │   ├── 📄 huginn_584-800.ico
-│       │   ├── 📄 huginn_71-71.ico
-│       │   ├── 📄 paleta-de-cores.ico
-│       │   ├── 📄 pause1.ico
-│       │   ├── 📄 pause2.ico
-│       │   ├── 📄 pause3.ico
-│       │   ├── 📄 pause4.ico
-│       │   ├── 📄 salvar.ico
-│       │   ├── 📄 save_as.ico
-│       │   ├── 📄 scan.ico
-│       │   ├── 📄 selecione.ico
-│       │   ├── 📄 start.ico
-│       │   ├── 📄 statistics.ico
-│       │   └── 📄 stop.ico
-│       └── 📁 imgs
-│           ├── 🖼️ analyze.png
-│           ├── 🖼️ atualizar.png
-│           ├── 🖼️ blocos-de-cores.png
-│           ├── 🖼️ calendar.png
-│           ├── 🖼️ clear.png
-│           ├── 🖼️ clear_button3.png
-│           ├── 🖼️ filtro.png
-│           ├── 🖼️ huginn.png
-│           ├── 🖼️ huginn_1080-1080.png
-│           ├── 🖼️ huginn_1440-2160.png
-│           ├── 🖼️ huginn_150-150.png
-│           ├── 🖼️ huginn_1920-1080.png
-│           ├── 🖼️ huginn_2160-2160.png
-│           ├── 🖼️ huginn_300-300.png
-│           ├── 🖼️ huginn_3840-2160.png
-│           ├── 🖼️ huginn_584-800.png
-│           ├── 🖼️ huginn_71-71.png
-│           ├── 🖼️ paleta-de-cores.png
-│           ├── 🖼️ pause1.png
-│           ├── 🖼️ pause2.png
-│           ├── 🖼️ pause3.png
-│           ├── 🖼️ pause4.png
-│           ├── 🖼️ salvar.png
-│           ├── 🖼️ save_as.png
-│           ├── 🖼️ scan.png
-│           ├── 🖼️ selecione.png
-│           ├── 🖼️ start.png
-│           ├── 🖼️ statistics.png
-│           └── 🖼️ stop.png
+│   └── 📁 icons
+│       ├── 📄 huginn.ico
+│       ├── 🖼️ huginn.png
+│       ├── 📄 huginn_1080-1080.ico
+│       ├── 🖼️ huginn_1080-1080.png
+│       ├── 📄 huginn_1440-2160.ico
+│       ├── 🖼️ huginn_1440-2160.png
+│       ├── 📄 huginn_150-150.ico
+│       ├── 🖼️ huginn_150-150.png
+│       ├── 📄 huginn_1920-1080.ico
+│       ├── 🖼️ huginn_1920-1080.png
+│       ├── 📄 huginn_2160-2160.ico
+│       ├── 🖼️ huginn_2160-2160.png
+│       ├── 📄 huginn_300-300.ico
+│       ├── 🖼️ huginn_300-300.png
+│       ├── 📄 huginn_3840-2160.ico
+│       ├── 🖼️ huginn_3840-2160.png
+│       ├── 📄 huginn_584-800.ico
+│       ├── 🖼️ huginn_584-800.png
+│       ├── 📄 huginn_71-71.ico
+│       └── 🖼️ huginn_71-71.png
 ├── 📁 core
 │   ├── 🦀 error.rs
 │   ├── 🦀 event.rs
@@ -483,7 +451,7 @@ Data verified in the `Cargo.toml` manifest:
 ├── 📝 cli-reference.md
 ├── 📝 compliance.md
 ├── 📝 licensing.md
-├── 📝 release-v2026.11.6.0.md
+├── 📝 release-v2026.11.11.0.md
 ├── 📝 security-model.md
 ├── 📝 suggested-issues.md
 └── 📝 user-guide.md

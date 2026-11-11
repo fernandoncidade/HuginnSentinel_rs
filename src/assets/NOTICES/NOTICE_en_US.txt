@@ -1,6 +1,6 @@
 Third-Party Dependencies and Open-Source Licenses Notice
 
-This notice applies to the native Rust implementation of the Huginn Sentinel project (version 2026.11.9.0).
+This notice applies to the native Rust implementation of the Huginn Sentinel project (version 2026.11.11.0).
 It supersedes notices from legacy editions. The current codebase is developed in Rust (2021/2024 editions), without dependencies on external interpreters, virtual machines, or managed language runtimes.
 
 Dependencies and Libraries Used in the Current Codebase:

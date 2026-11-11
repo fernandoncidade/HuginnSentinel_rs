@@ -1,6 +1,6 @@
 Hinweis zu Abhängigkeiten von Drittanbietern und Open-Source-Lizenzen
 
-Dieser Hinweis gilt für die native Rust-Implementierung des Projekts Huginn Sentinel (Version 2026.11.9.0).
+Dieser Hinweis gilt für die native Rust-Implementierung des Projekts Huginn Sentinel (Version 2026.11.11.0).
 Er ersetzt Hinweise aus früheren Editionen. Die aktuelle Codebasis wurde in Rust (Editionen 2021/2024) entwickelt, ohne Abhängigkeiten von externen Interpretern, virtuellen Maschinen oder verwalteten Runtimes interpretierter Sprachen.
 
 Verwendete Abhängigkeiten und Bibliotheken in der aktuellen Codebasis:

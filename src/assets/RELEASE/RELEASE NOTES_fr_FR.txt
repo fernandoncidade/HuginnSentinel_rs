@@ -1,3 +1,26 @@
+NOTES DE VERSION : Version 2026.11.11.0
+
+RÉSUMÉ GÉNÉRAL DES AMÉLIORATIONS ET NOUVEAUTÉS
+
+La version 2026.11.11.0 renforce l'autonomie, la compatibilité et la légèreté de l'application sous Windows en supprimant le besoin de paquets complémentaires externes pour son fonctionnement, en adaptant la distribution officielle aux exigences du Microsoft Store et en organisant les ressources visuelles dans une structure plus claire et épurée.
+
+
+1. FONCTIONNEMENT AUTONOME SANS PAQUETS EXTERNES SUPPLÉMENTAIRES
+- Tout Intégré dans l'Application : L'application principale comme l'outil en ligne de commande regroupent désormais en interne toutes les ressources nécessaires pour s'ouvrir et fonctionner directement sous Windows, sans exiger le téléchargement ni l'installation séparée de composants système supplémentaires.
+- Démarrage Fiable sur Tout Ordinateur : Même sur des postes fraîchement formatés ou des installations Windows récentes, Huginn Sentinel démarre normalement dès la première exécution, évitant les alertes de fichiers manquants ou les erreurs d'ouverture.
+
+
+2. CONFORMITÉ COMPLÈTE AUX EXIGENCES DU MICROSOFT STORE
+- Respect des Règles de Dépendances : Les paquets d'installation officiels ont été ajustés afin de supprimer toute dépendance externe superflue, répondant directement aux critères de sécurité, de transparence et de certification du Microsoft Store.
+- Installation Simple et Sans Étapes Supplémentaires : L'utilisateur installe et lance l'application directement, aussi bien via la boutique officielle que par les installateurs classiques, sans configuration préalable de l'environnement.
+
+
+3. NETTOYAGE DES RESSOURCES VISUELLES ET PAQUET PLUS LÉGER
+- Suppression des Anciens Fichiers Inutilisés : Des dizaines d'icônes et d'images anciennes qui n'étaient plus utilisées par l'interface actuelle ont été retirées, réduisant ainsi les fichiers superflus dans les paquets d'installation.
+- Structure Visuelle Unifiée : L'ensemble des icônes et images officielles de la marque a été regroupé dans un emplacement unique et ordonné, garantissant une apparence cohérente, nette et homogène dans la fenêtre de l'application, les raccourcis système et les installateurs.
+
+_________________________________________________
+
 NOTES DE VERSION : Version 2026.11.9.0
 
 RÉSUMÉ GÉNÉRAL DES AMÉLIORATIONS ET NOUVEAUTÉS

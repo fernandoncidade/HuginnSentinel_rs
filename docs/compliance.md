@@ -14,8 +14,8 @@
 
 # Huginn Sentinel — Mapeamento de Conformidade Regulatória
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 **Frameworks:** ISO/IEC 27001:2022 | NIST SP 800-53 Rev. 5 | CIS Controls v8 | LGPD / GDPR | SOX  
 
 ---
@@ -90,8 +90,8 @@ O Huginn Sentinel gera relatórios técnicos e pacotes probatórios estruturados
 
 # Huginn Sentinel — Regulatory Compliance Mapping
 
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 **Frameworks:** ISO/IEC 27001:2022 | NIST SP 800-53 Rev. 5 | CIS Controls v8 | LGPD / GDPR | SOX  
 
 ---

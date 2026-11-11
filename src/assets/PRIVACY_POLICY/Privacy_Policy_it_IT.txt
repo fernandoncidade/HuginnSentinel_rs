@@ -1,6 +1,6 @@
 Informativa sulla Privacy di Huginn Sentinel
-Ultimo aggiornamento: 9 novembre 2026
-Versione: 2026.11.9.0
+Ultimo aggiornamento: 11 novembre 2026
+Versione: 2026.11.11.0
 
 La tua privacy è fondamentale per noi. Questa Informativa sulla Privacy spiega quali informazioni utilizza Huginn Sentinel ("Software") e, soprattutto, come queste rimangono sotto il tuo controllo.
 

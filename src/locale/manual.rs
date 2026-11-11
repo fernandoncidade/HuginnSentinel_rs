@@ -1,5 +1,5 @@
-// Versão: 2026.11.9.0 | Data: 9 de novembro de 2026
-// Version: 2026.11.9.0 | Date: November 9, 2026
+// Versão: 2026.11.11.0 | Data: 11 de novembro de 2026
+// Version: 2026.11.11.0 | Date: November 11, 2026
 
 #[derive(Debug, Clone)]
 pub struct ManualDetails {
@@ -35,7 +35,7 @@ pub fn doc_pt_br() -> Vec<ManualSection> {
             title: "1. Novos Recursos e Arquitetura".into(),
             paragraphs: vec![
                 "O Huginn Sentinel é uma plataforma desktop corporativa de alto desempenho para auditoria forense de integridade, monitoramento em tempo real do sistema de arquivos e detecção autônoma de ameaças no Windows.".into(),
-                "A versão 2026.11.9.0 consolida a refatoração integral em Rust moderno (Edição 2021) com interface em egui 0.37 / eframe acelerada por GPU e persistência relacional SQLite3 em modo WAL.".into(),
+                "A versão 2026.11.11.0 consolida a refatoração integral em Rust moderno (Edição 2021) com interface em egui 0.37 / eframe acelerada por GPU e persistência relacional SQLite3 em modo WAL.".into(),
                 "Arquitetura Local-First / Sovereign Privacy: 100% das análises, cálculos de risco (0–100), harmonização de 58 colunas de metadados e bancos de dados ocorrem estritamente na máquina local, com zero telemetria, zero rede e sem IA externa.".into(),
             ],
             bullets: vec![
@@ -227,7 +227,7 @@ pub fn doc_en_us() -> Vec<ManualSection> {
             title: "1. New Features & Architecture".into(),
             paragraphs: vec![
                 "Huginn Sentinel is a high-performance Windows desktop platform for file integrity auditing, continuous real-time monitoring, and proactive local threat detection.".into(),
-                "Version 2026.11.9.0 consolidates the complete rewrite in modern Rust (Edition 2021) with an egui 0.37 / eframe GPU immediate mode interface and SQLite3 WAL persistence.".into(),
+                "Version 2026.11.11.0 consolidates the complete rewrite in modern Rust (Edition 2021) with an egui 0.37 / eframe GPU immediate mode interface and SQLite3 WAL persistence.".into(),
                 "Local-First Sovereign Privacy Architecture: 100% of telemetry, risk analytics (0–100), 58-column metadata harmonization, and databases reside exclusively on your local machine with zero network exposure and zero external AI.".into(),
             ],
             bullets: vec![
@@ -406,7 +406,7 @@ pub fn doc_es_es() -> Vec<ManualSection> {
             title: "1. Nuevas Funciones y Arquitectura".into(),
             paragraphs: vec![
                 "Huginn Sentinel es una plataforma de escritorio corporativa de alto rendimiento para auditoría forense de integridad, monitoreo en tiempo real del sistema de archivos de Windows y detección autónoma de amenazas.".into(),
-                "La versión 2026.11.9.0 consolida la refactorización completa en Rust moderno (Edición 2021) con interfaz en egui 0.37 / eframe acelerada por GPU y almacenamiento relacional SQLite3 en modo WAL.".into(),
+                "La versión 2026.11.11.0 consolida la refactorización completa en Rust moderno (Edición 2021) con interfaz en egui 0.37 / eframe acelerada por GPU y almacenamiento relacional SQLite3 en modo WAL.".into(),
                 "Arquitectura Local-First y Privacidad Soberana: el 100% de los análisis, puntuaciones de riesgo (0–100) y bases de datos permanecen exclusivamente en la máquina local sin telemetría ni IA externa.".into(),
             ],
             bullets: vec![
@@ -561,7 +561,7 @@ pub fn doc_fr_fr() -> Vec<ManualSection> {
             title: "1. Nouvelles Fonctionnalités et Architecture".into(),
             paragraphs: vec![
                 "Huginn Sentinel est une plateforme de bureau haute performance pour l'audit d'intégrité, la surveillance en temps réel du système de fichiers Windows et la détection autonome des menaces.".into(),
-                "La version 2026.11.9.0 consolide la réécriture intégrale en Rust moderne (Édition 2021) avec une interface GPU en egui 0.37 / eframe et stockage relationnel SQLite3 en mode WAL.".into(),
+                "La version 2026.11.11.0 consolide la réécriture intégrale en Rust moderne (Édition 2021) avec une interface GPU en egui 0.37 / eframe et stockage relationnel SQLite3 en mode WAL.".into(),
                 "Architecture Sovereign Privacy Local-First : 100% des analyses, scores de risque (0–100) et bases de données restent strictement locaux, sans télémétrie ni IA externe.".into(),
             ],
             bullets: vec![
@@ -716,7 +716,7 @@ pub fn doc_it_it() -> Vec<ManualSection> {
             title: "1. Nuove Funzionalità e Architettura".into(),
             paragraphs: vec![
                 "Huginn Sentinel è una piattaforma desktop aziendale ad alte prestazioni per l'audit forense dell'integrità, il monitoraggio in tempo reale del file system di Windows e il rilevamento autonomo delle minacce.".into(),
-                "La versione 2026.11.9.0 consolida la riscrittura completa in Rust moderno (Edizione 2021) con interfaccia grafica GPU in egui 0.37 / eframe e persistenza relazionale SQLite3 in modalità WAL.".into(),
+                "La versione 2026.11.11.0 consolida la riscrittura completa in Rust moderno (Edizione 2021) con interfaccia grafica GPU in egui 0.37 / eframe e persistenza relazionale SQLite3 in modalità WAL.".into(),
                 "Architettura Sovereign Privacy Local-First: il 100% delle analisi, punteggi di rischio (0–100) e database rimangono rigorosamente locali, senza telemetria e senza IA esterna.".into(),
             ],
             bullets: vec![
@@ -871,7 +871,7 @@ pub fn doc_de_de() -> Vec<ManualSection> {
             title: "1. Neue Funktionen und Architektur".into(),
             paragraphs: vec![
                 "Huginn Sentinel ist eine lokale Hochleistungs-Desktop-Plattform für Dateisicherheits- und forensische Integritätsüberwachung sowie autonome Bedrohungserkennung unter Windows.".into(),
-                "Version 2026.11.9.0 konsolidiert die vollständige Neuentwicklung in modernem Rust (Edition 2021) mit GPU-beschleunigter egui 0.37 / eframe Oberfläche und SQLite3 WAL-Persistenz.".into(),
+                "Version 2026.11.11.0 konsolidiert die vollständige Neuentwicklung in modernem Rust (Edition 2021) mit GPU-beschleunigter egui 0.37 / eframe Oberfläche und SQLite3 WAL-Persistenz.".into(),
                 "Local-First Sovereign Privacy Architektur: 100% der Analysen, Risikobewertungen (0–100) und Datenbanken verbleiben ausschließlich lokal ohne Telemetrie und ohne externe KI.".into(),
             ],
             bullets: vec![

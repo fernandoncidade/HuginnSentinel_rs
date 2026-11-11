@@ -1,6 +1,6 @@
 Avis sur les Dépendances Tierces et Licences Open Source
 
-Cet avis s'applique à l'implémentation native en Rust du projet Huginn Sentinel (version 2026.11.9.0).
+Cet avis s'applique à l'implémentation native en Rust du projet Huginn Sentinel (version 2026.11.11.0).
 Il remplace les avis des éditions précédentes. La base actuelle a été développée en Rust (éditions 2021/2024), sans dépendance envers des interpréteurs externes, des machines virtuelles ou des runtimes de langages interprétés.
 
 Dépendances et Bibliothèques Utilisées dans la Base Actuelle :

@@ -1,3 +1,26 @@
+NOTAS DE LANÇAMENTO: Versão 2026.11.11.0
+
+RESUMO GERAL DAS MELHORIAS E NOVIDADES
+
+A versão 2026.11.11.0 aprimora a autonomia, a compatibilidade e a leveza do aplicativo no Windows, eliminando a necessidade de pacotes complementares externos para que o programa funcione, adequando a distribuição oficial às exigências da loja da Microsoft e organizando os recursos visuais em uma estrutura mais limpa e enxuta.
+
+
+1. FUNCIONAMENTO AUTÔNOMO SEM PACOTES EXTERNOS ADICIONAIS
+- Tudo Integrado no Aplicativo: Tanto o aplicativo principal quanto a ferramenta de linha de comando passam a reunir internamente todos os recursos necessários para abrir e funcionar diretamente no Windows, sem exigir o download ou a instalação separada de componentes complementares do sistema.
+- Abertura Confiável em Qualquer Computador: Mesmo em equipamentos recém-formatados ou sistemas Windows recém-instalados, o Huginn Sentinel inicia normalmente na primeira execução, evitando avisos de arquivos ausentes ou falhas ao abrir.
+
+
+2. ADEQUAÇÃO COMPLETA ÀS EXIGÊNCIAS DA MICROSOFT STORE
+- Conformidade com Regras de Dependências: Os pacotes oficiais de instalação foram ajustados para eliminar dependências externas desnecessárias, atendendo de forma direta aos critérios de segurança, transparência e certificação da Microsoft Store.
+- Instalação Simples e Sem Etapas Extras: O usuário instala e executa o aplicativo de maneira direta, tanto pela loja oficial quanto pelos instaladores tradicionais, sem etapas adicionais de configuração de ambiente.
+
+
+3. LIMPEZA DE RECURSOS VISUAIS E PACOTE MAIS LEVE
+- Remoção de Arquivos Antigos Sem Uso: Foram excluídos dezenas de ícones e imagens antigos que não eram mais utilizados pela interface atual, reduzindo o volume de arquivos desnecessários nos pacotes de instalação.
+- Estrutura Visual Unificada: Todos os ícones e imagens oficiais da marca foram reunidos em um único espaço organizado, garantindo que os ícones exibidos na janela do aplicativo, nos atalhos do sistema e nos instaladores permaneçam consistentes, nítidos e atualizados.
+
+_________________________________________________
+
 NOTAS DE LANÇAMENTO: Versão 2026.11.9.0
 
 RESUMO GERAL DAS MELHORIAS E NOVIDADES

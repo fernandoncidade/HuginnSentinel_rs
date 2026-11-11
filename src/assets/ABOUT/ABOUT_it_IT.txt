@@ -1,5 +1,5 @@
 Progetto: HUGINN SENTINEL
-Versione: 2026.11.9.0
+Versione: 2026.11.11.0
 Autori: Fernando Nillsson Cidade
 
 Descrizione: Piattaforma Desktop Locale di Intelligence, Cronologia e Audit dei File

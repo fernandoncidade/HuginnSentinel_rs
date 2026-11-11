@@ -1,6 +1,6 @@
 [package]
 name = "huginn_rs"
-version = "2026.11.9"
+version = "2026.11.11"
 edition = "2021"
 description = "Huginn Sentinel — Plataforma Desktop Local de Monitoramento, Auditoria e Segurança de Arquivos"
 authors = ["Fernando Cidade"]

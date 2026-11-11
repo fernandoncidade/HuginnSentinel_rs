@@ -14,8 +14,8 @@
 
 # Pacto de Contribuição — Código de Conduta (Huginn Sentinel)
 
-**Versão:** `v2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `v2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 
 ## Nosso Compromisso
 
@@ -70,8 +70,8 @@ Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contri
 
 # Contributor Covenant Code of Conduct (Huginn Sentinel)
 
-**Version:** `v2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `v2026.11.11.0`  
+**Date:** `November 11, 2026`  
 
 ## Our Pledge
 

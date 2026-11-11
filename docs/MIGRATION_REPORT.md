@@ -2,7 +2,7 @@
 
 ## 1. Resumo da Migração Realizada
 
-O projeto **Huginn Sentinel** (versão `v2026.11.9.0`), originalmente concebido e prototipado em C++20 com o framework Qt 6 na base legada `Huginn_cpp`, foi integralmente migrado e refatorado para a linguagem **Rust (Edição 2021)** no repositório de produção `HuginnSentinel_rs`.
+O projeto **Huginn Sentinel** (versão `v2026.11.11.0`), originalmente concebido e prototipado em C++20 com o framework Qt 6 na base legada `Huginn_cpp`, foi integralmente migrado e refatorado para a linguagem **Rust (Edição 2021)** no repositório de produção `HuginnSentinel_rs`.
 
 A base de código em Rust adota o framework gráfico de modo imediato **`egui` (0.37) / `eframe` (0.37)** em conformidade com as diretrizes do projeto, substituindo completamente a infraestrutura legada do Qt 6. Foram preservadas e aprimoradas todas as 58 colunas de metadados da tabela de auditoria (agora com **harmonização determinística estrita** em `harmonizacao.rs`), as 17 visualizações gráficas analíticas nativas aceleradas por GPU, as 6 regras canônicas de segurança (`SEC-R01` a `SEC-R06`), o motor de linha de base criptográfica SHA-256, o sistema de quarentena com custódia em banco relacional SQLite WAL e extensão inerte `.quar`, a internacionalização instantânea para 6 idiomas e novos recursos exclusivos de alta produtividade (fixação 2D arbitrária de linhas e colunas em 4 quadrantes, menus persistentes por hover e contador dinâmico de janelas no rodapé).
 

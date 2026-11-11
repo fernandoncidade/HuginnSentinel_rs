@@ -14,8 +14,8 @@
 
 # Huginn Sentinel — Manual de Operação e Guia do Usuário
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 **Plataforma:** Windows 10 / Windows 11 / Windows Server 2022+ (x64)  
 **Autor:** Fernando Nillsson Cidade  
 
@@ -147,8 +147,8 @@ A planilha central suporta centenas de milhares de linhas e divide a renderizaç
 
 # Huginn Sentinel — Operations & User Guide
 
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 **Platform:** Windows 10 / Windows 11 / Windows Server 2022+ (x64)  
 **Author:** Fernando Nillsson Cidade  
 

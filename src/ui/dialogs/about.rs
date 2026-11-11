@@ -93,7 +93,7 @@ impl AboutDialog {
 
                     ui.horizontal(|ui| {
                         ui.label(RichText::new(format!("{}:", loc.t("version"))).strong());
-                        ui.label("2026.11.9.0");
+                        ui.label("2026.11.11.0");
                         ui.add_space(16.0);
                         ui.label(RichText::new(format!("{}:", loc.t("authors"))).strong());
                         ui.label("Fernando Nillsson Cidade");
@@ -442,7 +442,7 @@ impl AboutDialog {
             AboutTab::Licencas => "Licença GNU AGPLv3 / Duplo Licenciamento:\n\nO código-fonte é distribuído sob os termos da GNU Affero General Public License v3 (AGPLv3). Para binários comerciais oficiais na Microsoft Store, aplica-se o EULA comercial correspondente.".to_string(),
             AboutTab::Avisos => "Avisos e Declarações de Terceiros:\n\nEste produto utiliza bibliotecas de código aberto sob licenças MIT, Apache 2.0, CC0-1.0 e Domínio Público (SQLite).".to_string(),
             AboutTab::Privacidade => "Política de Privacidade Sovereign Privacy:\n\nO Huginn Sentinel opera 100% offline e localmente. Nenhum arquivo, metadado, hash ou telemetria é coletado ou transmitido para servidores remotos.".to_string(),
-            AboutTab::Release => "Versão 2026.11.9.0:\n- Refatoração integral para Rust moderno e egui\n- Monitoramento em tempo real resiliente com ReadDirectoryChangesW\n- 17 gráficos estatísticos nativos interativos\n- Utilitário autônomo de console CLI (huginnsentinel-cli)".to_string(),
+            AboutTab::Release => "Versão 2026.11.11.0:\n- Refatoração integral para Rust moderno e egui\n- Monitoramento em tempo real resiliente com ReadDirectoryChangesW\n- 17 gráficos estatísticos nativos interativos\n- Utilitário autônomo de console CLI (huginnsentinel-cli)".to_string(),
         }
     }
 

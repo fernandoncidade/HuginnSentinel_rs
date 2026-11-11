@@ -14,8 +14,8 @@
 
 # Contribuindo com o Huginn Sentinel
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 
 Antes de tudo, agradecemos seu interesse em contribuir com o **Huginn Sentinel**! Seu apoio torna o monitoramento de integridade e auditoria de segurança do Windows mais transparente, robusto e acessível para todos.
 
@@ -130,8 +130,8 @@ Conforme configurado em `.cargo/config.toml`, os binários compilados são gerad
 
 # Contributing to Huginn Sentinel
 
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 
 First off, thank you for considering contributing to **Huginn Sentinel**! Your help makes Windows file system integrity auditing, real-time monitoring, and forensic intelligence more robust, transparent, and accessible for everyone.
 

@@ -14,8 +14,8 @@
 
 # Huginn Sentinel — Modelo de Segurança e Análise de Ameaças
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
 **Nível de Segurança:** 100% Local-First | Zero Telemetria | Auditoria Determinística de Integridade (Sem IA Externa)  
 **Contexto Operacional:** Windows 10 / 11 / Windows Server 2022+  
 
@@ -111,8 +111,8 @@ Para arquivos executáveis do Windows (`.exe`, `.dll`, `.sys`), o subsistema `sr
 
 # Huginn Sentinel — Security Model & Threat Analysis
 
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 **Security Level:** 100% Local-First | Zero Telemetry | Deterministic Integrity Auditing (Zero External AI)  
 **Operating Environment:** Windows 10 / 11 / Windows Server 2022+  
 

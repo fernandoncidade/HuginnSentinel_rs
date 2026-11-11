@@ -1,6 +1,6 @@
 Avviso sulle Dipendenze di Terze Parti e Licenze Open Source
 
-Questo avviso si applica all'implementazione nativa in Rust del progetto Huginn Sentinel (versione 2026.11.9.0).
+Questo avviso si applica all'implementazione nativa in Rust del progetto Huginn Sentinel (versione 2026.11.11.0).
 Sostituisce gli avvisi delle edizioni precedenti. La base attuale è stata sviluppata in Rust (edizioni 2021/2024), senza dipendenze da interpreti esterni, macchine virtuali o runtime di linguaggi interpretati.
 
 Dipendenze e Librerie Utilizzate nella Base Attuale:

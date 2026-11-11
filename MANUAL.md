@@ -1,10 +1,10 @@
 # MANUAL DO USUÁRIO E GUIA DE AUDITORIA E SEGURANÇA — HUGINN SENTINEL
 # USER MANUAL AND SECURITY AUDIT GUIDE — HUGINN SENTINEL
 
-**Versão:** `2026.11.9.0`  
-**Data:** `9 de novembro de 2026`  
-**Version:** `2026.11.9.0`  
-**Date:** `November 9, 2026`  
+**Versão:** `2026.11.11.0`  
+**Data:** `11 de novembro de 2026`  
+**Version:** `2026.11.11.0`  
+**Date:** `November 11, 2026`  
 **Ambiente Tecnológico / Tech Stack:** Rust (Edição 2021) | egui 0.37 / eframe | Win32 API (`windows-sys`, `ReadDirectoryChangesW`, `WinTrust`) | SQLite3 (`rusqlite` WAL)  
 **Plataforma / Platform:** Windows 11 / Windows 10 / Windows Server 2022+ (x64)  
 **Binários / Binaries:** `huginnsentinel.exe` (GUI Desktop) | `huginnsentinel-cli.exe` (Console CLI)  
@@ -27,8 +27,8 @@
 
 # Manual do Usuário — Huginn Sentinel
 
-Versão documentada: `2026.11.9.0`  
-Data: `9 de novembro de 2026`  
+Versão documentada: `2026.11.11.0`  
+Data: `11 de novembro de 2026`  
 
 ## 1. Introdução & Filosofia Local-First
 
@@ -246,8 +246,8 @@ O executável autônomo `huginnsentinel-cli.exe` fornece suporte completo para s
 
 # User Operations Manual — Huginn Sentinel
 
-Documented version: `2026.11.9.0`  
-Date: `November 9, 2026`  
+Documented version: `2026.11.11.0`  
+Date: `November 11, 2026`  
 
 ## 1. Overview & Sovereign Local-First Philosophy
 
